@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: c48149d5cf2062a50ddd509cfa80cba676ede97c4921f1e1c91ec74a525cfed2
-# TOTAL: 112372
+# RULES-SHA256: f426b4d5b029d760aa75caa247b7120a7d9b2bf49f1b7458e56d8fd77d06a261
+# TOTAL: 112395
 # Requires the _Keyword.list companion for equivalent coverage.
 .0.zone
 .00.net
@@ -112153,6 +112153,7 @@ cbsnewshd-lh.akamaihd.net
 cdn-videos.akamaized.net
 cdn.ampproject.org
 cdn.angruo.com
+cdn.dancf.com
 cdn.globalsigncdn.com.cdn.cloudflare.net
 cdn.hkdtmb.com
 cgntv-glive.ofsdelivery.net
@@ -112176,6 +112177,7 @@ e1.vdowowza.vip.hk1.tvb.com
 edge.music-choice-play-chaina1.top.comcast.net
 end-api.shallow.ink
 end.shallow.ink
+esm.dancf.com
 f24hls-i.akamaihd.net
 fash1043.cloudycdn.services
 file.hhtv.cc
@@ -112185,13 +112187,18 @@ fm901.cityfm.tw
 fm929.cityfm.tw
 fm971.cityfm.tw
 fm983.cityfm.tw
+gaoding-market.dancf.com
 gayotv.net
+gd-cms.dancf.com
+gd-filems.dancf.com
+gd-hbimg.huabanimg.com
 gonglchuangl.net
 gongyichuangyi.net
 gpb-hls.streamguys1.com
 gstatic-cn.com
 gtm.oasisfeng.com
 hb2stream1.baoxinwen.com
+hbimg.huabanimg.com
 hindiabp-lh.akamaihd.net
 hls-1.wamu.org
 hls-video01.cdnvideo.ru
@@ -112282,6 +112289,7 @@ o.pki.goog
 ocsp.pki.goog
 origin-a.akamaihd.ne
 origin-a.akamaihd.net
+original-doc-online.oss-cn-shanghai.aliyuncs.com
 ott-live.olympicchannel.com
 play.jinnantv.top
 play.scrstv.com
@@ -112313,9 +112321,12 @@ service.urchin.com
 slive.ytn.co.kr
 sms.imagetasks.com
 sohucao.duapp.com
+st-gdx.dancf.com
+st0.dancf.com
 staging-controlbe.floonet.goog
 staging-databe.floonet.goog
 staging.databe.floonet.goog
+static-prod.ituchong.com
 steamcommunity-a.akamaihd.net
 storeedgefd.dsx.mp.microsoft.com
 stream.baoxinwen.com
@@ -112349,6 +112360,18 @@ uni6rtmp.tulix.tv
 update.crashlytics.com
 v1.one-tv.com
 vip888.kuyun99.com
+vjshi-data-img-new-dis.oss-cn-shanghai.aliyuncs.com
+vjshi-data-img-new.oss-cn-shanghai.aliyuncs.com
+vjshi-data-online-upload.oss-cn-shanghai.aliyuncs.com
+vjshi-data-to-user-prod.oss-cn-shanghai.aliyuncs.com
+vjshi-music-preview.oss-cn-shanghai.aliyuncs.com
+vjshi-musics-from-provider.oss-cn-shanghai.aliyuncs.com
+vjshi-personal-picture-online.oss-cn-hangzhou.aliyuncs.com
+vjshi-photos-from-provider-prod.oss-cn-shanghai.aliyuncs.com
+vjshi-photos-preview-not-enabled-prod.oss-cn-shanghai.aliyuncs.com
+vjshi.soboten.com
+vjstudio-case-preview-uploadable-prod.oss-cn-shanghai.aliyuncs.com
+vjstudio-case-upload-prod.oss-cn-shanghai.aliyuncs.com
 voa-lh.akamaihd.net
 vss.cbnmtv.com
 w3.wifijiangyin.com

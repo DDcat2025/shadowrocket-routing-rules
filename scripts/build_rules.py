@@ -119,7 +119,9 @@ def build():
     x = module('Twitter') | v2fly('twitter') | v2fly('xai')
     openai_owned = {('DOMAIN-SUFFIX', h) for h in ['openai.com','chatgpt.com','chat.com','chatgpt.site','sora.com','oaistatic.com','oaistatsig.com','oaiusercontent.com','openaimerge.com']}
     dedicated_scope = Scope(openai_owned | claude_core | x)
-    own_direct = external('tencent-shadowrocket-rules', 'Tencent') | external('douyin-bytedance-shadowrocket-rules', 'ByteDanceCN')
+    own_direct = (external('tencent-shadowrocket-rules', 'Tencent')
+                  | external('douyin-bytedance-shadowrocket-rules', 'ByteDanceCN')
+                  | read_rules(ROOT / 'data/custom/domestic-creative.list'))
     source_direct = module('China') | own_direct
     source_full = module('ChinaMax') | own_direct
     excluded = []

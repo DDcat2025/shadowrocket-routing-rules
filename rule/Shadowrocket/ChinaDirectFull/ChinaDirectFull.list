@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: c48149d5cf2062a50ddd509cfa80cba676ede97c4921f1e1c91ec74a525cfed2
-# TOTAL: 112385
+# RULES-SHA256: f426b4d5b029d760aa75caa247b7120a7d9b2bf49f1b7458e56d8fd77d06a261
+# TOTAL: 112408
 DOMAIN,1-fss24-s0.streamhoster.com
 DOMAIN,14033.live.streamtheworld.com
 DOMAIN,156zy.suyunbo.tv
@@ -50,6 +50,7 @@ DOMAIN,cbsnewshd-lh.akamaihd.net
 DOMAIN,cdn-videos.akamaized.net
 DOMAIN,cdn.ampproject.org
 DOMAIN,cdn.angruo.com
+DOMAIN,cdn.dancf.com
 DOMAIN,cdn.globalsigncdn.com.cdn.cloudflare.net
 DOMAIN,cdn.hkdtmb.com
 DOMAIN,cgntv-glive.ofsdelivery.net
@@ -73,6 +74,7 @@ DOMAIN,e1.vdowowza.vip.hk1.tvb.com
 DOMAIN,edge.music-choice-play-chaina1.top.comcast.net
 DOMAIN,end-api.shallow.ink
 DOMAIN,end.shallow.ink
+DOMAIN,esm.dancf.com
 DOMAIN,f24hls-i.akamaihd.net
 DOMAIN,fash1043.cloudycdn.services
 DOMAIN,file.hhtv.cc
@@ -82,13 +84,18 @@ DOMAIN,fm901.cityfm.tw
 DOMAIN,fm929.cityfm.tw
 DOMAIN,fm971.cityfm.tw
 DOMAIN,fm983.cityfm.tw
+DOMAIN,gaoding-market.dancf.com
 DOMAIN,gayotv.net
+DOMAIN,gd-cms.dancf.com
+DOMAIN,gd-filems.dancf.com
+DOMAIN,gd-hbimg.huabanimg.com
 DOMAIN,gonglchuangl.net
 DOMAIN,gongyichuangyi.net
 DOMAIN,gpb-hls.streamguys1.com
 DOMAIN,gstatic-cn.com
 DOMAIN,gtm.oasisfeng.com
 DOMAIN,hb2stream1.baoxinwen.com
+DOMAIN,hbimg.huabanimg.com
 DOMAIN,hindiabp-lh.akamaihd.net
 DOMAIN,hls-1.wamu.org
 DOMAIN,hls-video01.cdnvideo.ru
@@ -179,6 +186,7 @@ DOMAIN,o.pki.goog
 DOMAIN,ocsp.pki.goog
 DOMAIN,origin-a.akamaihd.ne
 DOMAIN,origin-a.akamaihd.net
+DOMAIN,original-doc-online.oss-cn-shanghai.aliyuncs.com
 DOMAIN,ott-live.olympicchannel.com
 DOMAIN,play.jinnantv.top
 DOMAIN,play.scrstv.com
@@ -210,9 +218,12 @@ DOMAIN,service.urchin.com
 DOMAIN,slive.ytn.co.kr
 DOMAIN,sms.imagetasks.com
 DOMAIN,sohucao.duapp.com
+DOMAIN,st-gdx.dancf.com
+DOMAIN,st0.dancf.com
 DOMAIN,staging-controlbe.floonet.goog
 DOMAIN,staging-databe.floonet.goog
 DOMAIN,staging.databe.floonet.goog
+DOMAIN,static-prod.ituchong.com
 DOMAIN,steamcommunity-a.akamaihd.net
 DOMAIN,storeedgefd.dsx.mp.microsoft.com
 DOMAIN,stream.baoxinwen.com
@@ -246,6 +257,18 @@ DOMAIN,uni6rtmp.tulix.tv
 DOMAIN,update.crashlytics.com
 DOMAIN,v1.one-tv.com
 DOMAIN,vip888.kuyun99.com
+DOMAIN,vjshi-data-img-new-dis.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-data-img-new.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-data-online-upload.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-data-to-user-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-music-preview.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-musics-from-provider.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-personal-picture-online.oss-cn-hangzhou.aliyuncs.com
+DOMAIN,vjshi-photos-from-provider-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-photos-preview-not-enabled-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi.soboten.com
+DOMAIN,vjstudio-case-preview-uploadable-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjstudio-case-upload-prod.oss-cn-shanghai.aliyuncs.com
 DOMAIN,voa-lh.akamaihd.net
 DOMAIN,vss.cbnmtv.com
 DOMAIN,w3.wifijiangyin.com

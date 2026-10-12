@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 0518ea2a02f1c13afed9dd2f51a4265964e801f96621e6a742d68c97fb42da08
-# TOTAL: 4802
+# RULES-SHA256: 4d90b4f84255ab5e6a789ccef5381c672164ebf76ba7267add6d48841896e227
+# TOTAL: 4834
 # Requires the _Keyword.list companion for equivalent coverage.
 .00cdn.com
 .0123456789.com
@@ -232,6 +232,7 @@
 .6655.com
 .66wz.com
 .68h5.com
+.699pic.com
 .6rooms.com
 .71.am
 .71.am.com
@@ -1090,6 +1091,7 @@
 .chouti.com
 .chrstatic.com
 .chua.pro
+.chuangkit.com
 .chuangxin.com
 .chuanke.com
 .chuansong.me
@@ -1821,6 +1823,7 @@
 .ganji.com
 .ganjistatic1.com
 .gaode.com
+.gaoding.com
 .gaodun.com
 .gaoshouyou.com
 .gaoxiaojob.com
@@ -1979,6 +1982,7 @@
 .heisha.net
 .hello-inc.com
 .hellobike.com
+.hellorf.com
 .hellowebfont.com
 .hemamax.com
 .hemaos.com
@@ -2047,6 +2051,7 @@
 .hteacher.net
 .htrace.wetvinfo.com
 .htsec.com
+.huaban.com
 .huajingsec.com
 .huangyuhui.net
 .huanqiu.com
@@ -3948,6 +3953,7 @@
 .ttmeiju.com
 .ttpod.com
 .ttwebview.com
+.tuchong.com
 .tudou.com
 .tudouui.com
 .tuer123.com
@@ -4066,6 +4072,7 @@
 .vaptcha.com
 .vaptcha.net
 .variflight.com
+.vcg.com
 .vcimg.com
 .vcloud-byte.com
 .vcloudapi.com
@@ -4117,6 +4124,7 @@
 .vipmro.com
 .vipmro.net
 .visualstudio.com
+.vjshi.com
 .vlabimg.com
 .vlabstatic.com
 .vlabvod.com
@@ -4472,6 +4480,7 @@
 .xingtan001.com
 .xingtu.cn
 .xinhuanet.com
+.xinpianchang.com
 .xinrenxinshi.com
 .xinshipu.com
 .xinyan.cn
@@ -4793,17 +4802,40 @@ analytics.strava.com
 blzddist1-a.akamaihd.net
 bytedance.map.fastly.net
 cdn.angruo.com
+cdn.dancf.com
 client.amplifi.com
 download.jetbrains.com
 download.microsoft.com
+esm.dancf.com
+gaoding-market.dancf.com
+gd-cms.dancf.com
+gd-filems.dancf.com
+gd-hbimg.huabanimg.com
+hbimg.huabanimg.com
 images-cn.ssl-images-amazon.com
 ip.istatmenus.app
 kc.kexinshe.com
 ntservicepack.microsoft.com
 origin-a.akamaihd.ne
 origin-a.akamaihd.net
+original-doc-online.oss-cn-shanghai.aliyuncs.com
 sms.imagetasks.com
+st-gdx.dancf.com
+st0.dancf.com
+static-prod.ituchong.com
 steamcommunity-a.akamaihd.net
+vjshi-data-img-new-dis.oss-cn-shanghai.aliyuncs.com
+vjshi-data-img-new.oss-cn-shanghai.aliyuncs.com
+vjshi-data-online-upload.oss-cn-shanghai.aliyuncs.com
+vjshi-data-to-user-prod.oss-cn-shanghai.aliyuncs.com
+vjshi-music-preview.oss-cn-shanghai.aliyuncs.com
+vjshi-musics-from-provider.oss-cn-shanghai.aliyuncs.com
+vjshi-personal-picture-online.oss-cn-hangzhou.aliyuncs.com
+vjshi-photos-from-provider-prod.oss-cn-shanghai.aliyuncs.com
+vjshi-photos-preview-not-enabled-prod.oss-cn-shanghai.aliyuncs.com
+vjshi.soboten.com
+vjstudio-case-preview-uploadable-prod.oss-cn-shanghai.aliyuncs.com
+vjstudio-case-upload-prod.oss-cn-shanghai.aliyuncs.com
 wetv.qq.com
 www.libvideo.com
 www.yxssp.com

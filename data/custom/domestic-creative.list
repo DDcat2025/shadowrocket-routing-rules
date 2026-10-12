@@ -1,0 +1,50 @@
+# 国内创意素材平台的人工核验补充；合入 ChinaDirect 和 ChinaDirectFull。
+# 核验日期：2026-10-12。来源和匹配边界见 docs/domestic-creative.md。
+# 此文件独立于 data/sources，自动刷新上游时保留。
+
+# 光厂 VJshi：主站、API、图片、音视频、开放平台及所有第一方子域。
+# https://www.vjshi.com/about
+DOMAIN-SUFFIX,vjshi.com
+# 官网客服链接；仅光厂专用入口。
+DOMAIN,vjshi.soboten.com
+# 官网公开页面内嵌的运行配置：专用上传桶与未启用图片的预览桶。
+# 不把 aliyuncs.com、区域 OSS 根域或 soboten.com 扩大为平台规则。
+DOMAIN,original-doc-online.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-data-img-new-dis.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-data-img-new.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-data-online-upload.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-data-to-user-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-music-preview.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-musics-from-provider.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-personal-picture-online.oss-cn-hangzhou.aliyuncs.com
+DOMAIN,vjshi-photos-from-provider-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-photos-preview-not-enabled-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjstudio-case-preview-uploadable-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjstudio-case-upload-prod.oss-cn-shanghai.aliyuncs.com
+
+# 新片场：https://www.xinpianchang.com/aboutus/aboutus
+DOMAIN-SUFFIX,xinpianchang.com
+# 摄图网：https://699pic.com/
+DOMAIN-SUFFIX,699pic.com
+# 视觉中国：https://www.vcg.com/home
+DOMAIN-SUFFIX,vcg.com
+# 站酷海洛：https://www.hellorf.com/
+DOMAIN-SUFFIX,hellorf.com
+# 图虫：https://stock.tuchong.com/landing-page/about?from=footer
+DOMAIN-SUFFIX,tuchong.com
+DOMAIN,static-prod.ituchong.com
+# 花瓣：https://huaban.com/；图片域名来自首页实际引用。
+DOMAIN-SUFFIX,huaban.com
+DOMAIN,gd-hbimg.huabanimg.com
+DOMAIN,hbimg.huabanimg.com
+# 稿定：https://www.gaoding.com/；资源主机来自首页实际引用，仅精确匹配。
+DOMAIN-SUFFIX,gaoding.com
+DOMAIN,cdn.dancf.com
+DOMAIN,esm.dancf.com
+DOMAIN,gaoding-market.dancf.com
+DOMAIN,gd-cms.dancf.com
+DOMAIN,gd-filems.dancf.com
+DOMAIN,st-gdx.dancf.com
+DOMAIN,st0.dancf.com
+# 创客贴：https://www.chuangkit.com/
+DOMAIN-SUFFIX,chuangkit.com

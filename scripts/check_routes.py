@@ -35,14 +35,36 @@ expectations = {
              'as1.ftcdn.net','www.behance.net'],
     'DIRECT':['account.adobe.com','ims-na1.adobelogin.com','creativecloud.com','fonts.adobe.com',
               'cc-api-storage.adobe.io','helpx.adobe.com','scene7.com','www.qq.com','weixin.qq.com',
-              'www.taobao.com','www.jd.com','jimeng.jianying.com','douyin.com','doubao.com','feishu.cn'],
+              'www.taobao.com','www.jd.com','jimeng.jianying.com','douyin.com','doubao.com','feishu.cn',
+              'vjshi.com','www.vjshi.com','mp4.vjshi.com','future-service.vjshi.com',
+              'vjshi.soboten.com','vjshi-data-online-upload.oss-cn-shanghai.aliyuncs.com',
+              'vjshi-personal-picture-online.oss-cn-hangzhou.aliyuncs.com',
+              'vjshi-photos-preview-not-enabled-prod.oss-cn-shanghai.aliyuncs.com',
+              'stock.xinpianchang.com','video.699pic.com','www.vcg.com','www.hellorf.com',
+              'stock.tuchong.com','static-prod.ituchong.com','huaban.com','hbimg.huabanimg.com',
+              'www.gaoding.com','cdn.dancf.com','gd-filems.dancf.com','static.chuangkit.com',
+              'ibaotu.com','www.58pic.com','www.zcool.com.cn'],
     'PINTEREST':['www.pinterest.com','i.pinimg.com','pin.it'],
     'PROXY':['www.google.com','www.youtube.com','www.netflix.com','discord.com','replicate.delivery',
              'runway.com','krea.ai','ideogram.ai','linear.app','notadobe.com',
              'firefly.adobe.io.example.invalid','openai.com.example.invalid','x.com.example.invalid'],
 }
 checks = 0
+creative = read_rules(ROOT / 'data/custom/domestic-creative.list')
+# Platform supplements must not capture lookalikes, other tenants or shared roots.
+negative_creative_hosts = [
+    'evilvjshi.com','vjshi.com.example.invalid','other.soboten.com','soboten.com',
+    'aliyuncs.com','oss-cn-shanghai.aliyuncs.com','oss-cn-hangzhou.aliyuncs.com',
+    'other-bucket.oss-cn-shanghai.aliyuncs.com','other-bucket.oss-cn-hangzhou.aliyuncs.com',
+    'vjshi-data-online-upload.oss-cn-shanghai.aliyuncs.com.example.invalid',
+    'dancf.com','unrelated.dancf.com','cdn.dancf.com.example.invalid',
+    'huabanimg.com','unrelated.huabanimg.com','ituchong.com','unrelated.ituchong.com',
+    'www.googletagmanager.com','firefly.adobe.com','chatgpt.com','claude.ai',
+]
+for host in negative_creative_hosts:
+    assert not any(match(host, r) for r in creative), ('Creative supplement too broad', host)
 for domestic in ['ChinaDirect','ChinaDirectFull']:
+    assert creative <= provider(domestic), ('Creative supplement missing from', domestic)
     ordered = base + [(provider(domestic),'DIRECT'),(provider('International'),'PROXY')]
     for expected, hosts in expectations.items():
         for host in hosts:
@@ -72,7 +94,7 @@ assert sc.contains(('DOMAIN','firefly.adobe.com'))
 assert not sc.contains(('DOMAIN','adobe.com.example.org'))
 assert not sc.contains(('DOMAIN-SUFFIX','amazonaws.com'))
 assert not sc.contains(('DOMAIN-SUFFIX','s3.amazonaws.com'))
-print(f'PASS: {checks} routing scenarios, Adobe isolation, exact/suffix/keyword semantics, client parity and Anthropic alias')
+print(f'PASS: {checks} routing scenarios, {len(negative_creative_hosts)} creative boundary cases, Adobe isolation, exact/suffix/keyword semantics, client parity and Anthropic alias')
 
 # Every non-shared Adobe community entry must be owned by the dedicated Adobe repository.
 owned = Scope(adobe | adobe_direct | external('adobe-shadowrocket-rules','AdobeStockLegacy'))

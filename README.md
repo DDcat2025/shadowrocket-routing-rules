@@ -8,8 +8,8 @@
 
 | 类别 | 主规则 | 作用 |
 |---|---|---|
-| 国内直连 | [ChinaDirect.list](rule/Shadowrocket/ChinaDirect/ChinaDirect.list) | China 常规集合＋现有腾讯／中国区字节规则；移除专属服务与 Adobe 条目 |
-| 国内扩展 | [ChinaDirectFull.list](rule/Shadowrocket/ChinaDirectFull/ChinaDirectFull.list) | ChinaMax 扩展集合＋腾讯／字节；与常规版二选一，上游 ChinaMax 是实验性分类 |
+| 国内直连 | [ChinaDirect.list](rule/Shadowrocket/ChinaDirect/ChinaDirect.list) | China 常规集合＋腾讯／中国区字节＋人工核验的国内素材站；移除专属服务与 Adobe 条目 |
+| 国内扩展 | [ChinaDirectFull.list](rule/Shadowrocket/ChinaDirectFull/ChinaDirectFull.list) | ChinaMax 扩展集合＋同一批国内补充；与常规版二选一，上游 ChinaMax 是实验性分类 |
 | Claude / Anthropic | [Claude.list](rule/Shadowrocket/Claude/Claude.list) | 社区域名、官网／Desktop／Code／下载及精确共享依赖 |
 | Anthropic 别名 | [Anthropic.list](rule/Shadowrocket/Anthropic/Anthropic.list) | 与 Claude.list 内容相同，二选一 |
 | X | [X.list](rule/Shadowrocket/X/X.list) | X、Twitter、媒体、短链接以及上游关联的 Grok / xAI 域名 |
@@ -59,6 +59,12 @@ FINAL,PROXY
 ```
 
 固定出口策略组使用手动 `select`。国内扩展版用 ChinaDirectFull 替换 ChinaDirect，不叠加两份。国际优先与国际综合有有意重叠：前者负责优先级，后者补漏。
+
+## 国内素材站补充
+
+常规版已补入光厂 VJshi、新片场、摄图网、视觉中国、站酷海洛、图虫、花瓣、稿定和创客贴；同时补入官网公开引用的专用资源主机。VJshi 使用根域后缀覆盖全部第一方子域，客服和 12 个专用 OSS 域名使用精确匹配。
+
+这些补充保存在 [domestic-creative.list](data/custom/domestic-creative.list)，构建时合入两种国内集合，自动刷新上游不会覆盖它们。已经订阅 `ChinaDirect.list` 的客户端只需更新规则并重新编译或使用配置，订阅地址不变。来源、边界和验收范围见 [国内素材站补充说明](docs/domestic-creative.md)。
 
 ## OpenAI 和 Anthropic 本次补全
 

@@ -2,23 +2,46 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 0518ea2a02f1c13afed9dd2f51a4265964e801f96621e6a742d68c97fb42da08
-# TOTAL: 4812
+# RULES-SHA256: 4d90b4f84255ab5e6a789ccef5381c672164ebf76ba7267add6d48841896e227
+# TOTAL: 4844
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,bytedance.map.fastly.net
 DOMAIN,cdn.angruo.com
+DOMAIN,cdn.dancf.com
 DOMAIN,client.amplifi.com
 DOMAIN,download.jetbrains.com
 DOMAIN,download.microsoft.com
+DOMAIN,esm.dancf.com
+DOMAIN,gaoding-market.dancf.com
+DOMAIN,gd-cms.dancf.com
+DOMAIN,gd-filems.dancf.com
+DOMAIN,gd-hbimg.huabanimg.com
+DOMAIN,hbimg.huabanimg.com
 DOMAIN,images-cn.ssl-images-amazon.com
 DOMAIN,ip.istatmenus.app
 DOMAIN,kc.kexinshe.com
 DOMAIN,ntservicepack.microsoft.com
 DOMAIN,origin-a.akamaihd.ne
 DOMAIN,origin-a.akamaihd.net
+DOMAIN,original-doc-online.oss-cn-shanghai.aliyuncs.com
 DOMAIN,sms.imagetasks.com
+DOMAIN,st-gdx.dancf.com
+DOMAIN,st0.dancf.com
+DOMAIN,static-prod.ituchong.com
 DOMAIN,steamcommunity-a.akamaihd.net
+DOMAIN,vjshi-data-img-new-dis.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-data-img-new.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-data-online-upload.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-data-to-user-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-music-preview.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-musics-from-provider.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-personal-picture-online.oss-cn-hangzhou.aliyuncs.com
+DOMAIN,vjshi-photos-from-provider-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi-photos-preview-not-enabled-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjshi.soboten.com
+DOMAIN,vjstudio-case-preview-uploadable-prod.oss-cn-shanghai.aliyuncs.com
+DOMAIN,vjstudio-case-upload-prod.oss-cn-shanghai.aliyuncs.com
 DOMAIN,weixin.com
 DOMAIN,wetv.qq.com
 DOMAIN,www.libvideo.com
@@ -259,6 +282,7 @@ DOMAIN-SUFFIX,61.com
 DOMAIN-SUFFIX,6655.com
 DOMAIN-SUFFIX,66wz.com
 DOMAIN-SUFFIX,68h5.com
+DOMAIN-SUFFIX,699pic.com
 DOMAIN-SUFFIX,6rooms.com
 DOMAIN-SUFFIX,71.am
 DOMAIN-SUFFIX,71.am.com
@@ -1117,6 +1141,7 @@ DOMAIN-SUFFIX,chongdiantou.com
 DOMAIN-SUFFIX,chouti.com
 DOMAIN-SUFFIX,chrstatic.com
 DOMAIN-SUFFIX,chua.pro
+DOMAIN-SUFFIX,chuangkit.com
 DOMAIN-SUFFIX,chuangxin.com
 DOMAIN-SUFFIX,chuanke.com
 DOMAIN-SUFFIX,chuansong.me
@@ -1848,6 +1873,7 @@ DOMAIN-SUFFIX,gandi.net
 DOMAIN-SUFFIX,ganji.com
 DOMAIN-SUFFIX,ganjistatic1.com
 DOMAIN-SUFFIX,gaode.com
+DOMAIN-SUFFIX,gaoding.com
 DOMAIN-SUFFIX,gaodun.com
 DOMAIN-SUFFIX,gaoshouyou.com
 DOMAIN-SUFFIX,gaoxiaojob.com
@@ -2006,6 +2032,7 @@ DOMAIN-SUFFIX,hefei.cc
 DOMAIN-SUFFIX,heisha.net
 DOMAIN-SUFFIX,hello-inc.com
 DOMAIN-SUFFIX,hellobike.com
+DOMAIN-SUFFIX,hellorf.com
 DOMAIN-SUFFIX,hellowebfont.com
 DOMAIN-SUFFIX,hemamax.com
 DOMAIN-SUFFIX,hemaos.com
@@ -2074,6 +2101,7 @@ DOMAIN-SUFFIX,htcases.com
 DOMAIN-SUFFIX,hteacher.net
 DOMAIN-SUFFIX,htrace.wetvinfo.com
 DOMAIN-SUFFIX,htsec.com
+DOMAIN-SUFFIX,huaban.com
 DOMAIN-SUFFIX,huajingsec.com
 DOMAIN-SUFFIX,huangyuhui.net
 DOMAIN-SUFFIX,huanqiu.com
@@ -3975,6 +4003,7 @@ DOMAIN-SUFFIX,ttjisu.com
 DOMAIN-SUFFIX,ttmeiju.com
 DOMAIN-SUFFIX,ttpod.com
 DOMAIN-SUFFIX,ttwebview.com
+DOMAIN-SUFFIX,tuchong.com
 DOMAIN-SUFFIX,tudou.com
 DOMAIN-SUFFIX,tudouui.com
 DOMAIN-SUFFIX,tuer123.com
@@ -4093,6 +4122,7 @@ DOMAIN-SUFFIX,vanclimg.com
 DOMAIN-SUFFIX,vaptcha.com
 DOMAIN-SUFFIX,vaptcha.net
 DOMAIN-SUFFIX,variflight.com
+DOMAIN-SUFFIX,vcg.com
 DOMAIN-SUFFIX,vcimg.com
 DOMAIN-SUFFIX,vcloud-byte.com
 DOMAIN-SUFFIX,vcloudapi.com
@@ -4144,6 +4174,7 @@ DOMAIN-SUFFIX,vipexam.org
 DOMAIN-SUFFIX,vipmro.com
 DOMAIN-SUFFIX,vipmro.net
 DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,vjshi.com
 DOMAIN-SUFFIX,vlabimg.com
 DOMAIN-SUFFIX,vlabstatic.com
 DOMAIN-SUFFIX,vlabvod.com
@@ -4499,6 +4530,7 @@ DOMAIN-SUFFIX,xingjiesj.com
 DOMAIN-SUFFIX,xingtan001.com
 DOMAIN-SUFFIX,xingtu.cn
 DOMAIN-SUFFIX,xinhuanet.com
+DOMAIN-SUFFIX,xinpianchang.com
 DOMAIN-SUFFIX,xinrenxinshi.com
 DOMAIN-SUFFIX,xinshipu.com
 DOMAIN-SUFFIX,xinyan.cn
