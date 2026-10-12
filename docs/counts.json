@@ -1,0 +1,50 @@
+{
+  "ChinaDirect": {
+    "total": 4812,
+    "DOMAIN": 19,
+    "DOMAIN-KEYWORD": 9,
+    "DOMAIN-SUFFIX": 4784
+  },
+  "ChinaDirectFull": {
+    "total": 112385,
+    "DOMAIN": 270,
+    "DOMAIN-KEYWORD": 13,
+    "DOMAIN-SUFFIX": 112102
+  },
+  "Claude": {
+    "total": 31,
+    "DOMAIN": 22,
+    "DOMAIN-SUFFIX": 9
+  },
+  "Claude_Core": {
+    "total": 11,
+    "DOMAIN": 2,
+    "DOMAIN-SUFFIX": 9
+  },
+  "Claude_Dependencies": {
+    "total": 20,
+    "DOMAIN": 20
+  },
+  "Anthropic": {
+    "total": 31,
+    "DOMAIN": 22,
+    "DOMAIN-SUFFIX": 9
+  },
+  "X": {
+    "total": 31,
+    "DOMAIN-KEYWORD": 1,
+    "DOMAIN-SUFFIX": 30
+  },
+  "International": {
+    "total": 36177,
+    "DOMAIN": 240,
+    "DOMAIN-KEYWORD": 76,
+    "DOMAIN-SUFFIX": 35861
+  },
+  "InternationalPriority": {
+    "total": 2082,
+    "DOMAIN": 48,
+    "DOMAIN-KEYWORD": 25,
+    "DOMAIN-SUFFIX": 2009
+  }
+}

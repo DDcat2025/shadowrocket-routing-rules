@@ -1,0 +1,19 @@
+# NAME: ChinaDirectFull
+# AUTHOR: DDcat2025
+# REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
+# SOURCE: data/source-lock.json; official manual supplements in data/custom
+# RULES-SHA256: c48149d5cf2062a50ddd509cfa80cba676ede97c4921f1e1c91ec74a525cfed2
+# TOTAL: 13
+DOMAIN-KEYWORD,.tmall.com
+DOMAIN-KEYWORD,alicdn
+DOMAIN-KEYWORD,alipay
+DOMAIN-KEYWORD,aliyun
+DOMAIN-KEYWORD,baidu
+DOMAIN-KEYWORD,beplay
+DOMAIN-KEYWORD,bilibili
+DOMAIN-KEYWORD,hnagroup
+DOMAIN-KEYWORD,officecdn
+DOMAIN-KEYWORD,qiyi
+DOMAIN-KEYWORD,stripe
+DOMAIN-KEYWORD,taobao
+DOMAIN-KEYWORD,weibo

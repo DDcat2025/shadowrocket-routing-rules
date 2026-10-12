@@ -1,0 +1,13 @@
+# Product entrypoints verified against official pages, 2026-10-11/12.
+# https://replicate.com/ and /docs/topics/predictions/output-files
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,replicateassets.com
+DOMAIN-SUFFIX,replicate.delivery
+# https://runwayml.com/ redirects to https://runway.com/
+DOMAIN-SUFFIX,runwayml.com
+DOMAIN-SUFFIX,runway.com
+# https://www.krea.ai/ https://ideogram.ai/ https://www.udio.com/ https://linear.app/
+DOMAIN-SUFFIX,krea.ai
+DOMAIN-SUFFIX,ideogram.ai
+DOMAIN-SUFFIX,udio.com
+DOMAIN-SUFFIX,linear.app

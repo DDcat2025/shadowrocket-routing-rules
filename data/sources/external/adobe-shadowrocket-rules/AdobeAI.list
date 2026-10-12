@@ -1,0 +1,48 @@
+# NAME: AdobeAI
+# AUTHOR: DDcat2025
+# REPO: https://github.com/DDcat2025/adobe-shadowrocket-rules
+# SOURCE: Adobe official network endpoint docs, Adobe Captivate endpoint docs, blackmatrix7 Adobe rule reference
+# TOTAL: 43
+DOMAIN,api.elevenlabs.io
+DOMAIN,clio-assets.adobe.com
+DOMAIN,cpassets.adobe.com
+DOMAIN,ffc-static-cdn.oobesaas.adobe.com
+DOMAIN,firefly-3di.adobe.io
+DOMAIN,firefly-acs.adobe.io
+DOMAIN,firefly-ae.adobe.io
+DOMAIN,firefly-ai.adobe.io
+DOMAIN,firefly-api.adobe.io
+DOMAIN,firefly-balancer.adobe.io
+DOMAIN,firefly-beta.adobe.io
+DOMAIN,firefly-clio-imaging-prerelease.adobe.io
+DOMAIN,firefly-clio-imaging.adobe.io
+DOMAIN,firefly-cliov2.adobe.com
+DOMAIN,firefly-cliov2.adobe.io
+DOMAIN,firefly-cme-inference.adobe.io
+DOMAIN,firefly-cme-training.adobe.io
+DOMAIN,firefly-md.adobe.io
+DOMAIN,firefly-prerelease.adobe.io
+DOMAIN,firefly-ps.adobe.io
+DOMAIN,firefly-services.adobe.io
+DOMAIN,firefly-st.adobe.io
+DOMAIN,firefly.adobe.com
+DOMAIN,firefly.adobe.io
+DOMAIN,illustrator.adobe.com
+DOMAIN,image.adobe.io
+DOMAIN,mds-cdn.infra.adobesensei.io
+DOMAIN,photoshop.adobe.com
+DOMAIN,pre-signed-firefly-prod.s3-accelerate.amazonaws.com
+DOMAIN,pre-signed-firefly-prod.s3.amazonaws.com
+DOMAIN,preview.illustrator.adobe.com
+DOMAIN,prod-rel-ffc-ccm.oobesaas.adobe.com
+DOMAIN,sensei-ue1.adobe.io
+DOMAIN,sensei-va6.adobe.io
+DOMAIN,sensei.adobe.io
+DOMAIN,senseicore-ue1.adobe.io
+DOMAIN,senseicore.adobe.io
+DOMAIN,senseimds.adobe.io
+DOMAIN-KEYWORD,aep-cs
+DOMAIN-KEYWORD,sharedcloud-production
+DOMAIN-KEYWORD,translate-captions
+DOMAIN-SUFFIX,adobeprojectm.com
+DOMAIN-SUFFIX,ff.adobe.io

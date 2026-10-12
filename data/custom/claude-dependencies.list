@@ -1,0 +1,24 @@
+# Exact shared dependencies from the official Claude Code network documentation.
+# https://code.claude.com/docs/en/network-config
+# Shared services also used by other applications; use Claude_Core if you prefer separate routing.
+DOMAIN,storage.googleapis.com
+DOMAIN,registry.npmjs.org
+DOMAIN,github.com
+DOMAIN,raw.githubusercontent.com
+DOMAIN,http-intake.logs.us5.datadoghq.com
+DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN,formulae.brew.sh
+DOMAIN,fonts.googleapis.com
+DOMAIN,fonts.gstatic.com
+DOMAIN,cdnjs.cloudflare.com
+DOMAIN,cdn.jsdelivr.net
+DOMAIN,cdn.tailwindcss.com
+DOMAIN,code.jquery.com
+DOMAIN,unpkg.com
+# Installer / extension stores linked by the official Claude download page.
+DOMAIN,apps.microsoft.com
+DOMAIN,marketplace.microsoft.com
+DOMAIN,marketplace.visualstudio.com
+DOMAIN,plugins.jetbrains.com
+DOMAIN,chromewebstore.google.com
+DOMAIN,apps.apple.com

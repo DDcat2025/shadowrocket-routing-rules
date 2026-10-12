@@ -1,0 +1,10 @@
+# Official Desktop / web / download domains, verified 2026-10-12.
+# https://claude.com/download
+# https://code.claude.com/docs/en/network-config
+# https://code.claude.com/docs/en/desktop#network-access-requirements
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claude.app
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,claudemcpcontent.com

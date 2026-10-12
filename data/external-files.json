@@ -1,0 +1,46 @@
+{
+  "adobe-shadowrocket-rules/AdobeAI.list": {
+    "repo": "DDcat2025/adobe-shadowrocket-rules",
+    "path": "rule/Shadowrocket/AdobeAI/AdobeAI.list"
+  },
+  "adobe-shadowrocket-rules/Behance.list": {
+    "repo": "DDcat2025/adobe-shadowrocket-rules",
+    "path": "rule/Shadowrocket/Behance/Behance.list"
+  },
+  "adobe-shadowrocket-rules/AdobeStock.list": {
+    "repo": "DDcat2025/adobe-shadowrocket-rules",
+    "path": "rule/Shadowrocket/AdobeStock/AdobeStock.list"
+  },
+  "adobe-shadowrocket-rules/AdobeProxy.list": {
+    "repo": "DDcat2025/adobe-shadowrocket-rules",
+    "path": "rule/Shadowrocket/AdobeProxy/AdobeProxy.list"
+  },
+  "adobe-shadowrocket-rules/AdobeDirect.list": {
+    "repo": "DDcat2025/adobe-shadowrocket-rules",
+    "path": "rule/Shadowrocket/AdobeDirect/AdobeDirect.list"
+  },
+  "adobe-shadowrocket-rules/AdobeStockLegacy.list": {
+    "repo": "DDcat2025/adobe-shadowrocket-rules",
+    "path": "rule/Shadowrocket/AdobeStockLegacy/AdobeStockLegacy.list"
+  },
+  "openai-shadowrocket-rules/OpenAI.list": {
+    "repo": "DDcat2025/openai-shadowrocket-rules",
+    "path": "rule/Shadowrocket/OpenAI/OpenAI.list"
+  },
+  "tencent-shadowrocket-rules/Tencent.list": {
+    "repo": "DDcat2025/tencent-shadowrocket-rules",
+    "path": "rule/Shadowrocket/Tencent/Tencent.list"
+  },
+  "douyin-bytedance-shadowrocket-rules/ByteDanceCN.list": {
+    "repo": "DDcat2025/douyin-bytedance-shadowrocket-rules",
+    "path": "rule/Shadowrocket/ByteDanceCN/ByteDanceCN.list"
+  },
+  "pinterest-shadowrocket-rules/Pinterest.list": {
+    "repo": "DDcat2025/pinterest-shadowrocket-rules",
+    "path": "rule/Shadowrocket/Pinterest/Pinterest.list"
+  },
+  "openai-shadowrocket-rules/OpenAI_Precise.list": {
+    "repo": "DDcat2025/openai-shadowrocket-rules",
+    "path": "rule/Shadowrocket/OpenAI/OpenAI_Precise.list"
+  }
+}

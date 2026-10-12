@@ -1,0 +1,12 @@
+# NAME: Behance
+# AUTHOR: DDcat2025
+# REPO: https://github.com/DDcat2025/adobe-shadowrocket-rules
+# SOURCE: Adobe official network endpoint docs, Adobe Captivate endpoint docs, blackmatrix7 Adobe rule reference
+# TOTAL: 7
+DOMAIN,a3.behance.net
+DOMAIN,a5.behance.net
+DOMAIN,cc-api-behance.adobe.io
+DOMAIN,mir-s3-cdn-cf.behance.net
+DOMAIN,sso.behance.net
+DOMAIN-SUFFIX,behance.net
+DOMAIN-SUFFIX,s2stagehance.com

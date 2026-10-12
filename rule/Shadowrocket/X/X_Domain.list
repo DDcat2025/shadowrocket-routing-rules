@@ -1,0 +1,37 @@
+# NAME: X
+# AUTHOR: DDcat2025
+# REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
+# SOURCE: data/source-lock.json; official manual supplements in data/custom
+# RULES-SHA256: f9b34ed4e83215a55fc9b881bbdf92920abc9d3295688bd297651c44f764bfa3
+# TOTAL: 30
+# Requires the _Keyword.list companion for equivalent coverage.
+.ads-twitter.com
+.cms-twdigitalassets.com
+.grok.com
+.grok.x.com
+.grokipedia.com
+.periscope.tv
+.pscp.tv
+.t.co
+.tellapart.com
+.tweetdeck.com
+.twimg.co
+.twimg.com
+.twimg.org
+.twitpic.com
+.twitter.biz
+.twitter.com
+.twitter.jp
+.twitter.map.fastly.net
+.twittercommunity.com
+.twitterflightschool.com
+.twitterinc.com
+.twitteroauth.com
+.twitterstat.us
+.twtrdns.net
+.twttr.com
+.twttr.net
+.twvid.com
+.vine.co
+.x.ai
+.x.com

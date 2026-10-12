@@ -1,0 +1,18 @@
+# NAME: Claude_Core
+# AUTHOR: DDcat2025
+# REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
+# SOURCE: data/source-lock.json; official manual supplements in data/custom
+# RULES-SHA256: b760da4e65b226cf6bc99dcd7e18902f35d5c8347917e1b2d5b978b54030e19c
+# TOTAL: 11
+payload:
+  - DOMAIN,cdn.usefathom.com
+  - DOMAIN,servd-anthropic-website.b-cdn.net
+  - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,clau.de
+  - DOMAIN-SUFFIX,claude.ai
+  - DOMAIN-SUFFIX,claude.app
+  - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,claude.dev
+  - DOMAIN-SUFFIX,claudemcpclient.com
+  - DOMAIN-SUFFIX,claudemcpcontent.com
+  - DOMAIN-SUFFIX,claudeusercontent.com

@@ -1,0 +1,1196 @@
+{
+  "excluded": [
+    {
+      "category": "ChinaDirect",
+      "rule": "DOMAIN-SUFFIX,adobesc.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "ChinaDirectFull",
+      "rule": "DOMAIN-SUFFIX,adobe-tool.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "ChinaDirectFull",
+      "rule": "DOMAIN-SUFFIX,adobeacp.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "ChinaDirectFull",
+      "rule": "DOMAIN-SUFFIX,adobeae.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "ChinaDirectFull",
+      "rule": "DOMAIN-SUFFIX,adobeedu.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "ChinaDirectFull",
+      "rule": "DOMAIN-SUFFIX,adobesc.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "ChinaDirectFull",
+      "rule": "DOMAIN-SUFFIX,ccmdls.adobe.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,adobeereg.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,appleworldwidedeveloper.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,asahishimbun.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,beatselectronicsllc.tt.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,ea.tt.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,espn.hb.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,espndotcom.tt.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,lgelectronics.122.2o7.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,linkedin.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,nationalaustraliaban.tt.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,nvidia.tt.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,practivate.adobe",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,practivate.adobe.ipp",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,practivate.adobe.newoa",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,practivate.adobe.ntp",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,qualcomm.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,standchartbank.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,standchartbank.tt.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN,vmware.tt.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-KEYWORD,twitter",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,10xfotolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,acrobat.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adbecrsl.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobe-aemassets-value.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobe-audience-finder.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobe-video-partner-finder.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobe.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobe.io",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobe.ly",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobeaemcloud.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobeaemcloud.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobeawards.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobecc.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobecce.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobeccstatic.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobecontent.io",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobecreativityawards.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobedc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobedemo.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobedtm.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobeexchange.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobeexperienceawards.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobegov.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobehiddentreasures.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobejanus.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobeku.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobelanding.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobelogin.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobeoobe.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobeplatinumclub.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobepress.ch",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobeprojectm.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobesign.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobesigncdn.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobespark.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobess.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobestats.io",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobestock.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobetag.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobetarget.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobetcstrialdvd.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobetechcomm.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobetechcommcallback.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobetechcommdemo.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,adobexdplatform.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,anthropic.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,appleworldwidedeveloper.hb-api.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,appleworldwidedeveloper.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,assetsadobe.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,authorxml.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,behance.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,berlintwitterwall.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,bluefootcms.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,businesscatalyst.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,ccnsite.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,ccpsx.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,chat.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,chat.openai.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,chatgpt.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,chatgpt.site",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,clau.de",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,claude.ai",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,claude.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,claude.dev",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,claudemcpclient.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,claudemcpcontent.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,claudeusercontent.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,cms-twdigitalassets.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,compresspdf.new",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,cotolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,creativecloud.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,creativesdk.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,demdex.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,developria.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,disney.demdex.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,dollarfotoclub.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,dollarphotoclub.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,dollarphotosclub.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,douwriteright.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,ea.tt.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,echocdn.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,echosign.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,edgefonts.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,enablementadobe.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,espn.hb.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,ffotolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,files.oaiusercontent.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,financetwitter.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,fiotolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,foftolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,fonolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,fotiolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,fotoiia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,fotolia-noticias.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,fotolia.cc",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,fotolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,fotolia.tv",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,fotolja.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,fptolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,ftcdn.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,geotrust.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,gfotolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,globalsign.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,godaddy.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,gostorego.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,grok.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,grokipedia.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,hulu.hb.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,hulu.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,imagineecommerce.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,macromedia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,mageconf.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,mageconf.com.ua",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,magento.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,magento.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,magentocommerce.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,magentoliveconference.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,magentomobile.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,marketing-cloud.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,marketing-nirvana.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,marketo.co.uk",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,marketo.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,marketo.tv",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,marketodesigner.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,marketolive.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,mktdns.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,mkto-c0100.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,mktorest.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,mktroute.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,mobilemarketo.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,motolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,mytvsuperlimited.hb.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,mytvsuperlimited.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,oaistatic.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,oaistatsig.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,oaiusercontent.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,omniroot.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,omniture.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,openai.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,pdf.new",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,periscope.tv",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,photolia.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,photoshop.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,placesdocs.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,pscp.tv",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,revenue-performance-management.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,s2stagehance.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,scene7.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,sign.new",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,simbolostwitter.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,sora.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,sundanceignite2016.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,symantec.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,symcb.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,symcd.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,t.co",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,tenbyfotolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,thawte.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,toutapp.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,turbotwitter.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,tweetdeck.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twimg.co",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twimg.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twimg.org",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitpic.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitter.biz",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitter.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitter.jp",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitter4j.org",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twittercommunity.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twittercounter.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitterfeed.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitterflightschool.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twittergadget.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitterinc.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitterkr.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twittermail.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitteroauth.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitterrific.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twitterstat.us",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twittertim.es",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twtrdns.net",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twttr.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twttr.net",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,twvid.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,typekit.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,typekit.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,verisign.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,vine.co",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,votolia.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,worldsecureemail.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,worldsecuresystems.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,x.ai",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,x.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN,linkedin.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,adobedtm.com",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,chatgpt.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,disney.demdex.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,espn.hb.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,espndotcom.tt.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,hulu.hb.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,hulu.sc.omtrdc.net",
+      "assigned_to": "Adobe"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,oaistatic.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,oaiusercontent.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,openai.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "InternationalPriority",
+      "rule": "DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net",
+      "assigned_to": "Adobe"
+    }
+  ],
+  "adobe_reference_rules": 241,
+  "note": "Explicit Adobe conditions are removed; shared provider parent domains may remain and require the documented order."
+}

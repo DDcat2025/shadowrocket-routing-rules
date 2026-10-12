@@ -1,0 +1,26 @@
+# NAME: AdobeStockLegacy
+# AUTHOR: DDcat2025
+# REPO: https://github.com/DDcat2025/adobe-shadowrocket-rules
+# SOURCE: Adobe official network endpoint docs, Adobe Captivate endpoint docs, blackmatrix7 Adobe rule reference
+# TOTAL: 21
+DOMAIN-SUFFIX,10xfotolia.com
+DOMAIN-SUFFIX,cotolia.com
+DOMAIN-SUFFIX,dollarfotoclub.com
+DOMAIN-SUFFIX,dollarphotoclub.com
+DOMAIN-SUFFIX,dollarphotosclub.com
+DOMAIN-SUFFIX,ffotolia.com
+DOMAIN-SUFFIX,fiotolia.com
+DOMAIN-SUFFIX,foftolia.com
+DOMAIN-SUFFIX,fonolia.com
+DOMAIN-SUFFIX,fotiolia.com
+DOMAIN-SUFFIX,fotoiia.com
+DOMAIN-SUFFIX,fotolia-noticias.com
+DOMAIN-SUFFIX,fotolia.cc
+DOMAIN-SUFFIX,fotolia.tv
+DOMAIN-SUFFIX,fotolja.com
+DOMAIN-SUFFIX,fptolia.com
+DOMAIN-SUFFIX,gfotolia.com
+DOMAIN-SUFFIX,motolia.com
+DOMAIN-SUFFIX,photolia.net
+DOMAIN-SUFFIX,tenbyfotolia.com
+DOMAIN-SUFFIX,votolia.com
