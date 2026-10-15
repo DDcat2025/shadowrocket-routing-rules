@@ -19,6 +19,7 @@ openai = external('openai-shadowrocket-rules', 'OpenAI_Precise')
 pinterest = external('pinterest-shadowrocket-rules', 'Pinterest')
 base = [(adobe,'ADOBE'),(adobe_direct,'DIRECT'),(openai,'OPENAI'),
         (provider('Claude'),'CLAUDE'),(provider('X'),'X'),(pinterest,'PINTEREST'),
+        (provider('Gemini'),'GEMINI'),
         (provider('InternationalPriority'),'PROXY')]
 expectations = {
     'OPENAI':['api.openai.com','auth.openai.com','chatgpt.com','ws.chatgpt.com','sora.com',
@@ -29,6 +30,10 @@ expectations = {
               'preview.livepreview.claude.app','tool.claudemcpcontent.com','claudemcpclient.com',
               'claude.dev','clau.de','registry.npmjs.org'],
     'X':['x.com','api.x.com','twitter.com','pbs.twimg.com','video.twimg.com','t.co','twitter.map.fastly.net','grok.com','api.x.ai'],
+    'GEMINI':['gemini.google.com','app.gemini.google.com','gemini.google',
+              'aistudio.google.com','ai.google.dev','generativelanguage.googleapis.com',
+              'bard.google.com','makersuite.google.com',
+              'alkalimakersuite-pa.clients6.google.com','proactivebackend-pa.googleapis.com'],
     'ADOBE':['firefly.adobe.com','firefly.adobe.io','firefly-ps.adobe.io','firefly-ae.adobe.io',
              'firefly-cme-training.adobe.io','mds-cdn.infra.adobesensei.io',
              'pre-signed-firefly-prod.s3.amazonaws.com','stock.adobe.com','contributor.stock.adobe.com',
@@ -50,6 +55,18 @@ expectations = {
              'firefly.adobe.io.example.invalid','openai.com.example.invalid','x.com.example.invalid'],
 }
 checks = 0
+gemini = provider('Gemini')
+assert not any(kind == 'DOMAIN-KEYWORD' for kind, _ in gemini)
+negative_gemini_hosts = [
+    'www.google.com','accounts.google.com','www.youtube.com','drive.google.com',
+    'apis.google.com','www.googleapis.com','maps.googleapis.com','oauth2.googleapis.com',
+    'lh3.googleusercontent.com','www.gstatic.com','storage.googleapis.com',
+    'colab.research.google.com','developerprofiles-pa.googleapis.com',
+    'cloudcode-pa.googleapis.com','generativelanguage.example.org',
+    'notgemini.google.com','gemini.google.com.example.org','aistudio.google.com.example.org',
+]
+for host in negative_gemini_hosts:
+    assert not any(match(host, r) for r in gemini), ('Gemini provider too broad', host)
 creative = read_rules(ROOT / 'data/custom/domestic-creative.list')
 # Platform supplements must not capture lookalikes, other tenants or shared roots.
 negative_creative_hosts = [
@@ -71,6 +88,11 @@ for domestic in ['ChinaDirect','ChinaDirectFull']:
             actual = next((policy for rules,policy in ordered if any(match(host,r) for r in rules)), 'PROXY')
             assert actual == expected, (domestic,host,expected,actual)
             checks += 1
+    # Clients that have not added the optional provider retain the old proxy path.
+    legacy_ordered = [(rules, policy) for rules, policy in ordered if policy != 'GEMINI']
+    for host in expectations['GEMINI']:
+        actual = next((policy for rules, policy in legacy_ordered if any(match(host, r) for r in rules)), 'PROXY')
+        assert actual == 'PROXY', ('Gemini legacy routing changed', domestic, host, actual)
     # Explicit Adobe entries must be absent even if a shared parent CDN remains.
     protected = Scope(adobe | adobe_direct | external('adobe-shadowrocket-rules','AdobeStockLegacy') | {('DOMAIN-KEYWORD','adobe')})
     for name in [domestic,'International','InternationalPriority']:
@@ -94,7 +116,7 @@ assert sc.contains(('DOMAIN','firefly.adobe.com'))
 assert not sc.contains(('DOMAIN','adobe.com.example.org'))
 assert not sc.contains(('DOMAIN-SUFFIX','amazonaws.com'))
 assert not sc.contains(('DOMAIN-SUFFIX','s3.amazonaws.com'))
-print(f'PASS: {checks} routing scenarios, {len(negative_creative_hosts)} creative boundary cases, Adobe isolation, exact/suffix/keyword semantics, client parity and Anthropic alias')
+print(f'PASS: {checks} routing scenarios, {len(negative_creative_hosts)} creative and {len(negative_gemini_hosts)} Gemini boundary cases, Gemini legacy routing, Adobe isolation, exact/suffix/keyword semantics, client parity and Anthropic alias')
 
 # Every non-shared Adobe community entry must be owned by the dedicated Adobe repository.
 owned = Scope(adobe | adobe_direct | external('adobe-shadowrocket-rules','AdobeStockLegacy'))

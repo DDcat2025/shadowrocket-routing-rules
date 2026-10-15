@@ -116,6 +116,9 @@ def build():
     claude_core = module('Claude') | module('Anthropic') | v2fly('anthropic') | read_rules(ROOT / 'data/custom/claude-core.list')
     dependencies = read_rules(ROOT / 'data/custom/claude-dependencies.list')
     claude = claude_core | dependencies
+    # Opt-in precise provider. Keep the existing international providers intact
+    # so clients without a Gemini group retain their current routing.
+    gemini = read_rules(ROOT / 'data/custom/gemini-core.list')
     x = module('Twitter') | v2fly('twitter') | v2fly('xai')
     openai_owned = {('DOMAIN-SUFFIX', h) for h in ['openai.com','chatgpt.com','chat.com','chatgpt.site','sora.com','oaistatic.com','oaistatsig.com','oaiusercontent.com','openaimerge.com']}
     dedicated_scope = Scope(openai_owned | claude_core | x)
@@ -149,7 +152,7 @@ def build():
     priority = filter_pool(priority_pool, 'InternationalPriority')
     names = {'ChinaDirect': china, 'ChinaDirectFull': china_full, 'Claude': claude,
              'Claude_Core': claude_core, 'Claude_Dependencies': dependencies, 'Anthropic': claude,
-             'X': x, 'International': international, 'InternationalPriority': priority}
+             'X': x, 'Gemini': gemini, 'International': international, 'InternationalPriority': priority}
     for name, rules in names.items(): output(name, rules)
     # No complete .conf: these are composable rule providers without nodes or credentials.
     counts = {name: {'total': len(rules), **dict(sorted(Counter(k for k, _ in rules).items()))} for name, rules in names.items()}

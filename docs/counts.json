@@ -35,6 +35,11 @@
     "DOMAIN-KEYWORD": 1,
     "DOMAIN-SUFFIX": 30
   },
+  "Gemini": {
+    "total": 9,
+    "DOMAIN": 5,
+    "DOMAIN-SUFFIX": 4
+  },
   "International": {
     "total": 36177,
     "DOMAIN": 240,

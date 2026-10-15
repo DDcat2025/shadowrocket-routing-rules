@@ -1,6 +1,6 @@
 # Shadowrocket 综合分流规则
 
-国内直连、Claude / Anthropic、X 和国际通用规则集中维护；继续使用原有 OpenAI、Adobe、腾讯、字节与 Pinterest 仓库的订阅地址。
+国内直连、Claude / Anthropic、Gemini、X 和国际通用规则集中维护；继续使用原有 OpenAI、Adobe、腾讯、字节与 Pinterest 仓库的订阅地址。
 
 适用于 Shadowrocket；同时生成 Mihomo classical rule-provider。这里提供规则集合，不包含节点、密码或完整客户端配置。
 
@@ -12,6 +12,7 @@
 | 国内扩展 | [ChinaDirectFull.list](rule/Shadowrocket/ChinaDirectFull/ChinaDirectFull.list) | ChinaMax 扩展集合＋同一批国内补充；与常规版二选一，上游 ChinaMax 是实验性分类 |
 | Claude / Anthropic | [Claude.list](rule/Shadowrocket/Claude/Claude.list) | 社区域名、官网／Desktop／Code／下载及精确共享依赖 |
 | Anthropic 别名 | [Anthropic.list](rule/Shadowrocket/Anthropic/Anthropic.list) | 与 Claude.list 内容相同，二选一 |
+| Gemini | [Gemini.list](rule/Shadowrocket/Gemini/Gemini.list) | 可选独立分组：Gemini 网页、AI Studio、Gemini API；共享 Google 登录与资源沿用原规则 |
 | X | [X.list](rule/Shadowrocket/X/X.list) | X、Twitter、媒体、短链接以及上游关联的 Grok / xAI 域名 |
 | 国际通用 | [International.list](rule/Shadowrocket/International/International.list) | 搜索、影音、社交、办公、创意、开发、游戏等；Adobe 已独立移交 |
 | 国际优先 | [InternationalPriority.list](rule/Shadowrocket/InternationalPriority/InternationalPriority.list) | 一组明确的海外服务，放在国内大集合之前，避免误归国内 |
@@ -50,6 +51,9 @@ RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/X/X.list,X
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/pinterest-shadowrocket-rules/main/rule/Shadowrocket/Pinterest/Pinterest.list,PINTEREST
 
+# 可选 Gemini 独立分组：先创建 Gemini 策略组，再启用下一行
+# RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Gemini/Gemini.list,Gemini
+
 # 明确的海外服务优先，再国内，再国际综合补漏
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/InternationalPriority/InternationalPriority.list,PROXY
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/ChinaDirect/ChinaDirect.list,DIRECT
@@ -59,6 +63,16 @@ FINAL,PROXY
 ```
 
 固定出口策略组使用手动 `select`。国内扩展版用 ChinaDirectFull 替换 ChinaDirect，不叠加两份。国际优先与国际综合有有意重叠：前者负责优先级，后者补漏。
+
+## Gemini 独立分组
+
+新增 `Gemini` 手动策略组并选择节点，再把下面这一行放在 Google 通用规则、`InternationalPriority`、国内集合及 `FINAL` 之前：
+
+```ini
+RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Gemini/Gemini.list,Gemini
+```
+
+这只是新增可选的独立入口，原国际集合继续保留原有 Gemini / Google 覆盖。仅更新旧规则集不会自动在客户端创建 Gemini 分组。共享登录、图片、字体和通用 CDN 不全部绑定 Gemini；完整范围与可复制分组片段见 [Gemini 接入说明](docs/gemini.md)。
 
 ## 国内素材站补充
 
