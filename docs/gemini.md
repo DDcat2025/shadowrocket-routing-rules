@@ -1,50 +1,54 @@
-# Gemini 独立代理规则
+# Gemini 网页与桌面端统一出口
 
-新增一个可单独选择代理节点的 `Gemini` 规则集。范围是 Gemini 网页、Google AI Studio、Gemini API 及清单中的特定入口和服务主机，不是 Google 全家桶，也不是所有 Google AI 产品的完整网络清单。
+`Gemini.list` 合并 Gemini 网页、Mac 桌面端、AI Studio、公开 API 核心域名，以及已识别的登录、图片、字体、静态资源和相关共享请求。让它们匹配同一个手动策略组，可以统一到该组选择的节点。
+
+这是域名分流：共享 Google 域名无法按请求来自哪个应用区分。其他应用访问本清单中的登录、字体、图片或 API 主机时，也会使用 Gemini 分组的节点。Google 搜索、YouTube、Drive 主站和整个 `googleapis.com` 父域没有因此整体加入，但这些服务访问被收录的共享资源时仍会受到影响。
 
 ## Shadowrocket 接入
 
-在已有 `[Proxy Group]` 段添加以下一行，随后在客户端为 Gemini 选择需要的节点。`PROXY` 代表首页当前代理，尚未选择具体节点时会跟随它。
+在已有 `[Proxy Group]` 段添加一行，随后为它选择需要的节点。`PROXY` 代表首页当前代理，未选具体节点时会跟随它。已有分组可以沿用原名称，例如 `Gemini-Google`，不必新建或重命名。
 
 ```ini
 Gemini = select,PROXY,policy-regex-filter=.*,policy-select-name=PROXY
 ```
 
-在已有 `[Rule]` 段添加以下一行，放在 Google 通用规则、`InternationalPriority`、国内集合、IP 判断和 `FINAL` 前面：
+在已有 `[Rule]` 段添加以下一行。**它必须位于 Claude/其他共享依赖、Google 通用规则、InternationalPriority、国内集合、IP 判断和 FINAL 前面**，才能优先接管相同的 Google 字体与共享主机。
 
 ```ini
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Gemini/Gemini.list,Gemini
 ```
 
-两个片段分别合入已有段落，不要复制第二个同名段或覆盖整份配置。也可以在客户端界面创建同名手动策略组，再添加规则集 URL 并把策略设为 Gemini。之后更新规则集、编译并使用配置。
+末尾策略名必须与自己的分组对应；若使用 `Gemini-Google`，末尾也填写 `Gemini-Google`。两个片段分别合入已有段，不要覆盖整份配置。
 
-仅刷新现有的国际规则不会创建新的策略组或订阅行；这次需要添加一次上述入口，之后可沿用远程规则更新方式。
+如果使用客户端的“添加规则”界面：类型选 `RULE-SET`，URL 栏只填写下方网址，策略另选 Gemini 对应分组。不要把包含 `RULE-SET,` 和策略名的整行粘进 URL 栏。
 
-## 匹配范围与来源
+```text
+https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Gemini/Gemini.list
+```
 
-人工清单位于 [`data/custom/gemini-core.list`](../data/custom/gemini-core.list)，由生成器输出 Shadowrocket RULE-SET、DOMAIN-SET 及 Mihomo classical 格式。核验日期为 2026-10-14。
+已有 Gemini 订阅地址不变。更新规则集、调整优先级、编译并使用配置后，新的连接才会按新规则匹配；此前已建立的长连接不会因此证明已切换。没有 Gemini 入口的客户端仍需添加一次分组与规则，单纯刷新国际规则不会自动创建它们。
 
-| 域名 | 用途／来源 |
-|---|---|
-| `gemini.google.com` | [Google 官方 Gemini 登录说明](https://support.google.com/gemini/answer/13278668)确认的网页入口；后缀匹配 |
-| `gemini.google` | [官方产品入口](https://gemini.google/)，本次访问重定向到 Gemini 网页；后缀匹配 |
-| `aistudio.google.com`、`ai.google.dev` | [Google AI Studio 官方介绍](https://ai.google.dev/aistudio)列出的产品入口与开发文档 |
-| `generativelanguage.googleapis.com` | [Gemini API 官方参考](https://ai.google.dev/api/all-methods)列明的服务端点；精确匹配 |
-| `bard.google.com`、`makersuite.google.com` | 当前已锁定的社区 Gemini/BardAI 源中保留的历史入口 |
-| `alkalimakersuite-pa.clients6.google.com`、`proactivebackend-pa.googleapis.com` | 同一锁定源中的具体服务主机；精确匹配，非官方完整网络要求 |
+## 来源与覆盖
 
-社区输入的版本和来源见 [`data/source-lock.json`](../data/source-lock.json) 及 `data/sources/blackmatrix/Gemini`、`BardAI`。独立集合使用人工精选范围，不自动照搬上游所有条目；需要新主机时应先核验再补入。
+核验日期：2026-10-14。核心入口位于 [`gemini-core.list`](../data/custom/gemini-core.list)，共享依赖位于 [`gemini-shared.list`](../data/custom/gemini-shared.list)；生成器合并输出同一个 Gemini 订阅，自动刷新上游时保留人工清单。
 
-## 共享依赖边界
+| 范围 | 规则 | 依据 |
+|---|---|---|
+| Gemini 网页与产品入口 | `gemini.google.com`、`gemini.google` 后缀 | [官方登录说明](https://support.google.com/gemini/answer/13278668)、[产品入口](https://gemini.google/) |
+| AI Studio 与公开 API | `aistudio.google.com` 后缀；`ai.google.dev`、`generativelanguage.googleapis.com` 精确主机 | [AI Studio](https://ai.google.dev/aistudio)、[API 服务端点](https://ai.google.dev/api/all-methods) |
+| Mac 桌面接口 | `robinfrontend-pa.googleapis.com` | 本地 Gemini Mac 1.128.14.1166（`com.google.GeminiMacOS`）进程网络日志实测 |
+| 桌面共享 API、图片 | `www.googleapis.com`；`googleusercontent.com` 后缀 | 同一进程实测 `www.googleapis.com`、`lh3.googleusercontent.com`；资源后缀覆盖分片变化 |
+| 登录与令牌刷新 | `accounts.google.com`、`oauth2.googleapis.com` | [Google 官方桌面 OAuth 文档](https://developers.google.com/identity/protocols/oauth2/native-app) |
+| 静态资源与字体 | `gstatic.com` 后缀、`fonts.googleapis.com` | Gemini 公开网页引用 `gemini.gstatic.com`、`www.gstatic.com`；字体 API 为共享兼容项 |
+| 网页声明的服务与统计 | `ogads-pa.clients6.google.com`、`waa-pa.clients6.google.com`、`www.googletagmanager.com` | Gemini 网页的 DNS 预取声明、标签管理脚本及 iframe；预取声明不等于已经观察到具体业务调用 |
+| 历史入口与 SDK | `bard.google.com`、`makersuite.google.com`、`alkalimakersuite-pa.clients6.google.com`、`proactivebackend-pa.googleapis.com`、`apis.google.com` | 已锁定的社区 Gemini/BardAI 源中的具体主机；不是官方完整网络要求 |
 
-没有加入 `google.com`、`googleapis.com`、`googleusercontent.com`、`gstatic.com` 整个父域，也没有使用 `colab`、`developerprofiles`、`generativelanguage` 这类宽泛关键词。`accounts.google.com` 登录、Google Photos/Drive、通用图片、字体和 CDN 继续匹配其他既有规则。
+网页来源通过公开页面的链接及资源属性核验；桌面来源只保留公共主机名、应用版本和匹配结果，不记录会话、令牌、聊天正文或完整请求 URL。社区快照出处见 [`data/source-lock.json`](../data/source-lock.json)。
 
-因此，这份规则能独立选择核心服务的出口，但不能保证一次 Gemini 操作中的所有共享请求都走同一个出口。Gemini CLI / Code Assist 的 `cloudcode-pa.googleapis.com`、Vertex AI、Workspace 内嵌 Gemini、Flow 等产品未纳入这次范围。若后续需要扩展，应按实际使用的产品和连接日志明确补充。
+## 验证边界
 
-原有 `International` 和 `InternationalPriority` 的规则内容保持兼容，未添加独立 Gemini 入口的客户端继续沿用原来的国际／兜底路由。已添加时，必须把具体 Gemini 规则放在宽泛 Google 规则前面，否则先匹配的规则会接管流量。
+自动检查覆盖上述范围的分组优先级、共享依赖的有意接管、未接入 Gemini 时的兼容路由、相似域名不误匹配，以及 Shadowrocket/Mihomo 导出一致性。原有国际和国内集合保持原内容，只有选择接入 Gemini 统一规则的配置会使用新策略。
 
-## 验证范围
+域名列表不能保证永久穷尽未来的新接口，也不能覆盖用户主动访问的任意第三方链接、外部 MCP/工具服务。Gemini CLI / Code Assist、Vertex AI、Workspace 内嵌 Gemini 和 Flow 等独立产品的专用接口仍需按实际使用范围另外核验，不能把本规则称为所有 Google AI 产品的完整清单。
 
-自动检查覆盖 Gemini 网页、AI Studio、API、历史入口、具体服务主机和子域匹配；同时检查搜索、YouTube、Drive、登录、共享资源、相似域名及其他 API 不会被这份集合误匹配。两种国内集合下的优先级、未启用 Gemini 独立分组时的兼容路由，以及客户端导出格式一致性均纳入检查。
-
-这些检查验证规则内容与匹配逻辑，不等于已完成 Gemini 登录、生成图片、实时音视频或下载的客户端验收。没有调用 Gemini API、提交生成请求或修改用户的客户端配置。
+入口的 HTTP 200/302/404 只表明得到相应 HTTP 响应，不能直接证明出口 IP。Google 端点未回显客户端 IP 时，只能结合客户端规则命中及同节点回显交叉核对；不把服务器/CDN 地址或另一节点的地址冒充 Gemini 出口。

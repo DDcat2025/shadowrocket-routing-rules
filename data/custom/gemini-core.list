@@ -1,6 +1,7 @@
 # Gemini 独立精确规则；核验日期：2026-10-14。
 # 来源、接入顺序及共享依赖边界见 docs/gemini.md。
-# 网页、产品入口、AI Studio 和 Gemini API；不包含整个 Google 家族。
+# 网页、Mac 桌面端、产品入口、AI Studio 和 Gemini API。
+# 默认 Gemini 输出还合并 gemini-shared.list 的共享依赖。
 # https://support.google.com/gemini/answer/13278668
 # https://gemini.google/ -> https://gemini.google.com/
 DOMAIN-SUFFIX,gemini.google.com
@@ -10,6 +11,8 @@ DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN,ai.google.dev
 # https://ai.google.dev/api/all-methods
 DOMAIN,generativelanguage.googleapis.com
+# Gemini Mac 1.128.14.1166 的进程网络日志中实测到的桌面接口。
+DOMAIN,robinfrontend-pa.googleapis.com
 
 # 已锁定的 blackmatrix7 Gemini/BardAI 输入中保留的具体入口与服务主机。
 # 不继承 colab/developerprofiles/generativelanguage 关键词或 apis.google.com。

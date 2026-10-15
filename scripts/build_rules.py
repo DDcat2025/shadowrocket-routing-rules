@@ -116,9 +116,10 @@ def build():
     claude_core = module('Claude') | module('Anthropic') | v2fly('anthropic') | read_rules(ROOT / 'data/custom/claude-core.list')
     dependencies = read_rules(ROOT / 'data/custom/claude-dependencies.list')
     claude = claude_core | dependencies
-    # Opt-in precise provider. Keep the existing international providers intact
-    # so clients without a Gemini group retain their current routing.
-    gemini = read_rules(ROOT / 'data/custom/gemini-core.list')
+    # Opt-in unified Gemini provider, including explicitly documented shared
+    # dependencies. Clients without this provider keep the existing routing.
+    gemini = (read_rules(ROOT / 'data/custom/gemini-core.list')
+              | read_rules(ROOT / 'data/custom/gemini-shared.list'))
     x = module('Twitter') | v2fly('twitter') | v2fly('xai')
     openai_owned = {('DOMAIN-SUFFIX', h) for h in ['openai.com','chatgpt.com','chat.com','chatgpt.site','sora.com','oaistatic.com','oaistatsig.com','oaiusercontent.com','openaimerge.com']}
     dedicated_scope = Scope(openai_owned | claude_core | x)

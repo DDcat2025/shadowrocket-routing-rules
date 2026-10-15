@@ -1,0 +1,26 @@
+# Gemini 统一出口所需的共享域名；2026-10-14。
+# 这些规则同时影响其他应用对相同主机/后缀的请求。
+# 依据和边界见 docs/gemini.md；不要泛化为整个 google.com/googleapis.com。
+
+# Google 官方桌面 OAuth 授权及令牌刷新端点。
+# https://developers.google.com/identity/protocols/oauth2/native-app
+DOMAIN,accounts.google.com
+DOMAIN,oauth2.googleapis.com
+# Gemini Mac 进程网络日志中实测的共享 Google API 入口。
+DOMAIN,www.googleapis.com
+
+# 原有上游 Gemini 集合中的 Google API JavaScript SDK 依赖。
+DOMAIN,apis.google.com
+# 共享字体入口；字体文件由下方 gstatic.com 后缀覆盖。
+DOMAIN,fonts.googleapis.com
+
+# Gemini 公开网页声明的服务主机，以及实际引用的标签管理脚本/iframe。
+DOMAIN,ogads-pa.clients6.google.com
+DOMAIN,waa-pa.clients6.google.com
+DOMAIN,www.googletagmanager.com
+
+# Mac 日志实测 lh3.googleusercontent.com；网页引用同一图片主机。
+# 使用资源后缀覆盖图片/CDN 分片变化，也影响 Photos/Drive 等共享资源。
+DOMAIN-SUFFIX,googleusercontent.com
+# Gemini 网页引用 gemini.gstatic.com、www.gstatic.com；同时覆盖字体和静态资源。
+DOMAIN-SUFFIX,gstatic.com

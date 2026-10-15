@@ -2,15 +2,26 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: e42c12cca80d5558dca632e1a1057068cb68b1b428f2f4feb8a3a12db3e53c84
-# TOTAL: 9
+# RULES-SHA256: 8b8445315e90f83633dc779343fab234f6beb6954ffc5e5527403b90734c139e
+# TOTAL: 20
 # Requires the _Keyword.list companion for equivalent coverage.
 .aistudio.google.com
 .bard.google.com
 .gemini.google
 .gemini.google.com
+.googleusercontent.com
+.gstatic.com
+accounts.google.com
 ai.google.dev
 alkalimakersuite-pa.clients6.google.com
+apis.google.com
+fonts.googleapis.com
 generativelanguage.googleapis.com
 makersuite.google.com
+oauth2.googleapis.com
+ogads-pa.clients6.google.com
 proactivebackend-pa.googleapis.com
+robinfrontend-pa.googleapis.com
+waa-pa.clients6.google.com
+www.googleapis.com
+www.googletagmanager.com

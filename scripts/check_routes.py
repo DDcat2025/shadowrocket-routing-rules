@@ -18,8 +18,8 @@ adobe_direct = external('adobe-shadowrocket-rules', 'AdobeDirect')
 openai = external('openai-shadowrocket-rules', 'OpenAI_Precise')
 pinterest = external('pinterest-shadowrocket-rules', 'Pinterest')
 base = [(adobe,'ADOBE'),(adobe_direct,'DIRECT'),(openai,'OPENAI'),
-        (provider('Claude'),'CLAUDE'),(provider('X'),'X'),(pinterest,'PINTEREST'),
         (provider('Gemini'),'GEMINI'),
+        (provider('Claude'),'CLAUDE'),(provider('X'),'X'),(pinterest,'PINTEREST'),
         (provider('InternationalPriority'),'PROXY')]
 expectations = {
     'OPENAI':['api.openai.com','auth.openai.com','chatgpt.com','ws.chatgpt.com','sora.com',
@@ -33,7 +33,12 @@ expectations = {
     'GEMINI':['gemini.google.com','app.gemini.google.com','gemini.google',
               'aistudio.google.com','ai.google.dev','generativelanguage.googleapis.com',
               'bard.google.com','makersuite.google.com',
-              'alkalimakersuite-pa.clients6.google.com','proactivebackend-pa.googleapis.com'],
+              'alkalimakersuite-pa.clients6.google.com','proactivebackend-pa.googleapis.com',
+              'robinfrontend-pa.googleapis.com','accounts.google.com','oauth2.googleapis.com',
+              'www.googleapis.com','apis.google.com','fonts.googleapis.com','fonts.gstatic.com',
+              'www.gstatic.com','gemini.gstatic.com','lh3.googleusercontent.com',
+              'lh4.googleusercontent.com','ogads-pa.clients6.google.com',
+              'waa-pa.clients6.google.com','www.googletagmanager.com'],
     'ADOBE':['firefly.adobe.com','firefly.adobe.io','firefly-ps.adobe.io','firefly-ae.adobe.io',
              'firefly-cme-training.adobe.io','mds-cdn.infra.adobesensei.io',
              'pre-signed-firefly-prod.s3.amazonaws.com','stock.adobe.com','contributor.stock.adobe.com',
@@ -58,12 +63,14 @@ checks = 0
 gemini = provider('Gemini')
 assert not any(kind == 'DOMAIN-KEYWORD' for kind, _ in gemini)
 negative_gemini_hosts = [
-    'www.google.com','accounts.google.com','www.youtube.com','drive.google.com',
-    'apis.google.com','www.googleapis.com','maps.googleapis.com','oauth2.googleapis.com',
-    'lh3.googleusercontent.com','www.gstatic.com','storage.googleapis.com',
+    'www.google.com','www.youtube.com','drive.google.com',
+    'maps.googleapis.com','storage.googleapis.com',
     'colab.research.google.com','developerprofiles-pa.googleapis.com',
     'cloudcode-pa.googleapis.com','generativelanguage.example.org',
     'notgemini.google.com','gemini.google.com.example.org','aistudio.google.com.example.org',
+    'accounts.google.com.example.org','robinfrontend-pa.googleapis.com.example.org',
+    'evilgoogleusercontent.com','lh3.googleusercontent.com.example.org','evilgstatic.com',
+    'www.gstatic.com.example.org','unrelated.clients6.google.com',
 ]
 for host in negative_gemini_hosts:
     assert not any(match(host, r) for r in gemini), ('Gemini provider too broad', host)
@@ -90,9 +97,10 @@ for domestic in ['ChinaDirect','ChinaDirectFull']:
             checks += 1
     # Clients that have not added the optional provider retain the old proxy path.
     legacy_ordered = [(rules, policy) for rules, policy in ordered if policy != 'GEMINI']
+    legacy_shared = {'fonts.googleapis.com': 'CLAUDE', 'fonts.gstatic.com': 'CLAUDE'}
     for host in expectations['GEMINI']:
         actual = next((policy for rules, policy in legacy_ordered if any(match(host, r) for r in rules)), 'PROXY')
-        assert actual == 'PROXY', ('Gemini legacy routing changed', domestic, host, actual)
+        assert actual == legacy_shared.get(host, 'PROXY'), ('Gemini legacy routing changed', domestic, host, actual)
     # Explicit Adobe entries must be absent even if a shared parent CDN remains.
     protected = Scope(adobe | adobe_direct | external('adobe-shadowrocket-rules','AdobeStockLegacy') | {('DOMAIN-KEYWORD','adobe')})
     for name in [domestic,'International','InternationalPriority']:

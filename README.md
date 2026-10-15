@@ -12,7 +12,7 @@
 | 国内扩展 | [ChinaDirectFull.list](rule/Shadowrocket/ChinaDirectFull/ChinaDirectFull.list) | ChinaMax 扩展集合＋同一批国内补充；与常规版二选一，上游 ChinaMax 是实验性分类 |
 | Claude / Anthropic | [Claude.list](rule/Shadowrocket/Claude/Claude.list) | 社区域名、官网／Desktop／Code／下载及精确共享依赖 |
 | Anthropic 别名 | [Anthropic.list](rule/Shadowrocket/Anthropic/Anthropic.list) | 与 Claude.list 内容相同，二选一 |
-| Gemini | [Gemini.list](rule/Shadowrocket/Gemini/Gemini.list) | 可选独立分组：Gemini 网页、AI Studio、Gemini API；共享 Google 登录与资源沿用原规则 |
+| Gemini | [Gemini.list](rule/Shadowrocket/Gemini/Gemini.list) | 网页、Mac 桌面端、AI Studio、API 与已识别的登录/图片/静态资源统一出口；共享域名也会影响其他应用 |
 | X | [X.list](rule/Shadowrocket/X/X.list) | X、Twitter、媒体、短链接以及上游关联的 Grok / xAI 域名 |
 | 国际通用 | [International.list](rule/Shadowrocket/International/International.list) | 搜索、影音、社交、办公、创意、开发、游戏等；Adobe 已独立移交 |
 | 国际优先 | [InternationalPriority.list](rule/Shadowrocket/InternationalPriority/InternationalPriority.list) | 一组明确的海外服务，放在国内大集合之前，避免误归国内 |
@@ -47,12 +47,13 @@ RULE-SET,https://raw.githubusercontent.com/DDcat2025/openai-shadowrocket-rules/m
 # 可选语音 IP，需要时取消下一行注释
 # RULE-SET,https://raw.githubusercontent.com/DDcat2025/openai-shadowrocket-rules/main/rule/Shadowrocket/OpenAI/OpenAI_Voice.list,OPENAI
 
+# 可选 Gemini 统一出口：先创建 Gemini 策略组，再启用下一行
+# 放在 Claude 共享依赖前，确保 Google 字体等共享请求也由 Gemini 接管
+# RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Gemini/Gemini.list,Gemini
+
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Claude/Claude.list,CLAUDE
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/X/X.list,X
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/pinterest-shadowrocket-rules/main/rule/Shadowrocket/Pinterest/Pinterest.list,PINTEREST
-
-# 可选 Gemini 独立分组：先创建 Gemini 策略组，再启用下一行
-# RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Gemini/Gemini.list,Gemini
 
 # 明确的海外服务优先，再国内，再国际综合补漏
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/InternationalPriority/InternationalPriority.list,PROXY
@@ -66,13 +67,13 @@ FINAL,PROXY
 
 ## Gemini 独立分组
 
-新增 `Gemini` 手动策略组并选择节点，再把下面这一行放在 Google 通用规则、`InternationalPriority`、国内集合及 `FINAL` 之前：
+新增 `Gemini` 手动策略组并选择节点，再把下面这一行放在 Claude/其他共享依赖、Google 通用规则、`InternationalPriority`、国内集合及 `FINAL` 之前：
 
 ```ini
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Gemini/Gemini.list,Gemini
 ```
 
-这只是新增可选的独立入口，原国际集合继续保留原有 Gemini / Google 覆盖。仅更新旧规则集不会自动在客户端创建 Gemini 分组。共享登录、图片、字体和通用 CDN 不全部绑定 Gemini；完整范围与可复制分组片段见 [Gemini 接入说明](docs/gemini.md)。
+该集合现包含 Mac 桌面接口 `robinfrontend-pa.googleapis.com`，并把已识别的 Google 登录、共享 API、图片和静态资源统一到该分组。共享地址也供其他应用使用，相关请求会一起改变出口。原国际集合继续保留原有覆盖；仅更新旧国际规则集不会自动创建 Gemini 分组。已有 Gemini 订阅沿用原 URL，刷新后需确认它位于共享依赖规则之前。范围与可复制分组片段见 [Gemini 接入说明](docs/gemini.md)。
 
 ## 国内素材站补充
 
