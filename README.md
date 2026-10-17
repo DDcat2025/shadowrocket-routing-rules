@@ -11,6 +11,7 @@
 | 国内直连 | [ChinaDirect.list](rule/Shadowrocket/ChinaDirect/ChinaDirect.list) | China 常规集合＋腾讯／中国区字节＋人工核验的国内素材站；移除专属服务与 Adobe 条目 |
 | 国内扩展 | [ChinaDirectFull.list](rule/Shadowrocket/ChinaDirectFull/ChinaDirectFull.list) | ChinaMax 扩展集合＋同一批国内补充；与常规版二选一，上游 ChinaMax 是实验性分类 |
 | Claude / Anthropic | [Claude.list](rule/Shadowrocket/Claude/Claude.list) | 社区域名、官网／Desktop／Code／下载及精确共享依赖 |
+| Claude IP 兜底 | [Claude_IP.list](rule/Shadowrocket/Claude_IP/Claude_IP.list) | 官方 API/Console 入站 IPv4 / IPv6 网段；单独接入，不依赖 ASN 数据库 |
 | Anthropic 别名 | [Anthropic.list](rule/Shadowrocket/Anthropic/Anthropic.list) | 与 Claude.list 内容相同，二选一 |
 | Gemini | [Gemini.list](rule/Shadowrocket/Gemini/Gemini.list) | 网页、Mac 桌面端、AI Studio、API 与已识别的登录/图片/静态资源统一出口；共享域名也会影响其他应用 |
 | X | [X.list](rule/Shadowrocket/X/X.list) | X、Twitter、媒体、短链接以及上游关联的 Grok / xAI 域名 |
@@ -52,6 +53,8 @@ RULE-SET,https://raw.githubusercontent.com/DDcat2025/openai-shadowrocket-rules/m
 # RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Gemini/Gemini.list,Gemini
 
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Claude/Claude.list,CLAUDE
+# 可选 IP 兜底：在 Claude 域名规则之后、通用规则和 GEOIP 之前
+RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/Claude_IP/Claude_IP.list,CLAUDE,no-resolve
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/main/rule/Shadowrocket/X/X.list,X
 RULE-SET,https://raw.githubusercontent.com/DDcat2025/pinterest-shadowrocket-rules/main/rule/Shadowrocket/Pinterest/Pinterest.list,PINTEREST
 
@@ -109,6 +112,8 @@ claudeusercontent.com
 
 Claude.list 还含官方文档点名的安装、字体、JS 库和商店精确主机。这些也服务其他应用。若不希望固定这些共享依赖，可改用 [Claude_Core.list](rule/Shadowrocket/Claude_Core/Claude_Core.list)，把 [Claude_Dependencies.list](rule/Shadowrocket/Claude_Dependencies/Claude_Dependencies.list) 分配给国际代理。不要把整个 Google、GitHub 或 Microsoft 企业域都绑定到 Claude。
 
+2026-10-17 对照 Net.Coffee 清单复核后，补入 3 个精确 CDN/历史兼容地址、5 个官网帮助中心实际引用的 Intercom 主机，并新增独立 `Claude_IP`：官方 API 入站 `160.79.104.0/23`、`2607:6bc0::/48`。`anthropic.auth0.com` 和 `anthropic-com.ghost.io` 是兼容条目，尚未确认仍为当前登录必需。Intercom 是 OpenAI 与 Claude 共用的服务，前面的 OpenAI 规则仍有优先权；单靠域名不能区分是哪一个应用发出的请求。没有加入覆盖所有 Sentry、Datadog、Sift、NTP 的 Claude 关键词规则。逐项差异、依据、IP 接入片段和未采纳原因见 [Claude 网络规则核对](docs/claude-network-audit-2026-10-17.md)。
+
 自定义 MCP、企业 SSO 和第三方模型平台的租户地址无法穷举；需要结合实际连接日志。网站改版与新域名仍要更新，不能保证未来不出现新地址。
 
 ## Adobe 如何从国际通用规则中分离
@@ -123,9 +128,11 @@ Adobe 官方新确认的 Firefly / Sensei 应用后端、训练推理和专用�
 
 主 `.list` 是完整类型化域名规则，使用 RULE-SET。与上游 blackmatrix7 的某些拆分集合不同，本仓库主 `.list` 已合并全部域名，不需要再叠加 `_Domain.list`。
 
+`Claude_IP` 是单独的 IP 规则提供方，只提供类型化 `.list` 和 Mihomo classical YAML，不生成 DOMAIN-SET。原 Claude 域名集合及其域名/关键词拆分文件继续保持原格式。
+
 如果使用 `_Domain.list`：前导点表示后缀，不带点表示精确主机；还需配合 `_Keyword.list` 才能获得该集合的关键词覆盖。单独的 DOMAIN-SET 不能表达关键词。Mihomo 输出为 `behavior: classical`。
 
-这些新集合专注域名，不批量导入上游共享 ASN、IP 或 USER-AGENT 条件。国内 IP 使用客户端 GeoIP；OpenAI 官方语音 IP 已在原仓库提供可选集合。规则顺序与模块优先级以客户端实际编译及连接日志为准。
+通用集合专注域名，不批量导入上游共享 ASN、IP 或 USER-AGENT 条件。`Claude_IP` 仅收录官方明确发布的 API 入站网段；国内 IP 使用客户端 GeoIP；OpenAI 官方语音 IP 已在原仓库提供可选集合。规则顺序与模块优先级以客户端实际编译及连接日志为准。
 
 ## 更新、构建和验收
 

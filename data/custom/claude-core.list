@@ -8,3 +8,10 @@ DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claude.app
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,claudemcpcontent.com
+# Precise compatibility hosts from the user-supplied Net.Coffee list, 2026-10-17.
+# All resolve; the Cloudflare alias currently resolves inside the official API ingress range.
+# Auth0 / Ghost are historical compatibility entries, not verified current login requirements.
+# https://ip.net.coffee/claude/site.html
+DOMAIN,anthropic.com.cdn.cloudflare.net
+DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic-com.ghost.io

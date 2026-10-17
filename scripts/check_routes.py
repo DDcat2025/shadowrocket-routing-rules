@@ -2,7 +2,8 @@
 from __future__ import annotations
 from pathlib import Path
 import json
-from build_rules import ROOT, Scope, external, read_rules, module
+import ipaddress
+from build_rules import ROOT, Scope, external, read_rules, read_ip_rules, module
 
 
 def provider(name): return read_rules(ROOT / f'rule/Shadowrocket/{name}/{name}.list')
@@ -60,6 +61,15 @@ expectations = {
              'browserleaks.com','www.browserleaks.com','probe.browserleaks.net','probe.browserleaks.org',
              'firefly.adobe.io.example.invalid','openai.com.example.invalid','x.com.example.invalid'],
 }
+expectations['CLAUDE'] += [
+    'anthropic.com.cdn.cloudflare.net', 'anthropic.auth0.com', 'anthropic-com.ghost.io',
+    'static.intercomassets.com',
+]
+# Existing OpenAI rules intentionally precede Claude for these shared hosts.
+# Membership in Claude remains useful for clients that subscribe to it alone.
+expectations['OPENAI'] += [
+    'api-iam.intercom.io', 'widget.intercom.io', 'downloads.intercomcdn.com', 'js.intercomcdn.com',
+]
 checks = 0
 gemini = provider('Gemini')
 assert not any(kind == 'DOMAIN-KEYWORD' for kind, _ in gemini)
@@ -116,6 +126,8 @@ for domestic in ['ChinaDirect','ChinaDirectFull']:
         assert not any(protected.contains(r) for r in provider(name)), ('Adobe mixed into',name)
 # Rule-set / domain-set(+keyword) / Mihomo exports must retain exact-match semantics.
 for name in json.loads((ROOT/'docs/counts.json').read_text()):
+    if name == 'Claude_IP':
+        continue  # Separate typed IP provider has no DOMAIN-SET representation.
     rules = provider(name)
     directory = ROOT/'rule/Shadowrocket'/name
     combined = read_rules(directory/(name+'_Domain.list')) | read_rules(directory/(name+'_Keyword.list'))
@@ -142,3 +154,34 @@ for rule in module('Adobe'):
         continue
     assert owned.contains(rule), ('New Adobe source entry needs explicit classification', rule)
 print('PASS: Adobe source migration coverage')
+
+# IP fallback is only the officially documented API ingress space. Broader
+# outbound/registration ranges must not silently take unrelated traffic.
+ip_rules = read_ip_rules(ROOT / 'rule/Shadowrocket/Claude_IP/Claude_IP.list')
+assert ip_rules == {('IP-CIDR', '160.79.104.0/23'), ('IP-CIDR6', '2607:6bc0::/48')}
+ip_export = (ROOT / 'rule/Mihomo/Claude_IP/Claude_IP.yaml').read_text().splitlines()
+ip_lines = [line.strip()[2:] for line in ip_export if line.strip().startswith('- ')]
+assert set(ip_lines) == {','.join(rule) + ',no-resolve' for rule in ip_rules}
+ip_networks = [ipaddress.ip_network(value) for _, value in ip_rules]
+for address, expected in [
+    ('160.79.104.0', True), ('160.79.104.10', True), ('160.79.105.255', True),
+    ('160.79.103.255', False), ('160.79.106.0', False), ('160.79.111.255', False),
+    ('2607:6bc0::', True), ('2607:6bc0:0:ffff:ffff:ffff:ffff:ffff', True),
+    ('2607:6bc0:1::', False), ('2607:6bc1::', False),
+]:
+    ip = ipaddress.ip_address(address)
+    assert any(ip in network for network in ip_networks if ip.version == network.version) == expected, address
+for provider_name in ['Claude_Core', 'Claude_Dependencies', 'Claude']:
+    values = provider(provider_name)
+    assert not any(kind == 'DOMAIN-KEYWORD' for kind, _ in values), provider_name
+    for broad in ['sentry.io', 'statsigapi.net', 'datadoghq.com', 'intercom.io',
+                  'intercomcdn.com', 'intercomassets.com', 'auth0.com', 'ghost.io', 'cloudflare.net']:
+        assert ('DOMAIN-SUFFIX', broad) not in values, (provider_name, broad)
+assert {('DOMAIN', host) for host in [
+    'api-iam.intercom.io', 'widget.intercom.io', 'downloads.intercomcdn.com',
+    'js.intercomcdn.com', 'static.intercomassets.com',
+]} <= provider('Claude_Dependencies')
+for host in ['other.auth0.com', 'other.ghost.io', 'other.cdn.cloudflare.net',
+             'anthropic.auth0.com.example.org', 'anthropic-com.ghost.io.example.org']:
+    assert not any(match(host, rule) for rule in provider('Claude_Core')), host
+print('PASS: Claude ingress IP boundaries, no-resolve export parity and shared-domain precision')

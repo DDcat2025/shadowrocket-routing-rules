@@ -12,23 +12,28 @@
     "DOMAIN-SUFFIX": 112101
   },
   "Claude": {
-    "total": 31,
-    "DOMAIN": 22,
+    "total": 39,
+    "DOMAIN": 30,
     "DOMAIN-SUFFIX": 9
   },
   "Claude_Core": {
-    "total": 11,
-    "DOMAIN": 2,
+    "total": 14,
+    "DOMAIN": 5,
     "DOMAIN-SUFFIX": 9
   },
   "Claude_Dependencies": {
-    "total": 20,
-    "DOMAIN": 20
+    "total": 25,
+    "DOMAIN": 25
   },
   "Anthropic": {
-    "total": 31,
-    "DOMAIN": 22,
+    "total": 39,
+    "DOMAIN": 30,
     "DOMAIN-SUFFIX": 9
+  },
+  "Claude_IP": {
+    "total": 2,
+    "IP-CIDR": 1,
+    "IP-CIDR6": 1
   },
   "X": {
     "total": 31,

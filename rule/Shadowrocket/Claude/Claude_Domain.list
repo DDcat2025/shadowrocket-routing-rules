@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 06c62787b85346cbdd77a7173b82adf5fb905b5e21fca0d840cb240156a65659
-# TOTAL: 31
+# RULES-SHA256: 84c0f5867c9fddfb9f403e4be10bd1c65b5d7a5a413f5f4af4dec6484fe4f9f6
+# TOTAL: 39
 # Requires the _Keyword.list companion for equivalent coverage.
 .anthropic.com
 .clau.de
@@ -14,6 +14,10 @@
 .claudemcpclient.com
 .claudemcpcontent.com
 .claudeusercontent.com
+anthropic-com.ghost.io
+anthropic.auth0.com
+anthropic.com.cdn.cloudflare.net
+api-iam.intercom.io
 apps.apple.com
 apps.microsoft.com
 browser-intake-us5-datadoghq.com
@@ -23,16 +27,20 @@ cdn.usefathom.com
 cdnjs.cloudflare.com
 chromewebstore.google.com
 code.jquery.com
+downloads.intercomcdn.com
 fonts.googleapis.com
 fonts.gstatic.com
 formulae.brew.sh
 github.com
 http-intake.logs.us5.datadoghq.com
+js.intercomcdn.com
 marketplace.microsoft.com
 marketplace.visualstudio.com
 plugins.jetbrains.com
 raw.githubusercontent.com
 registry.npmjs.org
 servd-anthropic-website.b-cdn.net
+static.intercomassets.com
 storage.googleapis.com
 unpkg.com
+widget.intercom.io

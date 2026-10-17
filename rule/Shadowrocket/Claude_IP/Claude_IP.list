@@ -1,0 +1,8 @@
+# NAME: Claude_IP
+# AUTHOR: DDcat2025
+# REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
+# SOURCE: data/source-lock.json; official manual supplements in data/custom
+# RULES-SHA256: 380ab9d7244b2073e29638740c3e64414827cc2fb5a0fd078b879ff997ffe2f6
+# TOTAL: 2
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve

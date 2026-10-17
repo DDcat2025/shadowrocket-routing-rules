@@ -1,7 +1,8 @@
-"""Deterministic domain-only rule generation from committed, versioned snapshots."""
+"""Deterministic domain providers and a separate verified API IP provider."""
 from __future__ import annotations
 import argparse
 import hashlib
+import ipaddress
 import json
 from collections import Counter
 from pathlib import Path
@@ -29,6 +30,24 @@ def read_rules(path: Path) -> set[tuple[str, str]]:
         if not value or any(c in value for c in ' ,/*\t\r\n'):
             raise ValueError(f'{path}:{no}: invalid value {value}')
         out.add((kind, value))
+    return out
+
+
+def read_ip_rules(path: Path) -> set[tuple[str, str]]:
+    out = set()
+    for no, raw in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):
+        line = raw.split('#', 1)[0].strip()
+        if not line:
+            continue
+        fields = [value.strip() for value in line.split(',')]
+        if len(fields) != 3 or fields[0] not in {'IP-CIDR', 'IP-CIDR6'} or fields[2] != 'no-resolve':
+            raise ValueError(f'{path}:{no}: invalid IP rule')
+        network = ipaddress.ip_network(fields[1], strict=True)
+        if network.version != (4 if fields[0] == 'IP-CIDR' else 6):
+            raise ValueError(f'{path}:{no}: IP family does not match rule type')
+        out.add((fields[0], str(network)))
+    if not out:
+        raise ValueError(f'Empty IP provider: {path}')
     return out
 
 
@@ -92,7 +111,7 @@ def output(name, rules, companion=True):
               '# REPO: https://github.com/DDcat2025/shadowrocket-routing-rules',
               '# SOURCE: data/source-lock.json; official manual supplements in data/custom',
               f'# RULES-SHA256: {digest}', f'# TOTAL: {len(ordered)}']
-    lines = [','.join(r) for r in ordered]
+    lines = [','.join(r) + (',no-resolve' if r[0] in {'IP-CIDR', 'IP-CIDR6'} else '') for r in ordered]
     queue(f'rule/Shadowrocket/{name}/{name}.list', header + lines)
     queue(f'rule/Mihomo/{name}/{name}.yaml', header + ['payload:'] + ['  - ' + r for r in lines])
     if companion:
@@ -116,6 +135,7 @@ def build():
     claude_core = module('Claude') | module('Anthropic') | v2fly('anthropic') | read_rules(ROOT / 'data/custom/claude-core.list')
     dependencies = read_rules(ROOT / 'data/custom/claude-dependencies.list')
     claude = claude_core | dependencies
+    claude_ip = read_ip_rules(ROOT / 'data/custom/claude-ip.list')
     # Opt-in unified Gemini provider, including explicitly documented shared
     # dependencies. Clients without this provider keep the existing routing.
     gemini = (read_rules(ROOT / 'data/custom/gemini-core.list')
@@ -159,12 +179,13 @@ def build():
     priority = filter_pool(priority_pool, 'InternationalPriority')
     names = {'ChinaDirect': china, 'ChinaDirectFull': china_full, 'Claude': claude,
              'Claude_Core': claude_core, 'Claude_Dependencies': dependencies, 'Anthropic': claude,
-             'X': x, 'Gemini': gemini, 'International': international, 'InternationalPriority': priority}
-    for name, rules in names.items(): output(name, rules)
+             'Claude_IP': claude_ip, 'X': x, 'Gemini': gemini,
+             'International': international, 'InternationalPriority': priority}
+    for name, rules in names.items(): output(name, rules, companion=name != 'Claude_IP')
     # No complete .conf: these are composable rule providers without nodes or credentials.
     counts = {name: {'total': len(rules), **dict(sorted(Counter(k for k, _ in rules).items()))} for name, rules in names.items()}
     queue('docs/counts.json', [json.dumps(counts, ensure_ascii=False, indent=2)])
-    queue('docs/规则规模.md', ['# 生成规则规模', '', '| 集合 | 域名匹配条件 |', '|---|---:|']
+    queue('docs/规则规模.md', ['# 生成规则规模', '', '| 集合 | 匹配条件 |', '|---|---:|']
           + [f'| {name} | {stat["total"]:,} |' for name, stat in counts.items()]
           + ['', '统计的是匹配条件，不是独立网站数量。可选集合之间有交集，不应直接相加。'])
     audit = {'excluded': sorted(excluded, key=lambda r: (r['category'], r['rule'])),

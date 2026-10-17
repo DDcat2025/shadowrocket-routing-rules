@@ -2,9 +2,13 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 06c62787b85346cbdd77a7173b82adf5fb905b5e21fca0d840cb240156a65659
-# TOTAL: 31
+# RULES-SHA256: 84c0f5867c9fddfb9f403e4be10bd1c65b5d7a5a413f5f4af4dec6484fe4f9f6
+# TOTAL: 39
 payload:
+  - DOMAIN,anthropic-com.ghost.io
+  - DOMAIN,anthropic.auth0.com
+  - DOMAIN,anthropic.com.cdn.cloudflare.net
+  - DOMAIN,api-iam.intercom.io
   - DOMAIN,apps.apple.com
   - DOMAIN,apps.microsoft.com
   - DOMAIN,browser-intake-us5-datadoghq.com
@@ -14,19 +18,23 @@ payload:
   - DOMAIN,cdnjs.cloudflare.com
   - DOMAIN,chromewebstore.google.com
   - DOMAIN,code.jquery.com
+  - DOMAIN,downloads.intercomcdn.com
   - DOMAIN,fonts.googleapis.com
   - DOMAIN,fonts.gstatic.com
   - DOMAIN,formulae.brew.sh
   - DOMAIN,github.com
   - DOMAIN,http-intake.logs.us5.datadoghq.com
+  - DOMAIN,js.intercomcdn.com
   - DOMAIN,marketplace.microsoft.com
   - DOMAIN,marketplace.visualstudio.com
   - DOMAIN,plugins.jetbrains.com
   - DOMAIN,raw.githubusercontent.com
   - DOMAIN,registry.npmjs.org
   - DOMAIN,servd-anthropic-website.b-cdn.net
+  - DOMAIN,static.intercomassets.com
   - DOMAIN,storage.googleapis.com
   - DOMAIN,unpkg.com
+  - DOMAIN,widget.intercom.io
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,clau.de
   - DOMAIN-SUFFIX,claude.ai

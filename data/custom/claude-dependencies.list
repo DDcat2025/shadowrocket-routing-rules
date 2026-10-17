@@ -22,3 +22,11 @@ DOMAIN,marketplace.visualstudio.com
 DOMAIN,plugins.jetbrains.com
 DOMAIN,chromewebstore.google.com
 DOMAIN,apps.apple.com
+# Official support.claude.com page and its embedded widget, verified 2026-10-17.
+# Shared hosts: routing these also affects other applications using the same host.
+# Earlier OpenAI rules retain priority for intercom.io/intercomcdn.com hosts.
+DOMAIN,api-iam.intercom.io
+DOMAIN,widget.intercom.io
+DOMAIN,downloads.intercomcdn.com
+DOMAIN,js.intercomcdn.com
+DOMAIN,static.intercomassets.com

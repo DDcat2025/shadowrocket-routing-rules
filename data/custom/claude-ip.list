@@ -1,0 +1,5 @@
+# Official API/Console INBOUND ranges, verified 2026-10-17.
+# https://platform.claude.com/docs/en/api/ip-addresses
+# Do not substitute the broader outbound /21, registered IPv6 /32, or an ASN database.
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve

@@ -2,9 +2,10 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 3d1eb3610d4b88574d635e50ac4580aa36ab4af56da5632dbaa881a9495e910d
-# TOTAL: 20
+# RULES-SHA256: 193d899f09846fd2aa986fd33b759af88e98bb83dd8a942444f0a0f66d0ded63
+# TOTAL: 25
 # Requires the _Keyword.list companion for equivalent coverage.
+api-iam.intercom.io
 apps.apple.com
 apps.microsoft.com
 browser-intake-us5-datadoghq.com
@@ -13,15 +14,19 @@ cdn.tailwindcss.com
 cdnjs.cloudflare.com
 chromewebstore.google.com
 code.jquery.com
+downloads.intercomcdn.com
 fonts.googleapis.com
 fonts.gstatic.com
 formulae.brew.sh
 github.com
 http-intake.logs.us5.datadoghq.com
+js.intercomcdn.com
 marketplace.microsoft.com
 marketplace.visualstudio.com
 plugins.jetbrains.com
 raw.githubusercontent.com
 registry.npmjs.org
+static.intercomassets.com
 storage.googleapis.com
 unpkg.com
+widget.intercom.io
