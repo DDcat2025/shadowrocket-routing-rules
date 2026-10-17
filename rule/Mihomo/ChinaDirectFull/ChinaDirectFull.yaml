@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: f426b4d5b029d760aa75caa247b7120a7d9b2bf49f1b7458e56d8fd77d06a261
-# TOTAL: 112408
+# RULES-SHA256: af4c80a48f9edce71f42927fe9aac1090c9c81ac97ba67e803815965aad7116e
+# TOTAL: 112407
 payload:
   - DOMAIN,1-fss24-s0.streamhoster.com
   - DOMAIN,14033.live.streamtheworld.com
@@ -17730,7 +17730,6 @@ payload:
   - DOMAIN-SUFFIX,brother-cn.net
   - DOMAIN-SUFFIX,brother-movie.com
   - DOMAIN-SUFFIX,brotherchem.com
-  - DOMAIN-SUFFIX,browserleaks.com
   - DOMAIN-SUFFIX,browurl.com
   - DOMAIN-SUFFIX,brpcb.com
   - DOMAIN-SUFFIX,brsiee.com

@@ -57,6 +57,7 @@ expectations = {
     'PINTEREST':['www.pinterest.com','i.pinimg.com','pin.it'],
     'PROXY':['www.google.com','www.youtube.com','www.netflix.com','discord.com','replicate.delivery',
              'runway.com','krea.ai','ideogram.ai','linear.app','notadobe.com',
+             'browserleaks.com','www.browserleaks.com','probe.browserleaks.net','probe.browserleaks.org',
              'firefly.adobe.io.example.invalid','openai.com.example.invalid','x.com.example.invalid'],
 }
 checks = 0
@@ -87,8 +88,16 @@ negative_creative_hosts = [
 ]
 for host in negative_creative_hosts:
     assert not any(match(host, r) for r in creative), ('Creative supplement too broad', host)
+diagnostics = read_rules(ROOT / 'data/custom/network-diagnostics.list')
+for host in ['evilbrowserleaks.com', 'browserleaks.com.example.org',
+             'probe.browserleaks.net.example.org', 'browserleaks.org.example.org']:
+    assert not any(match(host, r) for r in diagnostics), ('Diagnostics supplement too broad', host)
+for name in ['International', 'InternationalPriority']:
+    assert diagnostics <= provider(name), ('Diagnostics missing from', name)
 for domestic in ['ChinaDirect','ChinaDirectFull']:
     assert creative <= provider(domestic), ('Creative supplement missing from', domestic)
+    for host in ['browserleaks.com', 'www.browserleaks.com', 'probe.browserleaks.net', 'probe.browserleaks.org']:
+        assert not any(match(host, r) for r in provider(domestic)), ('Diagnostics must not route DIRECT', domestic, host)
     ordered = base + [(provider(domestic),'DIRECT'),(provider('International'),'PROXY')]
     for expected, hosts in expectations.items():
         for host in hosts:

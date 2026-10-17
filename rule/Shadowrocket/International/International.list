@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 290967bf71f20cfb38a5166aa4df4a75b246377555e95ec8a33aad3fe8580b87
-# TOTAL: 36177
+# RULES-SHA256: 62762a15119f5756e368e50d5a40843af867193b1aa845de392fcb8ac0dc5d8b
+# TOTAL: 36180
 DOMAIN,1password.drift.click
 DOMAIN,agb9r0ad.qllfkl.com
 DOMAIN,ai.google.dev
@@ -6018,6 +6018,9 @@ DOMAIN-SUFFIX,brotli.org
 DOMAIN-SUFFIX,brourou.com
 DOMAIN-SUFFIX,browser.kagi.com
 DOMAIN-SUFFIX,browser.run
+DOMAIN-SUFFIX,browserleaks.com
+DOMAIN-SUFFIX,browserleaks.net
+DOMAIN-SUFFIX,browserleaks.org
 DOMAIN-SUFFIX,brox-coll.ac.uk
 DOMAIN-SUFFIX,broxtowe.ac.uk
 DOMAIN-SUFFIX,brucewang.net

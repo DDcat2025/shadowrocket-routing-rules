@@ -81,6 +81,12 @@ RULE-SET,https://raw.githubusercontent.com/DDcat2025/shadowrocket-routing-rules/
 
 这些补充保存在 [domestic-creative.list](data/custom/domestic-creative.list)，构建时合入两种国内集合，自动刷新上游不会覆盖它们。已经订阅 `ChinaDirect.list` 的客户端只需更新规则并重新编译或使用配置，订阅地址不变。来源、边界和验收范围见 [国内素材站补充说明](docs/domestic-creative.md)。
 
+## BrowserLeaks 检测站分流
+
+`browserleaks.com` 曾由上游 China / ChinaMax 集合归入直连，导致检测页的 “Your IP Address” 显示真实公网出口，即使其他网站仍正常走代理。现在将该站及 DNS 测试实际使用的 `browserleaks.net`、`browserleaks.org` 纳入国际优先和国际通用集合，并从两种国内集合中排除，人工补充保存在 [network-diagnostics.list](data/custom/network-diagnostics.list)，上游刷新不会重新带回直连分类。
+
+已有客户端更新国内及国际规则集后重新编译或应用；内置规则的离线 YAML 需要重新导入修正版。此改动只让检测网站按所选国际代理策略运行，不改变 AI 专属分组，也不能代替对其他应用、DNS 实际路径或断线保护的验证。DNS 测试域名依据 [官方测试页](https://browserleaks.com/dns) 及其公开 `/js/dns.js` 确认。
+
 ## OpenAI 和 Anthropic 本次补全
 
 OpenAI 保留上游 ChatGPT、API、Sora、语音与 CDN 规则，补入官方 WorkOS、验证码、设备验证、上报及 WebSocket 主机。完整兼容版不删除原有共享父域；精确依赖版用官方明确主机减少影响范围。语音还涉及 UDP 3478 / TCP 443，域名规则本身不保证协议可达。

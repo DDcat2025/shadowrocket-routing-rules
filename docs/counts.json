@@ -1,15 +1,15 @@
 {
   "ChinaDirect": {
-    "total": 4844,
+    "total": 4843,
     "DOMAIN": 42,
     "DOMAIN-KEYWORD": 9,
-    "DOMAIN-SUFFIX": 4793
+    "DOMAIN-SUFFIX": 4792
   },
   "ChinaDirectFull": {
-    "total": 112408,
+    "total": 112407,
     "DOMAIN": 293,
     "DOMAIN-KEYWORD": 13,
-    "DOMAIN-SUFFIX": 112102
+    "DOMAIN-SUFFIX": 112101
   },
   "Claude": {
     "total": 31,
@@ -41,15 +41,15 @@
     "DOMAIN-SUFFIX": 6
   },
   "International": {
-    "total": 36177,
+    "total": 36180,
     "DOMAIN": 240,
     "DOMAIN-KEYWORD": 76,
-    "DOMAIN-SUFFIX": 35861
+    "DOMAIN-SUFFIX": 35864
   },
   "InternationalPriority": {
-    "total": 2082,
+    "total": 2085,
     "DOMAIN": 48,
     "DOMAIN-KEYWORD": 25,
-    "DOMAIN-SUFFIX": 2009
+    "DOMAIN-SUFFIX": 2012
   }
 }

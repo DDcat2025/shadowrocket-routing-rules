@@ -6,6 +6,11 @@
       "assigned_to": "Adobe"
     },
     {
+      "category": "ChinaDirect",
+      "rule": "DOMAIN-SUFFIX,browserleaks.com",
+      "assigned_to": "NetworkDiagnostics"
+    },
+    {
       "category": "ChinaDirectFull",
       "rule": "DOMAIN-SUFFIX,adobe-tool.com",
       "assigned_to": "Adobe"
@@ -29,6 +34,11 @@
       "category": "ChinaDirectFull",
       "rule": "DOMAIN-SUFFIX,adobesc.com",
       "assigned_to": "Adobe"
+    },
+    {
+      "category": "ChinaDirectFull",
+      "rule": "DOMAIN-SUFFIX,browserleaks.com",
+      "assigned_to": "NetworkDiagnostics"
     },
     {
       "category": "ChinaDirectFull",

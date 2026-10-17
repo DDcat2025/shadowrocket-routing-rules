@@ -1,0 +1,6 @@
+# BrowserLeaks diagnostics should measure the configured proxy path.
+# Verified 2026-10-17: https://browserleaks.com/dns
+# The public /js/dns.js test queries random subdomains under both .net and .org.
+DOMAIN-SUFFIX,browserleaks.com
+DOMAIN-SUFFIX,browserleaks.net
+DOMAIN-SUFFIX,browserleaks.org

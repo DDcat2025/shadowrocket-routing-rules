@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 290967bf71f20cfb38a5166aa4df4a75b246377555e95ec8a33aad3fe8580b87
-# TOTAL: 36081
+# RULES-SHA256: 62762a15119f5756e368e50d5a40843af867193b1aa845de392fcb8ac0dc5d8b
+# TOTAL: 36084
 # Requires the _Keyword.list companion for equivalent coverage.
 .000webhost.com
 .01.org
@@ -5703,6 +5703,9 @@
 .brourou.com
 .browser.kagi.com
 .browser.run
+.browserleaks.com
+.browserleaks.net
+.browserleaks.org
 .brox-coll.ac.uk
 .broxtowe.ac.uk
 .brucewang.net

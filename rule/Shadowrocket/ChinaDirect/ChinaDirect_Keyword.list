@@ -2,7 +2,7 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 4d90b4f84255ab5e6a789ccef5381c672164ebf76ba7267add6d48841896e227
+# RULES-SHA256: 13f67a5129c42367e0a05d7fdefd17aa81071ef6d49a53422e2025a47941ee5b
 # TOTAL: 9
 DOMAIN-KEYWORD,.tmall.com
 DOMAIN-KEYWORD,alicdn

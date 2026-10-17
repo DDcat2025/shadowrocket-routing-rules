@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: f426b4d5b029d760aa75caa247b7120a7d9b2bf49f1b7458e56d8fd77d06a261
-# TOTAL: 112395
+# RULES-SHA256: af4c80a48f9edce71f42927fe9aac1090c9c81ac97ba67e803815965aad7116e
+# TOTAL: 112394
 # Requires the _Keyword.list companion for equivalent coverage.
 .0.zone
 .00.net
@@ -17424,7 +17424,6 @@
 .brother-cn.net
 .brother-movie.com
 .brotherchem.com
-.browserleaks.com
 .browurl.com
 .brpcb.com
 .brsiee.com

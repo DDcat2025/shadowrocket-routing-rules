@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 7756e1fcf78d86e7ed1b4b8900b4d9ef47e307dcb6da018eb0189d6b4eadf6d0
-# TOTAL: 2056
+# RULES-SHA256: a52aeef44ca9cf53a5e006f0f88d22486f6eed2a1aa9ab8fec87768b2c8674f6
+# TOTAL: 2059
 # Requires the _Keyword.list companion for equivalent coverage.
 .0emm.com
 .112263.com
@@ -195,6 +195,9 @@
 .braze.com
 .brocaproject.com
 .brotli.org
+.browserleaks.com
+.browserleaks.net
+.browserleaks.org
 .buck.build
 .buckbuild.com
 .bumpshare.com

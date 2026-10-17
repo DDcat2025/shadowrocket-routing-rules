@@ -128,12 +128,16 @@ def build():
                   | read_rules(ROOT / 'data/custom/domestic-creative.list'))
     source_direct = module('China') | own_direct
     source_full = module('ChinaMax') | own_direct
+    diagnostics = read_rules(ROOT / 'data/custom/network-diagnostics.list')
+    diagnostics_scope = Scope(diagnostics)
     excluded = []
 
     def filter_pool(pool, category):
         result = set()
         for rule in pool:
             reason = 'Adobe' if adobe_scope.contains(rule) else 'OpenAI/Claude/X' if dedicated_scope.contains(rule) else None
+            if reason is None and category in {'ChinaDirect', 'ChinaDirectFull'} and diagnostics_scope.contains(rule):
+                reason = 'NetworkDiagnostics'
             if reason: excluded.append({'category': category, 'rule': ','.join(rule), 'assigned_to': reason})
             else: result.add(rule)
         return result
@@ -143,6 +147,7 @@ def build():
     other_names = [n for category, names in groups.items() if category != '基础' for n in names if n != 'Adobe']
     source_international = set().union(*(module(n) for n in other_names))
     source_international |= read_rules(ROOT / 'data/custom/international.list')
+    source_international |= diagnostics
     international = filter_pool(source_international, 'International')
     # Explicit overseas modules are small enough to place before generic domestic classification.
     priority_names = ['Google','GoogleSearch','GoogleDrive','GoogleVoice','Gemini','BardAI','Bing','Copilot',
@@ -150,6 +155,7 @@ def build():
         'Whatsapp','Reddit','LinkedIn','Pinterest','TikTok','Netflix','Disney','HBO','Hulu','Spotify',
         'Notion','Figma','Dropbox','Slack','Protonmail','Wikipedia','Wikimedia','Twitch','Vimeo']
     priority_pool = set().union(*(module(n) for n in priority_names)) | read_rules(ROOT / 'data/custom/international.list')
+    priority_pool |= diagnostics
     priority = filter_pool(priority_pool, 'InternationalPriority')
     names = {'ChinaDirect': china, 'ChinaDirectFull': china_full, 'Claude': claude,
              'Claude_Core': claude_core, 'Claude_Dependencies': dependencies, 'Anthropic': claude,
