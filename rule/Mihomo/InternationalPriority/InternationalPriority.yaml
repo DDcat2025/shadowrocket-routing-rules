@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: a52aeef44ca9cf53a5e006f0f88d22486f6eed2a1aa9ab8fec87768b2c8674f6
-# TOTAL: 2085
+# RULES-SHA256: 9989b94dc3891901a67a83ebb6d4db138365c69e2ca69bf63aa26532b64f083f
+# TOTAL: 2088
 payload:
   - DOMAIN,ai.google.dev
   - DOMAIN,alkalimakersuite-pa.clients6.google.com
@@ -290,6 +290,9 @@ payload:
   - DOMAIN-SUFFIX,callhulu.com
   - DOMAIN-SUFFIX,campuslondon.com
   - DOMAIN-SUFFIX,capcut.com
+  - DOMAIN-SUFFIX,capcutapi.com
+  - DOMAIN-SUFFIX,capcutapi.us
+  - DOMAIN-SUFFIX,capcutstatic.com
   - DOMAIN-SUFFIX,capitalg.com
   - DOMAIN-SUFFIX,careersatfb.com
   - DOMAIN-SUFFIX,carstagram.com

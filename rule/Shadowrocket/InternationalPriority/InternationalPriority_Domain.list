@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: a52aeef44ca9cf53a5e006f0f88d22486f6eed2a1aa9ab8fec87768b2c8674f6
-# TOTAL: 2059
+# RULES-SHA256: 9989b94dc3891901a67a83ebb6d4db138365c69e2ca69bf63aa26532b64f083f
+# TOTAL: 2062
 # Requires the _Keyword.list companion for equivalent coverage.
 .0emm.com
 .112263.com
@@ -217,6 +217,9 @@
 .callhulu.com
 .campuslondon.com
 .capcut.com
+.capcutapi.com
+.capcutapi.us
+.capcutstatic.com
 .capitalg.com
 .careersatfb.com
 .carstagram.com
