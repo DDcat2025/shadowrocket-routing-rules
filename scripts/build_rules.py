@@ -80,6 +80,46 @@ def external(repo: str, name: str) -> set[tuple[str, str]]:
     return read_rules(ROOT / 'data/sources/external' / repo / (name + '.list'))
 
 
+def google_family():
+    """Expand every pinned include; reject unknown syntax and audit redundant regex."""
+    rules, seen, redundant_regex = set(), set(), []
+    allowed_regex_parents = {'google-play': {'googlevideo.com', 'xn--ngstr-lra8j.com'}}
+
+    def visit(name):
+        if name in seen:
+            return
+        seen.add(name)
+        for line in (ROOT / 'data/sources/google-v2fly' / name).read_text().splitlines():
+            tokens = line.split('#', 1)[0].split()
+            if not tokens:
+                continue
+            token = tokens[0]
+            if token.startswith('include:'):
+                assert len(tokens) == 1, ('Unsupported filtered include', line)
+                visit(token.split(':', 1)[1])
+            elif token.startswith('regexp:'):
+                # Both current Play regexes are strict subdomains of suffix rules
+                # already present in the same Google/YouTube source tree.
+                parent = next((p for p in allowed_regex_parents.get(name, set())
+                               if token.endswith(p.replace('.', r'\.') + '$')), None)
+                assert parent, ('New regex requires review', name, token)
+                redundant_regex.append({'source': name, 'regex': token, 'covered_suffix': parent})
+            else:
+                kind = 'DOMAIN-SUFFIX'
+                if ':' in token:
+                    prefix, token = token.split(':', 1)
+                    assert prefix in {'full', 'domain'}, (name, line)
+                    kind = 'DOMAIN' if prefix == 'full' else 'DOMAIN-SUFFIX'
+                rules.add((kind, token.lower()))
+
+    visit('google')
+    for item in redundant_regex:
+        assert ('DOMAIN-SUFFIX', item['covered_suffix']) in rules
+    queue('docs/google-source-expansion.json', [json.dumps(
+        {'files': sorted(seen), 'redundant_regex': redundant_regex}, ensure_ascii=False, indent=2)])
+    return rules
+
+
 class Scope:
     """Recognize explicit protected names, descendants and existing keyword rules.
 
@@ -111,6 +151,10 @@ def output(name, rules, companion=True):
               '# REPO: https://github.com/DDcat2025/shadowrocket-routing-rules',
               '# SOURCE: data/source-lock.json; official manual supplements in data/custom',
               f'# RULES-SHA256: {digest}', f'# TOTAL: {len(ordered)}']
+    if name in {'Instagram', 'Facebook', 'Google'}:
+        release = json.loads((ROOT / 'data/release.json').read_text())
+        header[2:2] = [f'# VERSION: {release["version"]}', f'# UPDATED: {release["date"]}']
+        header.insert(-2, '# DEDICATED-SOURCES: data/dedicated-source-lock.json; data/custom/*-dedicated.list')
     lines = [','.join(r) + (',no-resolve' if r[0] in {'IP-CIDR', 'IP-CIDR6'} else '') for r in ordered]
     queue(f'rule/Shadowrocket/{name}/{name}.list', header + lines)
     queue(f'rule/Mihomo/{name}/{name}.yaml', header + ['payload:'] + ['  - ' + r for r in lines])
@@ -140,6 +184,14 @@ def build():
     # dependencies. Clients without this provider keep the existing routing.
     gemini = (read_rules(ROOT / 'data/custom/gemini-core.list')
               | read_rules(ROOT / 'data/custom/gemini-shared.list'))
+    instagram = read_rules(ROOT / 'data/custom/instagram-dedicated.list')
+    facebook = read_rules(ROOT / 'data/custom/facebook-dedicated.list')
+    google_modules = ['Google', 'GoogleSearch', 'GoogleDrive', 'GoogleVoice',
+                      'GoogleEarth', 'YouTube', 'YouTubeMusic']
+    google = google_family() | gemini | set().union(*(module(n) for n in google_modules))
+    # Dedicated providers avoid broad keyword false positives. Generic legacy
+    # providers remain compatible with clients that have not added these groups.
+    google = {r for r in google if r[0] != 'DOMAIN-KEYWORD'}
     x = module('Twitter') | v2fly('twitter') | v2fly('xai')
     openai_owned = {('DOMAIN-SUFFIX', h) for h in ['openai.com','chatgpt.com','chat.com','chatgpt.site','sora.com','oaistatic.com','oaistatsig.com','oaiusercontent.com','openaimerge.com']}
     dedicated_scope = Scope(openai_owned | claude_core | x)
@@ -180,6 +232,7 @@ def build():
     names = {'ChinaDirect': china, 'ChinaDirectFull': china_full, 'Claude': claude,
              'Claude_Core': claude_core, 'Claude_Dependencies': dependencies, 'Anthropic': claude,
              'Claude_IP': claude_ip, 'X': x, 'Gemini': gemini,
+             'Instagram': instagram, 'Facebook': facebook, 'Google': google,
              'International': international, 'InternationalPriority': priority}
     for name, rules in names.items(): output(name, rules, companion=name != 'Claude_IP')
     # No complete .conf: these are composable rule providers without nodes or credentials.

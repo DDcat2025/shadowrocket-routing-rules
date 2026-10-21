@@ -1,0 +1,35 @@
+{
+  "files": [
+    "android",
+    "blogspot",
+    "dart",
+    "fastlane",
+    "firebase",
+    "flutter",
+    "golang",
+    "google",
+    "google-deepmind",
+    "google-play",
+    "google-registry",
+    "google-scholar",
+    "google-trust-services",
+    "googlefcm",
+    "kaggle",
+    "opensourceinsights",
+    "polymer",
+    "v8",
+    "youtube"
+  ],
+  "redundant_regex": [
+    {
+      "source": "google-play",
+      "regex": "regexp:^r+[0-9]+(---|\\.)sn-(2x3|ni5|j5o)\\w{5}\\.xn--ngstr-lra8j\\.com$",
+      "covered_suffix": "xn--ngstr-lra8j.com"
+    },
+    {
+      "source": "google-play",
+      "regex": "regexp:^r+[0-9]+(---|\\.)sn-(2x3|ni5|j5o)\\w{5}\\.googlevideo\\.com$",
+      "covered_suffix": "googlevideo.com"
+    }
+  ]
+}

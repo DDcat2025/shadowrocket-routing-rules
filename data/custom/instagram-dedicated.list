@@ -1,0 +1,13 @@
+# Instagram service domains; 2026-10-21 / v2026.10.21.1.
+# Sources: blackmatrix Instagram; v2fly Instagram; Meta platform documentation.
+# https://developers.facebook.com/docs/instagram-platform/
+# Shared fbcdn.net / graph.facebook.com remain Facebook; hostnames cannot identify the caller.
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,instagr.am
+DOMAIN-SUFFIX,ig.me
+DOMAIN-SUFFIX,igcdn.com
+DOMAIN-SUFFIX,igsonar.com
+DOMAIN-SUFFIX,igtv.com
+DOMAIN,instagramstatic-a.akamaihd.net
+DOMAIN,instagramstatic-a.akamaihd.net.edgesuite.net

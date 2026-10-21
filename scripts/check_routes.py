@@ -185,3 +185,40 @@ for host in ['other.auth0.com', 'other.ghost.io', 'other.cdn.cloudflare.net',
              'anthropic.auth0.com.example.org', 'anthropic-com.ghost.io.example.org']:
     assert not any(match(host, rule) for rule in provider('Claude_Core')), host
 print('PASS: Claude ingress IP boundaries, no-resolve export parity and shared-domain precision')
+
+# New product groups are opt-in. Legacy expectations above remain unchanged.
+dedicated = [(provider('Instagram'), 'Instagram'), (provider('Facebook'), 'Facebook'),
+             (provider('Google'), 'Google')]
+dedicated_cases = {
+    'Instagram': ['instagram.com', 'i.instagram.com', 'graph.instagram.com',
+                  'scontent.cdninstagram.com', 'instagr.am', 'ig.me'],
+    'Facebook': ['facebook.com', 'www.facebook.com', 'graph.facebook.com',
+                 'connect.facebook.net', 'scontent.xx.fbcdn.net', 'messenger.com',
+                 'm.me', 'cdn.fbsbx.com', 'facebook-web-clients.appspot.com'],
+    'Google': ['google.com', 'google.co.jp', 'google.com.hk', 'gmail.com', 'mail.google.com',
+               'drive.google.com', 'docs.google.com', 'sheets.google.com', 'meet.google.com',
+               'maps.googleapis.com', 'photos.google.com', 'translate.google.com',
+               'play.google.com', 'android.clients.google.com', 'mtalk.google.com',
+               'youtube.com', 'music.youtube.com', 'i.ytimg.com', 'rr1.googlevideo.com',
+               'yt3.ggpht.com', 'cloud.google.com', 'storage.googleapis.com',
+               'cloudfunctions.net', 'firebase.google.com', 'app.firebaseio.com',
+               'firebaseapp.com', 'kaggle.com', 'deepmind.google', 'notebooklm.google',
+               'labs.google', 'flutter.dev', 'dart.dev', 'go.dev',
+               'gemini.google.com', 'gemini.google', 'aistudio.google.com',
+               'generativelanguage.googleapis.com', 'robinfrontend-pa.googleapis.com',
+               'accounts.google.com', 'fonts.gstatic.com', 'www.googletagmanager.com'],
+}
+for policy, hosts in dedicated_cases.items():
+    for host in hosts:
+        actual = next((name for rules, name in dedicated if any(match(host, r) for r in rules)), None)
+        assert actual == policy, ('Independent provider', host, actual, policy)
+for name in ['Instagram', 'Facebook', 'Google']:
+    rules = provider(name)
+    assert not any(kind == 'DOMAIN-KEYWORD' for kind, value in rules), name
+    for host in ['notinstagram.com', 'instagram.com.example.org', 'notfacebook.com',
+                 'facebook.com.example.org', 'notgoogle.com', 'google.com.example.org',
+                 'myapp.dev', 'myapp.app', 'whatsapp.com', 'threads.net', 'oculus.com']:
+        assert not any(match(host, r) for r in rules), (name, host)
+assert not Scope(provider('Facebook')).contains(('DOMAIN-SUFFIX', 'instagram.com'))
+assert not Scope(provider('Instagram')).contains(('DOMAIN-SUFFIX', 'facebook.com'))
+print(f'PASS: {sum(map(len, dedicated_cases.values()))} independent Instagram/Facebook/Google cases, legacy compatibility and hostname boundaries')

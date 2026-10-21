@@ -1,0 +1,32 @@
+# Facebook / Messenger service domains; 2026-10-21 / v2026.10.21.1.
+# Core domains selected from blackmatrix Facebook and v2fly Facebook.
+# Does not inherit Facebook's broad Instagram/WhatsApp/Oculus/React entries or keywords.
+# Shared Meta CDN and Facebook Graph API are assigned to Facebook.
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,facebook.org
+DOMAIN-SUFFIX,facebookmail.com
+DOMAIN-SUFFIX,facebookemail.com
+DOMAIN-SUFFIX,facebookads.com
+DOMAIN-SUFFIX,facebookconnect.com
+DOMAIN-SUFFIX,facebooklogin.com
+DOMAIN-SUFFIX,facebookpay.com
+DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fb.watch
+DOMAIN-SUFFIX,fb.gg
+DOMAIN-SUFFIX,fbwat.ch
+DOMAIN-SUFFIX,fbcdn.com
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,fbsbx.net
+DOMAIN-SUFFIX,tfbnw.net
+DOMAIN-SUFFIX,messenger.com
+DOMAIN-SUFFIX,messengerdevelopers.com
+DOMAIN-SUFFIX,m.me
+DOMAIN-SUFFIX,thefacebook.com
+DOMAIN-SUFFIX,thefacebook.net
+DOMAIN,fbcdn-a.akamaihd.net
+DOMAIN,fbcdn-profile-a.akamaihd.net
+DOMAIN,facebook-web-clients.appspot.com
+DOMAIN,connect.facebook.net.edgekey.net

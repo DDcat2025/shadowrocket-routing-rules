@@ -45,6 +45,21 @@
     "DOMAIN": 14,
     "DOMAIN-SUFFIX": 6
   },
+  "Instagram": {
+    "total": 9,
+    "DOMAIN": 2,
+    "DOMAIN-SUFFIX": 7
+  },
+  "Facebook": {
+    "total": 28,
+    "DOMAIN": 4,
+    "DOMAIN-SUFFIX": 24
+  },
+  "Google": {
+    "total": 1223,
+    "DOMAIN": 250,
+    "DOMAIN-SUFFIX": 973
+  },
   "International": {
     "total": 36190,
     "DOMAIN": 240,

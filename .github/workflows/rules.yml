@@ -41,6 +41,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/refresh_sources.py
+      - run: python3 scripts/refresh_dedicated_sources.py
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - run: python3 scripts/build_rules.py
       - run: python3 scripts/check_routes.py
       - run: python3 scripts/build_rules.py --check

@@ -1,0 +1,38 @@
+# NAME: Facebook
+# AUTHOR: DDcat2025
+# VERSION: v2026.10.21.1
+# UPDATED: 2026-10-21
+# REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
+# SOURCE: data/source-lock.json; official manual supplements in data/custom
+# DEDICATED-SOURCES: data/dedicated-source-lock.json; data/custom/*-dedicated.list
+# RULES-SHA256: d9b85f6a71f307ba27ab5ad17b44a0b7d2fe5465f85fad5887dd297626cc9007
+# TOTAL: 28
+# Requires the _Keyword.list companion for equivalent coverage.
+.facebook.com
+.facebook.net
+.facebook.org
+.facebookads.com
+.facebookconnect.com
+.facebookemail.com
+.facebooklogin.com
+.facebookmail.com
+.facebookpay.com
+.fb.com
+.fb.gg
+.fb.me
+.fb.watch
+.fbcdn.com
+.fbcdn.net
+.fbsbx.com
+.fbsbx.net
+.fbwat.ch
+.m.me
+.messenger.com
+.messengerdevelopers.com
+.tfbnw.net
+.thefacebook.com
+.thefacebook.net
+connect.facebook.net.edgekey.net
+facebook-web-clients.appspot.com
+fbcdn-a.akamaihd.net
+fbcdn-profile-a.akamaihd.net

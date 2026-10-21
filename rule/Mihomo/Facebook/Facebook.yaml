@@ -1,0 +1,38 @@
+# NAME: Facebook
+# AUTHOR: DDcat2025
+# VERSION: v2026.10.21.1
+# UPDATED: 2026-10-21
+# REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
+# SOURCE: data/source-lock.json; official manual supplements in data/custom
+# DEDICATED-SOURCES: data/dedicated-source-lock.json; data/custom/*-dedicated.list
+# RULES-SHA256: d9b85f6a71f307ba27ab5ad17b44a0b7d2fe5465f85fad5887dd297626cc9007
+# TOTAL: 28
+payload:
+  - DOMAIN,connect.facebook.net.edgekey.net
+  - DOMAIN,facebook-web-clients.appspot.com
+  - DOMAIN,fbcdn-a.akamaihd.net
+  - DOMAIN,fbcdn-profile-a.akamaihd.net
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,facebook.net
+  - DOMAIN-SUFFIX,facebook.org
+  - DOMAIN-SUFFIX,facebookads.com
+  - DOMAIN-SUFFIX,facebookconnect.com
+  - DOMAIN-SUFFIX,facebookemail.com
+  - DOMAIN-SUFFIX,facebooklogin.com
+  - DOMAIN-SUFFIX,facebookmail.com
+  - DOMAIN-SUFFIX,facebookpay.com
+  - DOMAIN-SUFFIX,fb.com
+  - DOMAIN-SUFFIX,fb.gg
+  - DOMAIN-SUFFIX,fb.me
+  - DOMAIN-SUFFIX,fb.watch
+  - DOMAIN-SUFFIX,fbcdn.com
+  - DOMAIN-SUFFIX,fbcdn.net
+  - DOMAIN-SUFFIX,fbsbx.com
+  - DOMAIN-SUFFIX,fbsbx.net
+  - DOMAIN-SUFFIX,fbwat.ch
+  - DOMAIN-SUFFIX,m.me
+  - DOMAIN-SUFFIX,messenger.com
+  - DOMAIN-SUFFIX,messengerdevelopers.com
+  - DOMAIN-SUFFIX,tfbnw.net
+  - DOMAIN-SUFFIX,thefacebook.com
+  - DOMAIN-SUFFIX,thefacebook.net

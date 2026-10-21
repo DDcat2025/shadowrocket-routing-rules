@@ -1,0 +1,18 @@
+# NAME: Instagram
+# AUTHOR: DDcat2025
+# VERSION: v2026.10.21.1
+# UPDATED: 2026-10-21
+# REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
+# SOURCE: data/source-lock.json; official manual supplements in data/custom
+# DEDICATED-SOURCES: data/dedicated-source-lock.json; data/custom/*-dedicated.list
+# RULES-SHA256: 1d956b460e7278efc0b7f1c56fa68dcd101f3ab8a3c2cd1c351223b05f58746b
+# TOTAL: 9
+DOMAIN,instagramstatic-a.akamaihd.net
+DOMAIN,instagramstatic-a.akamaihd.net.edgesuite.net
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,ig.me
+DOMAIN-SUFFIX,igcdn.com
+DOMAIN-SUFFIX,igsonar.com
+DOMAIN-SUFFIX,igtv.com
+DOMAIN-SUFFIX,instagr.am
+DOMAIN-SUFFIX,instagram.com

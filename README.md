@@ -1,5 +1,7 @@
 # Shadowrocket 综合分流规则
 
+当前分类版本：**v2026.10.21.1 · 2026-10-21**。新增 **Instagram、Facebook、Google 全产品家族**三份独立订阅；可分别绑定手动策略组。Google 包含原 Gemini、YouTube、Workspace、Play、Cloud、Firebase、开发工具与公共静态资源。接入顺序、共享域名边界和完整订阅链接见 [独立分流说明](docs/independent-products-2026-10-21.md)。
+
 国内直连、Claude / Anthropic、Gemini、X 和国际通用规则集中维护；继续使用原有 OpenAI、Adobe、腾讯、字节与 Pinterest 仓库的订阅地址。
 
 适用于 Shadowrocket；同时生成 Mihomo classical rule-provider。这里提供规则集合，不包含节点、密码或完整客户端配置。
@@ -14,6 +16,9 @@
 | Claude IP 兜底 | [Claude_IP.list](rule/Shadowrocket/Claude_IP/Claude_IP.list) | 官方 API/Console 入站 IPv4 / IPv6 网段；单独接入，不依赖 ASN 数据库 |
 | Anthropic 别名 | [Anthropic.list](rule/Shadowrocket/Anthropic/Anthropic.list) | 与 Claude.list 内容相同，二选一 |
 | Gemini | [Gemini.list](rule/Shadowrocket/Gemini/Gemini.list) | 网页、Mac 桌面端、AI Studio、API 与已识别的登录/图片/静态资源统一出口；共享域名也会影响其他应用 |
+| Instagram | [Instagram.list](rule/Shadowrocket/Instagram/Instagram.list) | Instagram 专用域名、图片/CDN、短链接；不把 Facebook / WhatsApp 混入 |
+| Facebook | [Facebook.list](rule/Shadowrocket/Facebook/Facebook.list) | Facebook、Messenger 及 Meta 共用 CDN；Instagram 专用域名优先 |
+| Google 全产品家族 | [Google.list](rule/Shadowrocket/Google/Google.list) | 搜索、Gmail、Drive、Maps、YouTube、Play、Gemini、Cloud、Firebase 等；完整展开 Google 上游 include 树 |
 | X | [X.list](rule/Shadowrocket/X/X.list) | X、Twitter、媒体、短链接以及上游关联的 Grok / xAI 域名 |
 | 国际通用 | [International.list](rule/Shadowrocket/International/International.list) | 搜索、影音、社交、办公、创意、开发、游戏等；Adobe 已独立移交 |
 | 国际优先 | [InternationalPriority.list](rule/Shadowrocket/InternationalPriority/InternationalPriority.list) | 一组明确的海外服务，放在国内大集合之前，避免误归国内 |
@@ -142,6 +147,7 @@ python3 scripts/build_rules.py --check
 python3 scripts/check_routes.py
 # 显式联网更新输入快照
 python3 scripts/refresh_sources.py
+python3 scripts/refresh_dedicated_sources.py
 python3 scripts/build_rules.py
 python3 scripts/check_routes.py
 ```
