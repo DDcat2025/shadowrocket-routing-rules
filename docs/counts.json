@@ -6,29 +6,29 @@
     "DOMAIN-SUFFIX": 4792
   },
   "ChinaDirectFull": {
-    "total": 111259,
-    "DOMAIN": 295,
+    "total": 110989,
+    "DOMAIN": 296,
     "DOMAIN-KEYWORD": 13,
-    "DOMAIN-SUFFIX": 110951
+    "DOMAIN-SUFFIX": 110680
   },
   "Claude": {
-    "total": 39,
+    "total": 48,
     "DOMAIN": 30,
-    "DOMAIN-SUFFIX": 9
+    "DOMAIN-SUFFIX": 18
   },
   "Claude_Core": {
-    "total": 14,
+    "total": 23,
     "DOMAIN": 5,
-    "DOMAIN-SUFFIX": 9
+    "DOMAIN-SUFFIX": 18
   },
   "Claude_Dependencies": {
     "total": 25,
     "DOMAIN": 25
   },
   "Anthropic": {
-    "total": 39,
+    "total": 48,
     "DOMAIN": 30,
-    "DOMAIN-SUFFIX": 9
+    "DOMAIN-SUFFIX": 18
   },
   "Claude_IP": {
     "total": 2,
@@ -56,15 +56,15 @@
     "DOMAIN-SUFFIX": 24
   },
   "Google": {
-    "total": 1223,
-    "DOMAIN": 250,
+    "total": 1226,
+    "DOMAIN": 253,
     "DOMAIN-SUFFIX": 973
   },
   "International": {
-    "total": 36190,
+    "total": 36258,
     "DOMAIN": 240,
     "DOMAIN-KEYWORD": 76,
-    "DOMAIN-SUFFIX": 35874
+    "DOMAIN-SUFFIX": 35942
   },
   "InternationalPriority": {
     "total": 2088,

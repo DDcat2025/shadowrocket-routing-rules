@@ -5,8 +5,8 @@
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
 # DEDICATED-SOURCES: data/dedicated-source-lock.json; data/custom/*-dedicated.list
-# RULES-SHA256: e9084681f6215d6e73c6a466330efe13dff21af4dddac6da713c6fb2e9b0d2fa
-# TOTAL: 1223
+# RULES-SHA256: bdf2fbb1f2d8d8441327411e0377e8d62aaee6398ede118e97547ee6084b06bc
+# TOTAL: 1226
 DOMAIN,2mdn-cn.net
 DOMAIN,2mdn.net
 DOMAIN,accounts.google.com
@@ -32,6 +32,9 @@ DOMAIN,app-analytics-services.com
 DOMAIN,app-measurement-cn.com
 DOMAIN,app-measurement.com
 DOMAIN,apps5.oingo.com
+DOMAIN,appsgenaiserver-pa.clients.google.com
+DOMAIN,appsgenaiserver-pa.clients6.google.com
+DOMAIN,appsgenaiserver-pa.googleapis.com
 DOMAIN,avail.googleflights.net
 DOMAIN,beacons.gcp.gvt2.com
 DOMAIN,beacons.gvt2.com

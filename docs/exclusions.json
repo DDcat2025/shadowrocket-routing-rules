@@ -377,7 +377,22 @@
     },
     {
       "category": "International",
+      "rule": "DOMAIN-SUFFIX,ant.dev",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
       "rule": "DOMAIN-SUFFIX,anthropic.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,anthropic.team",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,antspace.dev",
       "assigned_to": "OpenAI/Claude/X"
     },
     {
@@ -442,6 +457,11 @@
     },
     {
       "category": "International",
+      "rule": "DOMAIN-SUFFIX,chatbotclaude.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
       "rule": "DOMAIN-SUFFIX,chatgpt.com",
       "assigned_to": "OpenAI/Claude/X"
     },
@@ -462,6 +482,11 @@
     },
     {
       "category": "International",
+      "rule": "DOMAIN-SUFFIX,claude.app",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
       "rule": "DOMAIN-SUFFIX,claude.com",
       "assigned_to": "OpenAI/Claude/X"
     },
@@ -472,12 +497,37 @@
     },
     {
       "category": "International",
+      "rule": "DOMAIN-SUFFIX,claude.new",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,claude.site",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,claudeacademy.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
       "rule": "DOMAIN-SUFFIX,claudemcpclient.com",
       "assigned_to": "OpenAI/Claude/X"
     },
     {
       "category": "International",
       "rule": "DOMAIN-SUFFIX,claudemcpcontent.com",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,claudepages.dev",
+      "assigned_to": "OpenAI/Claude/X"
+    },
+    {
+      "category": "International",
+      "rule": "DOMAIN-SUFFIX,claudestudio.com",
       "assigned_to": "OpenAI/Claude/X"
     },
     {

@@ -2,7 +2,7 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: eabcbce8dfb166ac6498ff9ee4c4b8d8c36bb3ec9c047367562c15297ce604e4
+# RULES-SHA256: 537a5dcad194251355f39d68ceeda149c134c64499eb3349619667fe16775896
 # TOTAL: 76
 DOMAIN-KEYWORD,1drv
 DOMAIN-KEYWORD,1e100

@@ -1,101 +1,101 @@
 {
   "repository": "v2fly/domain-list-community",
-  "commit": "e8f6d1e5c4a01cda943c0784ffa834340eeab5ae",
+  "commit": "fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85",
   "root": "google",
   "files": [
     {
       "path": "google-v2fly/android",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/android",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/android",
       "sha256": "1c90653035a7504b5d0b883f9090717ecfe23f8873aee75645071b1c461c4043"
     },
     {
       "path": "google-v2fly/blogspot",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/blogspot",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/blogspot",
       "sha256": "9f9d2e0eba824d204812b0c64bee64ff1f4d4a4c838031f8f24c5f013e5e6063"
     },
     {
       "path": "google-v2fly/dart",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/dart",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/dart",
       "sha256": "8d4d744d1116638b4789c6502e3168e2c156d6a2747d9f1efd9028c502907a7b"
     },
     {
       "path": "google-v2fly/fastlane",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/fastlane",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/fastlane",
       "sha256": "c7917e6f926dfe2cbf63709aeeb7bbd397b349fe970467a097bbdd919c199861"
     },
     {
       "path": "google-v2fly/firebase",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/firebase",
-      "sha256": "b28f423fdffbf5e6b67a179f21c322302837428d333fdcd85fa18767e50f31e9"
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/firebase",
+      "sha256": "816b85c8cf0e9f686ab3ba332029b3f3ab8f602b01b930a42e4c4bdfee4b07fa"
     },
     {
       "path": "google-v2fly/flutter",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/flutter",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/flutter",
       "sha256": "98e9bc2d286c8edb174f67e195a40b7278890cade98b89dc25842424376f38b8"
     },
     {
       "path": "google-v2fly/golang",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/golang",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/golang",
       "sha256": "2c6febc8eceaa343fb8904840017f65123f30be28eea4c6f3d1a1ce50645b346"
     },
     {
       "path": "google-v2fly/google",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/google",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/google",
       "sha256": "5a85d201b8fb4b03486515618da4c164a0ce0c59341cb2dee6d1b0bdca176653"
     },
     {
       "path": "google-v2fly/google-deepmind",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/google-deepmind",
-      "sha256": "6a9195976e75c2b6adb255ec5cc4af6d8b66d0dd2a877437642deed6da244874"
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/google-deepmind",
+      "sha256": "6f768291aa81a8d88fa48fc20613f55be646674cfa24a3b3c152a97e859c33a8"
     },
     {
       "path": "google-v2fly/google-play",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/google-play",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/google-play",
       "sha256": "ea1a161c52a443b2c0a105f8a94bcfc86e5c8a267d483f34e53848b7310fc65e"
     },
     {
       "path": "google-v2fly/google-registry",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/google-registry",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/google-registry",
       "sha256": "a8060ed62f9ccb984b3099861d23a5f54cc51a5b26d5abddffd08924710d78dd"
     },
     {
       "path": "google-v2fly/google-scholar",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/google-scholar",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/google-scholar",
       "sha256": "76eb1c15c0b4fc479d7a88f4f5065ab9de61c7711e3660f2f4f6dc5ff267a31f"
     },
     {
       "path": "google-v2fly/google-trust-services",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/google-trust-services",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/google-trust-services",
       "sha256": "09f22a4aac72092ddcdd8e91dbf444b905a6b5eecaede13f2ca5605968d63702"
     },
     {
       "path": "google-v2fly/googlefcm",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/googlefcm",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/googlefcm",
       "sha256": "6611d2b58eda9737b00e14cebdebb52918709df1fc8b39b95a2966b55a1cfc7b"
     },
     {
       "path": "google-v2fly/kaggle",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/kaggle",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/kaggle",
       "sha256": "6257e9fe2594961ccccefa6b9d4a99fda236e9563a7274304303b9a2c63e911b"
     },
     {
       "path": "google-v2fly/opensourceinsights",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/opensourceinsights",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/opensourceinsights",
       "sha256": "f4ade2b230eaf9fa05b2f3ca20d72a24fe7248a876a020bd209921876c6febcd"
     },
     {
       "path": "google-v2fly/polymer",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/polymer",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/polymer",
       "sha256": "fbb1cb902ab884deee928743f919fe5fed5a45a744bd0e034a4d219dd429df3e"
     },
     {
       "path": "google-v2fly/v8",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/v8",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/v8",
       "sha256": "036cbbd5578577f5571ec64cb5406e8ebd52bbe8ecdd9f72cebe234096052c66"
     },
     {
       "path": "google-v2fly/youtube",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8f6d1e5c4a01cda943c0784ffa834340eeab5ae/data/youtube",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/fa3cb96fbc210b8d6466251a1d71b4a6e63a9c85/data/youtube",
       "sha256": "9ffb657176fdffed567953749c137bb3d8a216ce4e839b3831b626c752902213"
     }
   ]

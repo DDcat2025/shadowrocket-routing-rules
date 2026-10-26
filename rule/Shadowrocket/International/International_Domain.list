@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: eabcbce8dfb166ac6498ff9ee4c4b8d8c36bb3ec9c047367562c15297ce604e4
-# TOTAL: 36094
+# RULES-SHA256: 537a5dcad194251355f39d68ceeda149c134c64499eb3349619667fe16775896
+# TOTAL: 36162
 # Requires the _Keyword.list companion for equivalent coverage.
 .000webhost.com
 .01.org
@@ -49,6 +49,7 @@
 .123-hp.com
 .123av.com
 .123av.me
+.123av.org
 .123bin.cc
 .123dapp.com
 .123dappipad.com
@@ -211,6 +212,7 @@
 .1password.co
 .1password.com
 .1password.community
+.1password.dev
 .1password.eu
 .1password.io
 .1passwordservices.com
@@ -271,6 +273,7 @@
 .233abc.com
 .233v2.com
 .2371tom.com
+.24.place
 .24h.tv
 .24hbook.com
 .24hjav.com
@@ -2907,7 +2910,6 @@
 .asminternational.org
 .asmrbuluo.com
 .asn-online.org
-.asobostudio.com
 .asp-cc.com
 .asp.net
 .aspbjournals.org
@@ -3283,8 +3285,10 @@
 .avinin.com
 .avira.com
 .avistaz.to
+.avito.com
 .avito.ru
 .avito.st
+.avito.tech
 .avizoon.site
 .avizoone.com
 .avjb.com
@@ -4129,8 +4133,15 @@
 .beforeigners.com
 .befuck.com
 .befuck.net
+.beget.app
+.beget.cloud
 .beget.com
+.beget.de
+.beget.hosting
+.beget.pro
 .beget.ru
+.beget.tech
+.begetcdn.cloud
 .begin-trade.com
 .behaviour4learning.ac.uk
 .behavioural-science.ac.uk
@@ -4191,6 +4202,7 @@
 .beru.ru
 .besa.ac.uk
 .besc.ac.uk
+.beserver.ru
 .beside.ac.uk
 .bess.ac.uk
 .best-sex-games.com
@@ -4324,6 +4336,7 @@
 .bfsh.hk
 .bftv.ac.uk
 .bgc.ac.uk
+.bget.ru
 .bgicdn.com
 .bgm.tv
 .bgme.me
@@ -4363,6 +4376,7 @@
 .bicton.ac.uk
 .bidbay.com
 .bidi.net.uk
+.bidobido.xyz
 .bidong25.com
 .bidong9.com
 .bidorbuyindia.com
@@ -4428,6 +4442,7 @@
 .bikaa.xyz
 .bikac.xyz
 .bikaios.xyz
+.bikawebapp.com
 .bil.ac.uk
 .bilborough.ac.uk
 .bild.de
@@ -4698,6 +4713,8 @@
 .blobstore.apple.com
 .blockcast.it
 .blockchain.com
+.blockchair.com
+.blockchair.net
 .blockcn.com
 .blockedbyhk.com
 .blockfrost.io
@@ -6594,6 +6611,10 @@
 .cdp2006.org
 .cdpa.url.tw
 .cdpeu.org
+.cdpred.services
+.cdprojekt.com
+.cdprojekt.red
+.cdprojektred.com
 .cdpuk.co.uk
 .cdpusa.org
 .cdpweb.org
@@ -7668,6 +7689,7 @@
 .consentpro.com
 .conservatoiresuk.ac.uk
 .consilience.ac.uk
+.console.typesafe.ai
 .constitutionalism.solutions
 .constructware.com
 .consul.io
@@ -7833,6 +7855,7 @@
 .cqvip.com
 .crabporn.com
 .crackle.com
+.craftifyx.com
 .craigslist.org
 .cral.ac.uk
 .cran.ac.uk
@@ -7959,6 +7982,7 @@
 .crypto.com
 .cryptocompare.com
 .cryptographyengineering.com
+.cryptoid.info
 .cryptomus.com
 .crypton.co.jp
 .crysis.jp
@@ -8108,6 +8132,7 @@
 .cursor.com
 .cursor.sh
 .cursorapi.com
+.cursorvm.com
 .curve.fi
 .curvefish.com
 .curvybbwwives.com
@@ -8162,6 +8187,7 @@
 .cyberctm.com
 .cyberghostvpn.com
 .cybermondaybeats4sale.com
+.cyberpunk.net
 .cybersecurity-cdt.ac.uk
 .cybersecuritycdt.ac.uk
 .cybersport.ru
@@ -8510,6 +8536,7 @@
 .delcamtv.com
 .delcamuniversity.com
 .delcamusa.com
+.delets.cash
 .delets.online
 .delicious.com
 .delicious.com.au
@@ -11369,6 +11396,7 @@
 .fanbox.cc
 .fandango.com
 .fandom.com
+.fanfiction.net
 .fanfictionero.com
 .fanfox.net
 .fangbinxing.com
@@ -11904,7 +11932,6 @@
 .flickr.net
 .flickrhivemind.net
 .flickriver.com
-.flightsimulator.com
 .fling.com
 .flipboard.com
 .flipfap.com
@@ -11939,6 +11966,17 @@
 .fluids.ac.uk
 .flutter.dev
 .flutterapp.com
+.fluxer.app
+.fluxer.com
+.fluxer.dev
+.fluxer.gg
+.fluxer.gift
+.fluxer.media
+.fluxer.tools
+.fluxerapp.com
+.fluxerstatic.com
+.fluxerstatus.com
+.fluxerusercontent.com
 .flxvpn.net
 .fly.dev
 .fly.io
@@ -12554,6 +12592,7 @@
 .fundsupermart.com
 .funf.tw
 .funimation.com
+.funko.com
 .funkyimg.com
 .funnyfacebook.org
 .funnyordie.com
@@ -12681,6 +12720,7 @@
 .g1d1goob.xyz
 .g6hentai.com
 .g9.co.kr
+.ga.jspm.io
 .gab.com
 .gabia.net
 .gabocorp.com
@@ -12713,6 +12753,7 @@
 .game.maj-soul.com
 .game735.com
 .gameapps.hk
+.gamebanana.com
 .gamebase.com.tw
 .gamebeforethegame.com
 .gamebiz.jp
@@ -13055,6 +13096,7 @@
 .getporn.tv
 .getpricetag.com
 .getprintersupports.com
+.getsafety.com
 .getscorecash.com
 .getsentry.com
 .getsession.org
@@ -13272,6 +13314,8 @@
 .glenfife.ac.uk
 .glenrothes-college.ac.uk
 .glhl.ac.uk
+.glitchprod.com
+.glitchproductions.store
 .glitchwave.com
 .gllm.ac.uk
 .global-sci.org
@@ -15469,6 +15513,7 @@
 .huabansp.com
 .huabansp7.club
 .huaglad.com
+.huakacomic.com
 .huanghuagang.org
 .huangse.love
 .huangyiyu.com
@@ -18025,6 +18070,7 @@
 .kilmeadeandfriends.com
 .kimchi.tv
 .kimogirl.cc
+.kimootoko.net
 .kimosex.com
 .kimy.com.tw
 .kindgirls.com
@@ -18263,6 +18309,7 @@
 .kun66.xyz
 .kundun1069.com
 .kurashsultan.com
+.kurs.expert
 .kurtmunger.com
 .kusocity.com
 .kusugurizanmai.com
@@ -19401,6 +19448,7 @@
 .magicmovies.com
 .maglue.ac.uk
 .magnacartacollege.ac.uk
+.magnific.com
 .mahabodhi.org
 .mahajantech.com
 .mahjongsoul.com
@@ -19443,6 +19491,7 @@
 .makerepeater.jp
 .makersuite.google.com
 .makesenseofdata.com
+.makeship.com
 .makeshop.jp
 .makingassessmentcount.ac.uk
 .makingstartshere.com
@@ -20671,6 +20720,7 @@
 .miniwindsor.com
 .miniworkshop.com
 .miniyaletown.ca
+.minkch.com
 .minnano-av.com
 .minne.com
 .minneapolisbmw.com
@@ -21103,6 +21153,7 @@
 .movidius.net
 .movidius.org
 .movie-erog.com
+.movie.eroterest.net
 .movie1000.xyz
 .moviefap.com
 .moviepost.com
@@ -21287,6 +21338,7 @@
 .mtec.ac.uk
 .mthruf.com
 .mti.ac.uk
+.mts-link.ru
 .mts-ws.net
 .mts.ru
 .mtsbank.ru
@@ -22614,6 +22666,7 @@
 .nixpkgs.org
 .niziero.info
 .njactb.org
+.njav.com
 .njav.tv
 .njavtv.com
 .njncscotlandscolleges.ac.uk
@@ -23526,6 +23579,7 @@
 .opdems.ac.uk
 .open.ac.uk
 .open.com.hk
+.openai.org
 .openaiapi-site.azureedge.net
 .openaicom.imgix.net
 .openallweb.com
@@ -23778,6 +23832,7 @@
 .owl-elearning.ac.uk
 .owl.li
 .owltail.com
+.ownaj.com
 .owsc.ac.uk
 .owxd.xyz
 .ox.ac.uk
@@ -24454,6 +24509,7 @@
 .piaotian.net
 .piapp.com.tw
 .piapro.net
+.pica-id.com
 .picacg2022.com
 .picacgy.com
 .picacn.xyz
@@ -24670,6 +24726,7 @@
 .playfamily.ru
 .playforceone.com
 .playgrounds-cdn.apple.com
+.playgwent.com
 .playhearthstone.com
 .playmation.com
 .playmeow.com
@@ -24738,6 +24795,7 @@
 .pml.ac.uk
 .pms.ac.uk
 .pnas.org
+.po-kaki-to.com
 .po18.tw
 .po2b.com
 .pobeda.page
@@ -25224,6 +25282,7 @@
 .postimg.org
 .postini.com
 .postman-echo.com
+.postman.com
 .posty.kr
 .postyourgirls.ws
 .potato.im
@@ -25638,6 +25697,7 @@
 .pythonhosted.org
 .pythonic.life
 .pytorch.org
+.pyup.io
 .pzforever.skin
 .pzforever01.homes
 .pzhanfor.today
@@ -25874,6 +25934,7 @@
 .r18lu-avi.shop
 .r18lu.com
 .r2.dev
+.r2modman.com
 .r34porn.net
 .ra-review.ac.uk
 .ra.gg
@@ -26943,6 +27004,7 @@
 .safepal.com
 .safepodnetwork.ac.uk
 .safervpn.com
+.safetycli.com
 .saffrontech.com
 .sagabank.co.jp
 .sage-observability.tech
@@ -27196,6 +27258,7 @@
 .schwab.com.hk
 .schwab.com.sg
 .schwabassetmanagement.com
+.schwabcdn.com
 .schwabplan.com
 .sci-hub.it.nf
 .sci-hub.mksa.top
@@ -28860,6 +28923,7 @@
 .sprite.org
 .sproutcore.com
 .sproxy.info
+.sprut.io
 .spsrn.ac.uk
 .sptvbroadcast.com
 .spurgeons.ac.uk
@@ -29172,6 +29236,7 @@
 .steamdeck.com
 .steamgames.com
 .steammobile.akamaized.net
+.steamos.cloud
 .steampipe-kr.akamaized.net
 .steampipe-partner.akamaized.net
 .steampipe.akamaized.net
@@ -30175,6 +30240,7 @@
 .tgirlpostop.com
 .tgp6.com
 .tgstat.com
+.tgtime.store
 .tgtube.com
 .tgutube.com
 .th.hao123.com
@@ -30410,6 +30476,7 @@
 .theweek.in
 .thewgo.org
 .thewirechina.com
+.thewitcher.com
 .thewomenslibrary.ac.uk
 .thewonderful101.com
 .theync.com
@@ -30489,6 +30556,8 @@
 .thunderbird.net
 .thunderbolttechnology.net
 .thundermail.com
+.thunderstore.io
+.thunderstore.org
 .thurrock.ac.uk
 .thurrockcampus.ac.uk
 .thywords.com
@@ -30655,6 +30724,8 @@
 .timestamp.apple.com
 .timeweb.cloud
 .timeweb.com
+.timeweb.tech
+.timewebcloud.kz
 .timi1.me
 .timo0.com
 .timsah.com
@@ -30690,6 +30761,7 @@
 .tinyurl.com
 .tiohentai.com
 .tipas.net
+.tipatipa.xyz
 .tipo.gov.tw
 .tipple.ac.uk
 .tire-cadcam.com
@@ -30728,6 +30800,7 @@
 .tmei-taoyuan.com
 .tmi.me
 .tmiaf.ru
+.tmimgcdn.com
 .tmn.ac.uk
 .tmpp.org
 .tmsnrt.rs
@@ -31435,6 +31508,7 @@
 .typeisbeautiful.com
 .typenetwork.com
 .typepad.com
+.typesafe.ai
 .typeset.io
 .typesquare.com
 .typography.com
@@ -34020,6 +34094,7 @@
 .worldoftanks.eu
 .worldofwarcraft.com
 .worldofwarplanes.com
+.worldofwarships.asia
 .worldofwarships.com
 .worldpopulationreview.com
 .worldpornvideos.com
@@ -34450,6 +34525,7 @@
 .xn--90ab.com
 .xn--90ab2c.xn--p1ai
 .xn--90absjljw3g.xn--p1ai
+.xn--90aefb9d.xn--p1ai
 .xn--90aifd0az.shop
 .xn--90aifd0azb.xn--p1acf
 .xn--90wwvt03e.com
@@ -34471,15 +34547,15 @@
 .xn--d4ty0ojsqzfd.com
 .xn--e1adjldbbpv.xn--90ais
 .xn--e1aigb.xn--p1ai
-.xn--fiqs8s1bxp3anr7a.hk
-.xn--fiqs8s1bxp3anr7a.xn--j6w193g
-.xn--fiqs8s1byzqyvl.hk
-.xn--fiqs8s1byzqyvl.xn--j6w193g
+.xn--fiq80y.hk
+.xn--fiq80y.xn--j6w193g
+.xn--fiq80y3xbiwr.hk
+.xn--fiq80y3xbiwr.xn--j6w193g
+.xn--fiq80y3xbiwrs0kiu9d.hk
+.xn--fiq80y3xbiwrs0kiu9d.xn--j6w193g
 .xn--fiqs8sxootzz.cn
 .xn--fiqs8sxootzz.xn--hxt814e
 .xn--flw351e.com
-.xn--gdt08a.hk
-.xn--gdt08a.xn--j6w193g
 .xn--ggle-55da.com
 .xn--gmq348bujlxrb.com
 .xn--gmq92kd2rm1kx34a.com
@@ -34501,8 +34577,6 @@
 .xn--mts47c3w9b1qr.cn
 .xn--mts47c3w9b1qr.net
 .xn--mtswd61ejxq.com
-.xn--mxtq18a.hk
-.xn--mxtq18a.xn--j6w193g
 .xn--ngstr-lra8j.com
 .xn--noss43i.com
 .xn--ohq11k7pl25iyo8a.cn
@@ -34511,14 +34585,10 @@
 .xn--pearsonenespaol-brb.com
 .xn--pssu7ci2j23mp9ny48b.hk
 .xn--pssu7ci2j23mp9ny48b.xn--j6w193g
-.xn--pssu7cv61af1tcs59bnvd.hk
-.xn--pssu7cv61af1tcs59bnvd.xn--j6w193g
+.xn--pssu7ci3q5oge0ai91q.xn--j6w193g
 .xn--pssu7cv61af44b.hk
 .xn--pssu7cv61af44b.xn--j6w193g
-.xn--pssu7cv61ahw8aq79bztd.hk
-.xn--pssu7cv61ahw8aq79bztd.xn--j6w193g
-.xn--pssu7cv61ahwcb1p2yk.hk
-.xn--pssu7cv61ahwcb1p2yk.xn--j6w193g
+.xn--pssu7cz8nr8ibkx1e8a.xn--j6w193g
 .xn--q41am8x.com
 .xn--qhrx81fxh2a.xn--55qx5d.hk
 .xn--qoq462m.com
@@ -34533,11 +34603,7 @@
 .xn--uis44a.xn--j6w193g
 .xn--urs05q.jp
 .xn--vuqv2cf7wzyig79c.com
-.xn--wcv22d.hk
-.xn--wcv22d.xn--j6w193g
 .xn--wcvs22d.xn--j6w193g
-.xn--wcvs22d1m.hk
-.xn--wcvs22d1m.xn--j6w193g
 .xn--x-qeu1ji09tzlg.biz
 .xn--x-qeu1ji09tzlg.net
 .xn--xsq421m.com
@@ -35337,6 +35403,7 @@
 .youthforfreechina.org
 .youthnetradio.org
 .youthwant.com.tw
+.youtooz.com
 .youtrack.cloud
 .youtrannytube.com
 .youtu.be
@@ -35825,6 +35892,7 @@
 .zorrovpn.com
 .zotero.org
 .zozotown.com
+.zozovideo.com
 .zpagov.net
 .zpath.com
 .zpn.im

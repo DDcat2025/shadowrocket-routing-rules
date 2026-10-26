@@ -5,5 +5,5 @@
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
 # DEDICATED-SOURCES: data/dedicated-source-lock.json; data/custom/*-dedicated.list
-# RULES-SHA256: e9084681f6215d6e73c6a466330efe13dff21af4dddac6da713c6fb2e9b0d2fa
+# RULES-SHA256: bdf2fbb1f2d8d8441327411e0377e8d62aaee6398ede118e97547ee6084b06bc
 # TOTAL: 0
