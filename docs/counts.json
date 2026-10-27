@@ -40,6 +40,11 @@
     "DOMAIN-KEYWORD": 1,
     "DOMAIN-SUFFIX": 30
   },
+  "Grok": {
+    "total": 6,
+    "DOMAIN": 1,
+    "DOMAIN-SUFFIX": 5
+  },
   "Gemini": {
     "total": 20,
     "DOMAIN": 14,

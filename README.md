@@ -1,5 +1,7 @@
 # Shadowrocket 综合分流规则
 
+新增 **Grok / xAI 独立集合 v2026.10.26.1**：网站、API、内容资源及精确共用认证端点可单独绑定策略组。原 X 集合保持兼容；独立 Grok 规则应放在 X 和通用规则之前。订阅地址与边界见 [Grok 接入说明](docs/grok.md)。
+
 当前分类版本：**v2026.10.21.1 · 2026-10-21**。新增 **Instagram、Facebook、Google 全产品家族**三份独立订阅；可分别绑定手动策略组。Google 包含原 Gemini、YouTube、Workspace、Play、Cloud、Firebase、开发工具与公共静态资源。接入顺序、共享域名边界和完整订阅链接见 [独立分流说明](docs/independent-products-2026-10-21.md)。
 
 国内直连、Claude / Anthropic、Gemini、X 和国际通用规则集中维护；继续使用原有 OpenAI、Adobe、腾讯、字节与 Pinterest 仓库的订阅地址。
@@ -20,6 +22,7 @@
 | Facebook | [Facebook.list](rule/Shadowrocket/Facebook/Facebook.list) | Facebook、Messenger 及 Meta 共用 CDN；Instagram 专用域名优先 |
 | Google 全产品家族 | [Google.list](rule/Shadowrocket/Google/Google.list) | 搜索、Gmail、Drive、Maps、YouTube、Play、Gemini、Cloud、Firebase 等；完整展开 Google 上游 include 树 |
 | X | [X.list](rule/Shadowrocket/X/X.list) | X、Twitter、媒体、短链接以及上游关联的 Grok / xAI 域名 |
+| Grok / xAI 独立 | [Grok.list](rule/Shadowrocket/Grok/Grok.list) | Grok 网站、API、内容资源和精确认证端点；优先于 X |
 | 国际通用 | [International.list](rule/Shadowrocket/International/International.list) | 搜索、影音、社交、办公、创意、开发、游戏等；Adobe 已独立移交 |
 | 国际优先 | [InternationalPriority.list](rule/Shadowrocket/InternationalPriority/InternationalPriority.list) | 一组明确的海外服务，放在国内大集合之前，避免误归国内 |
 

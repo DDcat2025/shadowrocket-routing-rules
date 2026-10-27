@@ -155,6 +155,10 @@ def output(name, rules, companion=True):
         release = json.loads((ROOT / 'data/release.json').read_text())
         header[2:2] = [f'# VERSION: {release["version"]}', f'# UPDATED: {release["date"]}']
         header.insert(-2, '# DEDICATED-SOURCES: data/dedicated-source-lock.json; data/custom/*-dedicated.list')
+    if name == 'Grok':
+        release = json.loads((ROOT / 'data/grok-release.json').read_text())
+        header[2:2] = [f'# VERSION: {release["version"]}', f'# UPDATED: {release["date"]}']
+        header.insert(-2, '# OFFICIAL-SUPPLEMENTS: data/custom/grok-dedicated.list; docs/grok.md')
     lines = [','.join(r) + (',no-resolve' if r[0] in {'IP-CIDR', 'IP-CIDR6'} else '') for r in ordered]
     queue(f'rule/Shadowrocket/{name}/{name}.list', header + lines)
     queue(f'rule/Mihomo/{name}/{name}.yaml', header + ['payload:'] + ['  - ' + r for r in lines])
@@ -193,8 +197,10 @@ def build():
     # providers remain compatible with clients that have not added these groups.
     google = {r for r in google if r[0] != 'DOMAIN-KEYWORD'}
     x = module('Twitter') | v2fly('twitter') | v2fly('xai')
+    # Keep X backward-compatible while offering an opt-in independent Grok group.
+    grok = v2fly('xai') | read_rules(ROOT / 'data/custom/grok-dedicated.list')
     openai_owned = {('DOMAIN-SUFFIX', h) for h in ['openai.com','chatgpt.com','chat.com','chatgpt.site','sora.com','oaistatic.com','oaistatsig.com','oaiusercontent.com','openaimerge.com']}
-    dedicated_scope = Scope(openai_owned | claude_core | x)
+    dedicated_scope = Scope(openai_owned | claude_core | x | grok)
     own_direct = (external('tencent-shadowrocket-rules', 'Tencent')
                   | external('douyin-bytedance-shadowrocket-rules', 'ByteDanceCN')
                   | read_rules(ROOT / 'data/custom/domestic-creative.list'))
@@ -231,7 +237,7 @@ def build():
     priority = filter_pool(priority_pool, 'InternationalPriority')
     names = {'ChinaDirect': china, 'ChinaDirectFull': china_full, 'Claude': claude,
              'Claude_Core': claude_core, 'Claude_Dependencies': dependencies, 'Anthropic': claude,
-             'Claude_IP': claude_ip, 'X': x, 'Gemini': gemini,
+             'Claude_IP': claude_ip, 'X': x, 'Grok': grok, 'Gemini': gemini,
              'Instagram': instagram, 'Facebook': facebook, 'Google': google,
              'International': international, 'InternationalPriority': priority}
     for name, rules in names.items(): output(name, rules, companion=name != 'Claude_IP')

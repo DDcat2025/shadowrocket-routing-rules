@@ -222,3 +222,30 @@ for name in ['Instagram', 'Facebook', 'Google']:
 assert not Scope(provider('Facebook')).contains(('DOMAIN-SUFFIX', 'instagram.com'))
 assert not Scope(provider('Instagram')).contains(('DOMAIN-SUFFIX', 'facebook.com'))
 print(f'PASS: {sum(map(len, dedicated_cases.values()))} independent Instagram/Facebook/Google cases, legacy compatibility and hostname boundaries')
+
+# Independent Grok must precede the backward-compatible X provider.
+grok = provider('Grok')
+assert all(kind != 'DOMAIN-KEYWORD' for kind, _ in grok)
+positive_grok = ['grok.com', 'assets.grok.com', 'auth.grok.com', 'grok.x.com',
+                 'grokipedia.com', 'www.grokipedia.com', 'x.ai', 'api.x.ai',
+                 'us.api.x.ai', 'console.x.ai', 'accounts.x.ai',
+                 'grokusercontent.com', 'artifacts.grokusercontent.com',
+                 'auth.grokusercontent.com', 'accounts.spacex.ai']
+negative_grok = ['x.com', 'api.x.com', 'twitter.com', 'pbs.twimg.com',
+                 'spacex.ai', 'www.spacex.ai', 'other.accounts.spacex.ai',
+                 'cursor.com', 'api.cursor.sh', 'accounts.google.com',
+                 'cloudfront.net', 'storage.googleapis.com', 'notgrok.com',
+                 'grok.com.example.org', 'evilx.ai', 'api.x.ai.example.org',
+                 'accounts.spacex.ai.example.org', 'grokusercontent.com.example.org']
+for host in positive_grok:
+    assert any(match(host, r) for r in grok), ('Grok missing', host)
+    ordered = [(grok, 'Grok'), (provider('X'), 'X')]
+    actual = next((policy for rules, policy in ordered if any(match(host, r) for r in rules)), None)
+    assert actual == 'Grok', ('Grok priority', host, actual)
+for host in negative_grok:
+    assert not any(match(host, r) for r in grok), ('Grok too broad', host)
+for host in ['x.com', 'twitter.com', 'pbs.twimg.com']:
+    assert any(match(host, r) for r in provider('X')), ('X coverage changed', host)
+for host in ['grok.com', 'api.x.ai']:
+    assert any(match(host, r) for r in provider('X')), ('Legacy Grok coverage changed', host)
+print(f'PASS: {len(positive_grok)} Grok cases and {len(negative_grok)} boundary cases; X compatibility preserved')

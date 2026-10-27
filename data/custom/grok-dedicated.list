@@ -1,0 +1,7 @@
+# Grok-owned content and exact shared authentication host.
+# Verified 2026-10-26 against official documentation:
+# https://docs.x.ai/x-subscription/sign-in-domains
+# Existing grok.com, grok.x.com, grokipedia.com and x.ai come from pinned v2fly/xai.
+# Do not include spacex.ai as a suffix: only the shared account endpoint is needed.
+DOMAIN-SUFFIX,grokusercontent.com
+DOMAIN,accounts.spacex.ai

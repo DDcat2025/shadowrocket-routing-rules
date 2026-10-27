@@ -1,0 +1,15 @@
+# NAME: Grok
+# AUTHOR: DDcat2025
+# VERSION: v2026.10.26.1
+# UPDATED: 2026-10-26
+# REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
+# SOURCE: data/source-lock.json; official manual supplements in data/custom
+# OFFICIAL-SUPPLEMENTS: data/custom/grok-dedicated.list; docs/grok.md
+# RULES-SHA256: 02138fb54820a107b5592ca035495399e02431cbdca69fddedf47aca622dbe09
+# TOTAL: 6
+DOMAIN,accounts.spacex.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grok.x.com
+DOMAIN-SUFFIX,grokipedia.com
+DOMAIN-SUFFIX,grokusercontent.com
+DOMAIN-SUFFIX,x.ai
