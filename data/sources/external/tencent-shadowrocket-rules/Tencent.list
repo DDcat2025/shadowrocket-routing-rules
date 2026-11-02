@@ -2,11 +2,11 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/tencent-shadowrocket-rules
 # SOURCE: https://github.com/v2fly/domain-list-community
-# SOURCE-COMMIT: 8f1acdf69923fde68e1cb6e8a58fb6e501fdaf2f
+# SOURCE-COMMIT: 01add61fbaf719b55673d969615cd328e80f214c
 # INCLUDED: cnb, coding, discuz, dnspod, kugou, kuwo, qcloud, sogou, tencent, tencent-dev, tencent-games, tencent-tme, webnovel, ximalaya, yuewen
-# DOMAIN-SUFFIX: 699
+# DOMAIN-SUFFIX: 702
 # DOMAIN: 1
-# TOTAL: 700
+# TOTAL: 703
 DOMAIN-SUFFIX,17roco.com
 DOMAIN-SUFFIX,97ting.com
 DOMAIN-SUFFIX,acctdns.com
@@ -603,6 +603,7 @@ DOMAIN-SUFFIX,tendbcluster.com
 DOMAIN-SUFFIX,tendis.net
 DOMAIN-SUFFIX,tengmed.com
 DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,tenpayglobal.com
 DOMAIN-SUFFIX,testjrzk.net.cn
 DOMAIN-SUFFIX,testmeet.cn
 DOMAIN-SUFFIX,testwaf.com
@@ -665,6 +666,8 @@ DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,weixinsxy.com
 DOMAIN-SUFFIX,weiyun.com
 DOMAIN-SUFFIX,werepository.com.cn
+DOMAIN-SUFFIX,wesure.cn
+DOMAIN-SUFFIX,wesure100.com
 DOMAIN-SUFFIX,wetv.vip
 DOMAIN-SUFFIX,wetvinfo.com
 DOMAIN-SUFFIX,weui.io

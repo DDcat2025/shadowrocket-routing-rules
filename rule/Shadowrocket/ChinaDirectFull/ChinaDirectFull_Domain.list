@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 4bba9f7945a139eac38a9c19dbcb214d5822c5830cbff0305775f2a7aa437e96
-# TOTAL: 110976
+# RULES-SHA256: a6037f7dde8a24dc63d4005a666ca1ee474520fe448d6bf48e440c1e5ed0f775
+# TOTAL: 110981
 # Requires the _Keyword.list companion for equivalent coverage.
 .0.zone
 .00.net
@@ -29401,6 +29401,7 @@
 .doubanio.com
 .doubao-dev.com
 .doubao.com
+.doubaoapps.com
 .doubaocdn.com
 .doubaozhidao.com
 .doubean.com
@@ -33947,6 +33948,7 @@
 .fillersmart.com
 .fillseo.com
 .film-yuelongchina.com
+.filmorigin.com
 .fily.fun
 .fim34s.com
 .fimmu.com
@@ -56512,6 +56514,7 @@
 .kakappt.com
 .kakashuzi.net
 .kakatx.com
+.kakaxing.com
 .kakayuy.net
 .kaken-china.com
 .kaku-scdn.com
@@ -87348,6 +87351,7 @@
 .tenorshare.tw
 .tenovatech.com
 .tenpay.com
+.tenpayglobal.com
 .tenqent.com
 .tenrays.com
 .tensafe.com
@@ -94235,6 +94239,7 @@
 .westpac.group
 .westsh.com
 .westsummitcap.com
+.wesure.cn
 .wesure100.com
 .wetab.link
 .wetest.host

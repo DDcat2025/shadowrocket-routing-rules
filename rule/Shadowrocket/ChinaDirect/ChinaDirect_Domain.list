@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 13f67a5129c42367e0a05d7fdefd17aa81071ef6d49a53422e2025a47941ee5b
-# TOTAL: 4833
+# RULES-SHA256: 933afddb5afb66b587886174d8ca7bec65b1a13f1488fe2cbcf1cccaff2209ed
+# TOTAL: 4839
 # Requires the _Keyword.list companion for equivalent coverage.
 .00cdn.com
 .0123456789.com
@@ -1527,6 +1527,7 @@
 .doubanio.com
 .doubao-dev.com
 .doubao.com
+.doubaoapps.com
 .doubaocdn.com
 .doubo03.com
 .douxie.com
@@ -1620,6 +1621,7 @@
 .ecombdvod.com
 .ectencent.cn
 .ectencent.com.cn
+.edge-byted.com
 .edgeceler.com
 .edgeone.cool
 .edgeonedy1.com
@@ -1940,6 +1942,7 @@
 .hacpai.com
 .haibian.com
 .haidilao.com
+.haimian.com
 .hainanairlines.com
 .haishun.com
 .hanboshi.com
@@ -3810,6 +3813,7 @@
 .tendis.net
 .tengmed.com
 .tenpay.com
+.tenpayglobal.com
 .tenxcloud.com
 .test-cignacmb.com
 .testjrzk.net.cn
@@ -4337,6 +4341,8 @@
 .werewolf.53site.com
 .west95582.com
 .westlaw.com
+.wesure.cn
+.wesure100.com
 .wetv.vip
 .wetvinfo.com
 .weui.io

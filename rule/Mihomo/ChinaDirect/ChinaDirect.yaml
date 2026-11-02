@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 13f67a5129c42367e0a05d7fdefd17aa81071ef6d49a53422e2025a47941ee5b
-# TOTAL: 4843
+# RULES-SHA256: 933afddb5afb66b587886174d8ca7bec65b1a13f1488fe2cbcf1cccaff2209ed
+# TOTAL: 4849
 payload:
   - DOMAIN,analytics.strava.com
   - DOMAIN,blzddist1-a.akamaihd.net
@@ -1578,6 +1578,7 @@ payload:
   - DOMAIN-SUFFIX,doubanio.com
   - DOMAIN-SUFFIX,doubao-dev.com
   - DOMAIN-SUFFIX,doubao.com
+  - DOMAIN-SUFFIX,doubaoapps.com
   - DOMAIN-SUFFIX,doubaocdn.com
   - DOMAIN-SUFFIX,doubo03.com
   - DOMAIN-SUFFIX,douxie.com
@@ -1671,6 +1672,7 @@ payload:
   - DOMAIN-SUFFIX,ecombdvod.com
   - DOMAIN-SUFFIX,ectencent.cn
   - DOMAIN-SUFFIX,ectencent.com.cn
+  - DOMAIN-SUFFIX,edge-byted.com
   - DOMAIN-SUFFIX,edgeceler.com
   - DOMAIN-SUFFIX,edgeone.cool
   - DOMAIN-SUFFIX,edgeonedy1.com
@@ -1991,6 +1993,7 @@ payload:
   - DOMAIN-SUFFIX,hacpai.com
   - DOMAIN-SUFFIX,haibian.com
   - DOMAIN-SUFFIX,haidilao.com
+  - DOMAIN-SUFFIX,haimian.com
   - DOMAIN-SUFFIX,hainanairlines.com
   - DOMAIN-SUFFIX,haishun.com
   - DOMAIN-SUFFIX,hanboshi.com
@@ -3861,6 +3864,7 @@ payload:
   - DOMAIN-SUFFIX,tendis.net
   - DOMAIN-SUFFIX,tengmed.com
   - DOMAIN-SUFFIX,tenpay.com
+  - DOMAIN-SUFFIX,tenpayglobal.com
   - DOMAIN-SUFFIX,tenxcloud.com
   - DOMAIN-SUFFIX,test-cignacmb.com
   - DOMAIN-SUFFIX,testjrzk.net.cn
@@ -4388,6 +4392,8 @@ payload:
   - DOMAIN-SUFFIX,werewolf.53site.com
   - DOMAIN-SUFFIX,west95582.com
   - DOMAIN-SUFFIX,westlaw.com
+  - DOMAIN-SUFFIX,wesure.cn
+  - DOMAIN-SUFFIX,wesure100.com
   - DOMAIN-SUFFIX,wetv.vip
   - DOMAIN-SUFFIX,wetvinfo.com
   - DOMAIN-SUFFIX,weui.io

@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 537a5dcad194251355f39d68ceeda149c134c64499eb3349619667fe16775896
-# TOTAL: 36162
+# RULES-SHA256: 61cc73f8e7ad3740aa00f8d4353585d8e83c543d1f3b6c556c441417b1410562
+# TOTAL: 36173
 # Requires the _Keyword.list companion for equivalent coverage.
 .000webhost.com
 .01.org
@@ -964,6 +964,7 @@
 .addison.ac.uk
 .addthiscdn.com
 .addtoany.com
+.addtodropbox.com
 .addyoutube.com
 .adelaidebbs.com
 .adelaidenow.com.au
@@ -8354,6 +8355,7 @@
 .dasaob.online
 .dasg.ac.uk
 .dash-1.ac.uk
+.dash.ai
 .dashlane.com
 .dashly.app
 .dashly.help
@@ -9319,6 +9321,7 @@
 .docs.new
 .docs.rs
 .docs.rw
+.docsend.com
 .doctor-videos.com
 .doctorvoice.org
 .documentforce.com
@@ -9555,12 +9558,15 @@
 .dropboxapi.com
 .dropboxbusiness.com
 .dropboxcaptcha.com
+.dropboxexperiment.com
 .dropboxforum.com
 .dropboxforums.com
 .dropboxinsiders.com
+.dropboxlegal.com
 .dropboxmail.com
 .dropboxpartners.com
 .dropboxstatic.com
+.dropboxteam.com
 .dropboxusercontent.com
 .droplr.com
 .drpc.org
@@ -14560,10 +14566,12 @@
 .helixstudios.net
 .helloandroid.com
 .helloavgirls.com
+.hellofax.com
 .hellofuture.ac.uk
 .hellokittybeats.com
 .hellomoto.com
 .helloqueer.com
+.hellosign.com
 .hellosmartbook.com
 .helloss.pw
 .hellotxt.com
@@ -18717,6 +18725,7 @@
 .librarylovefest.com
 .libraryofthumbs.com
 .libredd.it
+.librewolf.dev
 .librewolf.net
 .libsolutions.app
 .libsolutions.domains
@@ -36016,6 +36025,7 @@ dashasiafox.akamaized.netflix
 databank.worldbank.org
 datarouter.apps.netherrealm.com
 daznfeeds.com.edgekey.net
+dc.services.visualstudio.com
 dca-lm-livedazn.secure.footprint.net
 deutschewelle.h-cdn.com
 dl.begellhouse.com
@@ -36121,6 +36131,7 @@ rsshub.rssforever.com
 rsshub.umzzz.com
 rsshub.woodland.cafe
 rsshub2.asailor.org
+rt.services.visualstudio.com
 rthklive2-lh.akamaihd.net
 scholar.google.com
 self.events.data.microsoft.com
