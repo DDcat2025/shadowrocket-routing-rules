@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 441c666849ce739ca15d09188dd020cc1a1cca533837de545afc931100a3318a
-# TOTAL: 48
+# RULES-SHA256: 3fa4ea1d18f1283d51c782003bbd2ef13502fc77c81779db4c1e81e044952381
+# TOTAL: 49
 # Requires the _Keyword.list companion for equivalent coverage.
 .ant.dev
 .anthropic.com
@@ -45,6 +45,7 @@ http-intake.logs.us5.datadoghq.com
 js.intercomcdn.com
 marketplace.microsoft.com
 marketplace.visualstudio.com
+o1158394.ingest.us.sentry.io
 plugins.jetbrains.com
 raw.githubusercontent.com
 registry.npmjs.org

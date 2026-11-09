@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: a6037f7dde8a24dc63d4005a666ca1ee474520fe448d6bf48e440c1e5ed0f775
-# TOTAL: 110981
+# RULES-SHA256: a191c6d77acde7eed6fab42e6d0186304c2752550c338acd5d2a95d436613c2a
+# TOTAL: 110983
 # Requires the _Keyword.list companion for equivalent coverage.
 .0.zone
 .00.net
@@ -67924,6 +67924,7 @@
 .nike.host
 .nike666.com
 .nikefans.com
+.nikke-en.com
 .nikkisoft.com
 .nikkiup2u2.com
 .nikkon-china.com
@@ -87208,6 +87209,7 @@
 .tencentfoundation.org
 .tencentga.com
 .tencentgames.co
+.tencentgames.com
 .tencentgames.us
 .tencentgme.com
 .tencentgse.com

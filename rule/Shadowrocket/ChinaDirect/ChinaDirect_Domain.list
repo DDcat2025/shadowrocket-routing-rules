@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 933afddb5afb66b587886174d8ca7bec65b1a13f1488fe2cbcf1cccaff2209ed
-# TOTAL: 4839
+# RULES-SHA256: 8977fa83be3c27dc2c097f4d3e32aa9576cc16155749db49928d67a208dcb43a
+# TOTAL: 4842
 # Requires the _Keyword.list companion for equivalent coverage.
 .00cdn.com
 .0123456789.com
@@ -2691,6 +2691,7 @@
 .letvcdn.com
 .letvcloud.com
 .letvimg.com
+.levelinfinite.com
 .lf-rc1.yhgfb-cn-static.com
 .lhzq.com
 .liangxinyao.com
@@ -3022,6 +3023,7 @@
 .nic.xin
 .nicaifu.com
 .nihaoafrica.org
+.nikke-en.com
 .nim-lang-cn.org
 .nmrdata.com
 .nnthink.com
@@ -3798,6 +3800,7 @@
 .tencentdms.com
 .tencenteiam.com
 .tencentelasticsearch.com
+.tencentgames.com
 .tencentid.com
 .tencentidentity.com
 .tencentmiying.com

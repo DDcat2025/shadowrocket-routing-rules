@@ -1,24 +1,24 @@
 {
   "ChinaDirect": {
-    "total": 4849,
+    "total": 4852,
     "DOMAIN": 42,
     "DOMAIN-KEYWORD": 9,
-    "DOMAIN-SUFFIX": 4798
+    "DOMAIN-SUFFIX": 4801
   },
   "ChinaDirectFull": {
-    "total": 110994,
+    "total": 110996,
     "DOMAIN": 296,
     "DOMAIN-KEYWORD": 13,
-    "DOMAIN-SUFFIX": 110685
+    "DOMAIN-SUFFIX": 110687
   },
   "Claude": {
-    "total": 48,
-    "DOMAIN": 30,
+    "total": 49,
+    "DOMAIN": 31,
     "DOMAIN-SUFFIX": 18
   },
   "Claude_Core": {
-    "total": 23,
-    "DOMAIN": 5,
+    "total": 25,
+    "DOMAIN": 7,
     "DOMAIN-SUFFIX": 18
   },
   "Claude_Dependencies": {
@@ -26,8 +26,8 @@
     "DOMAIN": 25
   },
   "Anthropic": {
-    "total": 48,
-    "DOMAIN": 30,
+    "total": 49,
+    "DOMAIN": 31,
     "DOMAIN-SUFFIX": 18
   },
   "Claude_IP": {
@@ -36,14 +36,14 @@
     "IP-CIDR6": 1
   },
   "X": {
-    "total": 31,
+    "total": 32,
     "DOMAIN-KEYWORD": 1,
-    "DOMAIN-SUFFIX": 30
+    "DOMAIN-SUFFIX": 31
   },
   "Grok": {
-    "total": 6,
+    "total": 7,
     "DOMAIN": 1,
-    "DOMAIN-SUFFIX": 5
+    "DOMAIN-SUFFIX": 6
   },
   "Gemini": {
     "total": 20,

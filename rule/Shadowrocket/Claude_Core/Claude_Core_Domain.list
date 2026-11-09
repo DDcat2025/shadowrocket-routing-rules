@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 6a8a766f42d813bf8c87bc3dc27ccd9e6e9b33bf88698de5a4de370c68d6b4a0
-# TOTAL: 23
+# RULES-SHA256: a278e05b41f970dadf408079357697934344afe75c090b4d642bae45267f9c6e
+# TOTAL: 25
 # Requires the _Keyword.list companion for equivalent coverage.
 .ant.dev
 .anthropic.com
@@ -27,4 +27,6 @@ anthropic-com.ghost.io
 anthropic.auth0.com
 anthropic.com.cdn.cloudflare.net
 cdn.usefathom.com
+http-intake.logs.us5.datadoghq.com
+o1158394.ingest.us.sentry.io
 servd-anthropic-website.b-cdn.net

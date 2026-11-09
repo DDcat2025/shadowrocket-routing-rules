@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 933afddb5afb66b587886174d8ca7bec65b1a13f1488fe2cbcf1cccaff2209ed
-# TOTAL: 4849
+# RULES-SHA256: 8977fa83be3c27dc2c097f4d3e32aa9576cc16155749db49928d67a208dcb43a
+# TOTAL: 4852
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,bytedance.map.fastly.net
@@ -2741,6 +2741,7 @@ DOMAIN-SUFFIX,letv.com
 DOMAIN-SUFFIX,letvcdn.com
 DOMAIN-SUFFIX,letvcloud.com
 DOMAIN-SUFFIX,letvimg.com
+DOMAIN-SUFFIX,levelinfinite.com
 DOMAIN-SUFFIX,lf-rc1.yhgfb-cn-static.com
 DOMAIN-SUFFIX,lhzq.com
 DOMAIN-SUFFIX,liangxinyao.com
@@ -3072,6 +3073,7 @@ DOMAIN-SUFFIX,ngacn.cc
 DOMAIN-SUFFIX,nic.xin
 DOMAIN-SUFFIX,nicaifu.com
 DOMAIN-SUFFIX,nihaoafrica.org
+DOMAIN-SUFFIX,nikke-en.com
 DOMAIN-SUFFIX,nim-lang-cn.org
 DOMAIN-SUFFIX,nmrdata.com
 DOMAIN-SUFFIX,nnthink.com
@@ -3848,6 +3850,7 @@ DOMAIN-SUFFIX,tencentdigitalassistant.com
 DOMAIN-SUFFIX,tencentdms.com
 DOMAIN-SUFFIX,tencenteiam.com
 DOMAIN-SUFFIX,tencentelasticsearch.com
+DOMAIN-SUFFIX,tencentgames.com
 DOMAIN-SUFFIX,tencentid.com
 DOMAIN-SUFFIX,tencentidentity.com
 DOMAIN-SUFFIX,tencentmiying.com

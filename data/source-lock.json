@@ -1,11 +1,11 @@
 {
   "blackmatrix_commit": "0b6897dc17e0c513d25449c935a9694818e32f0c",
-  "v2fly_commit": "328f6c5168653e809561c862757c966fc5012e5d",
+  "v2fly_commit": "e8d7a10a15bf662c927a40a3aa680bae86379608",
   "external_commits": {
     "DDcat2025/adobe-shadowrocket-rules": "985cc6c2303b230584237b85eb20c3ea55f7cb77",
-    "DDcat2025/openai-shadowrocket-rules": "aa46e7a413efd7ba5a63c4434e21a212ee2eda3a",
-    "DDcat2025/tencent-shadowrocket-rules": "0e29e30f630d15cd6205b7cac41fa028a650003d",
-    "DDcat2025/douyin-bytedance-shadowrocket-rules": "62deab9eaf8791db583c3aa62a5abf84a9b9e7ef",
+    "DDcat2025/openai-shadowrocket-rules": "d16b997f5bd4152f2b92d5833b2b9144985f5629",
+    "DDcat2025/tencent-shadowrocket-rules": "be34d8918d6c36e9b3883fb74d6875e66491a70c",
+    "DDcat2025/douyin-bytedance-shadowrocket-rules": "ebbb8b71b64f9abced42d9757be2206fc7ead43f",
     "DDcat2025/pinterest-shadowrocket-rules": "6b12faf6c45e481f6302e571b8c257d0d529c914"
   },
   "files": [
@@ -827,21 +827,21 @@
     },
     {
       "path": "v2fly/anthropic",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/328f6c5168653e809561c862757c966fc5012e5d/data/anthropic",
-      "bytes": 373,
-      "sha256": "48597d05d9206b7c841be6872c7ca954685a416d7e61c9316c017ed5f28c7053"
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8d7a10a15bf662c927a40a3aa680bae86379608/data/anthropic",
+      "bytes": 494,
+      "sha256": "59ad6a25a6d9759995777fe98f2cf30675199fad00546a0ffe027b95ec0776f0"
     },
     {
       "path": "v2fly/twitter",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/328f6c5168653e809561c862757c966fc5012e5d/data/twitter",
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8d7a10a15bf662c927a40a3aa680bae86379608/data/twitter",
       "bytes": 327,
       "sha256": "05fee908ab80f262be5f603b24d3bdaa60aee1005ccc1cec988bab9236061116"
     },
     {
       "path": "v2fly/xai",
-      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/328f6c5168653e809561c862757c966fc5012e5d/data/xai",
-      "bytes": 40,
-      "sha256": "1e15c6018174f58f6a2f3710c84566909eee45a8092247280d244cf8ea7cd928"
+      "url": "https://raw.githubusercontent.com/v2fly/domain-list-community/e8d7a10a15bf662c927a40a3aa680bae86379608/data/xai",
+      "bytes": 52,
+      "sha256": "4c95fc6465d5f135f5d27935e9b44f6fcc82cfaa0eb6bb4e3232c44c5c581628"
     },
     {
       "path": "external/adobe-shadowrocket-rules/AdobeAI.list",
@@ -881,21 +881,21 @@
     },
     {
       "path": "external/douyin-bytedance-shadowrocket-rules/ByteDanceCN.list",
-      "url": "https://raw.githubusercontent.com/DDcat2025/douyin-bytedance-shadowrocket-rules/62deab9eaf8791db583c3aa62a5abf84a9b9e7ef/rule/Shadowrocket/ByteDanceCN/ByteDanceCN.list",
+      "url": "https://raw.githubusercontent.com/DDcat2025/douyin-bytedance-shadowrocket-rules/ebbb8b71b64f9abced42d9757be2206fc7ead43f/rule/Shadowrocket/ByteDanceCN/ByteDanceCN.list",
       "bytes": 23478,
-      "sha256": "e6e8bb0bf877fcaee9d8cb397a20901dd428875aca0ac44a3b10139a4d186557"
+      "sha256": "87c3ed2229486898b212f3a8484c1b151507ea0d3f069dfe4aa1b853d2879d4e"
     },
     {
       "path": "external/openai-shadowrocket-rules/OpenAI.list",
-      "url": "https://raw.githubusercontent.com/DDcat2025/openai-shadowrocket-rules/aa46e7a413efd7ba5a63c4434e21a212ee2eda3a/rule/Shadowrocket/OpenAI/OpenAI.list",
+      "url": "https://raw.githubusercontent.com/DDcat2025/openai-shadowrocket-rules/d16b997f5bd4152f2b92d5833b2b9144985f5629/rule/Shadowrocket/OpenAI/OpenAI.list",
       "bytes": 2469,
-      "sha256": "1fd69e1d3e9e440025978a0972bbb2f6b1e6d07421dd6f571cebb5b2a57074ac"
+      "sha256": "d79ce1a3630f7ee2a710f3d9917012b8ab0127ada0593106eaedac526e023ef4"
     },
     {
       "path": "external/openai-shadowrocket-rules/OpenAI_Precise.list",
-      "url": "https://raw.githubusercontent.com/DDcat2025/openai-shadowrocket-rules/aa46e7a413efd7ba5a63c4434e21a212ee2eda3a/rule/Shadowrocket/OpenAI/OpenAI_Precise.list",
+      "url": "https://raw.githubusercontent.com/DDcat2025/openai-shadowrocket-rules/d16b997f5bd4152f2b92d5833b2b9144985f5629/rule/Shadowrocket/OpenAI/OpenAI_Precise.list",
       "bytes": 1902,
-      "sha256": "5ac92246294ded6a087d1462bf46d4359962ed041fd9b8c5880d6a5346481d8c"
+      "sha256": "f954c8c2fc9052dc286f0aeb909b7ecdac23bc8d7812d321889abddfed168602"
     },
     {
       "path": "external/pinterest-shadowrocket-rules/Pinterest.list",
@@ -905,9 +905,9 @@
     },
     {
       "path": "external/tencent-shadowrocket-rules/Tencent.list",
-      "url": "https://raw.githubusercontent.com/DDcat2025/tencent-shadowrocket-rules/0e29e30f630d15cd6205b7cac41fa028a650003d/rule/Shadowrocket/Tencent/Tencent.list",
-      "bytes": 20611,
-      "sha256": "2964558c40922ab5f9b7ad4cca28235e64065a1b0b1046afc7df3881c0aa3ff7"
+      "url": "https://raw.githubusercontent.com/DDcat2025/tencent-shadowrocket-rules/be34d8918d6c36e9b3883fb74d6875e66491a70c/rule/Shadowrocket/Tencent/Tencent.list",
+      "bytes": 20681,
+      "sha256": "ba9ee042dab7a21d5bc4cff020b2df99f649330d07955f3393a0066c113c9c21"
     }
   ]
 }

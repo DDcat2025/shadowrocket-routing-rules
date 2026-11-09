@@ -2,11 +2,11 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/tencent-shadowrocket-rules
 # SOURCE: https://github.com/v2fly/domain-list-community
-# SOURCE-COMMIT: 01add61fbaf719b55673d969615cd328e80f214c
+# SOURCE-COMMIT: e8d7a10a15bf662c927a40a3aa680bae86379608
 # INCLUDED: cnb, coding, discuz, dnspod, kugou, kuwo, qcloud, sogou, tencent, tencent-dev, tencent-games, tencent-tme, webnovel, ximalaya, yuewen
-# DOMAIN-SUFFIX: 702
+# DOMAIN-SUFFIX: 704
 # DOMAIN: 1
-# TOTAL: 703
+# TOTAL: 705
 DOMAIN-SUFFIX,17roco.com
 DOMAIN-SUFFIX,97ting.com
 DOMAIN-SUFFIX,acctdns.com
@@ -269,7 +269,6 @@ DOMAIN-SUFFIX,ihappystudio.cn
 DOMAIN-SUFFIX,ihappystudio.com
 DOMAIN-SUFFIX,imqq.com
 DOMAIN-SUFFIX,imweb.io
-DOMAIN-SUFFIX,in.th
 DOMAIN-SUFFIX,inte.sogou.com
 DOMAIN-SUFFIX,inte.sogoucdn.com
 DOMAIN-SUFFIX,intltencentcos.com
@@ -300,6 +299,7 @@ DOMAIN-SUFFIX,kugouvoice.com
 DOMAIN-SUFFIX,kugouyouth.com
 DOMAIN-SUFFIX,kuwo.cn
 DOMAIN-SUFFIX,labycore.cn
+DOMAIN-SUFFIX,levelinfinite.com
 DOMAIN-SUFFIX,log.tbs.qq.com
 DOMAIN-SUFFIX,lrts.me
 DOMAIN-SUFFIX,lu.sogou.com
@@ -347,6 +347,7 @@ DOMAIN-SUFFIX,na-toronto.tencentcos.com.cn
 DOMAIN-SUFFIX,nagcloudcs.com
 DOMAIN-SUFFIX,nextstudios.com
 DOMAIN-SUFFIX,nextworkshop.net
+DOMAIN-SUFFIX,nikke-en.com
 DOMAIN-SUFFIX,onexmail.com
 DOMAIN-SUFFIX,openapp.run
 DOMAIN-SUFFIX,openmidas.com
@@ -588,6 +589,7 @@ DOMAIN-SUFFIX,tencentdigitalassistant.com
 DOMAIN-SUFFIX,tencentdms.com
 DOMAIN-SUFFIX,tencenteiam.com
 DOMAIN-SUFFIX,tencentelasticsearch.com
+DOMAIN-SUFFIX,tencentgames.com
 DOMAIN-SUFFIX,tencentid.com
 DOMAIN-SUFFIX,tencentidentity.com
 DOMAIN-SUFFIX,tencentmiying.com
