@@ -1,9 +1,9 @@
 {
   "ChinaDirect": {
-    "total": 4852,
+    "total": 4853,
     "DOMAIN": 42,
     "DOMAIN-KEYWORD": 9,
-    "DOMAIN-SUFFIX": 4801
+    "DOMAIN-SUFFIX": 4802
   },
   "ChinaDirectFull": {
     "total": 110996,
@@ -61,9 +61,9 @@
     "DOMAIN-SUFFIX": 24
   },
   "Google": {
-    "total": 1226,
+    "total": 1227,
     "DOMAIN": 253,
-    "DOMAIN-SUFFIX": 973
+    "DOMAIN-SUFFIX": 974
   },
   "International": {
     "total": 36269,

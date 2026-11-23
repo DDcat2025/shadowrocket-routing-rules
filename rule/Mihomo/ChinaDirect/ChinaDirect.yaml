@@ -2,8 +2,8 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/shadowrocket-routing-rules
 # SOURCE: data/source-lock.json; official manual supplements in data/custom
-# RULES-SHA256: 8977fa83be3c27dc2c097f4d3e32aa9576cc16155749db49928d67a208dcb43a
-# TOTAL: 4852
+# RULES-SHA256: cfa3faf33fd48ba124ce19f965fd1141ebf9fecae451b30be57b468b7e5e95a9
+# TOTAL: 4853
 payload:
   - DOMAIN,analytics.strava.com
   - DOMAIN,blzddist1-a.akamaihd.net
@@ -3822,6 +3822,7 @@ payload:
   - DOMAIN-SUFFIX,tencent.design
   - DOMAIN-SUFFIX,tencent.net
   - DOMAIN-SUFFIX,tencent.net.cn
+  - DOMAIN-SUFFIX,tencentads.com
   - DOMAIN-SUFFIX,tencentapps.com
   - DOMAIN-SUFFIX,tencentbyod.com
   - DOMAIN-SUFFIX,tencentcdb.cn

@@ -2,11 +2,11 @@
 # AUTHOR: DDcat2025
 # REPO: https://github.com/DDcat2025/tencent-shadowrocket-rules
 # SOURCE: https://github.com/v2fly/domain-list-community
-# SOURCE-COMMIT: 41504eae2a11f305fe88cfc605cf6c105a80bf5a
+# SOURCE-COMMIT: dff1013c77ee24daaffb2168b5b425894a9f87bc
 # INCLUDED: cnb, coding, discuz, dnspod, kugou, kuwo, qcloud, sogou, tencent, tencent-dev, tencent-games, tencent-tme, webnovel, ximalaya, yuewen
-# DOMAIN-SUFFIX: 704
+# DOMAIN-SUFFIX: 705
 # DOMAIN: 1
-# TOTAL: 705
+# TOTAL: 706
 DOMAIN-SUFFIX,17roco.com
 DOMAIN-SUFFIX,97ting.com
 DOMAIN-SUFFIX,acctdns.com
@@ -560,6 +560,7 @@ DOMAIN-SUFFIX,tencent.com.hk
 DOMAIN-SUFFIX,tencent.design
 DOMAIN-SUFFIX,tencent.net
 DOMAIN-SUFFIX,tencent.net.cn
+DOMAIN-SUFFIX,tencentads.com
 DOMAIN-SUFFIX,tencentapps.com
 DOMAIN-SUFFIX,tencentbyod.com
 DOMAIN-SUFFIX,tencentcdb.cn
